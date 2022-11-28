@@ -1,3 +1,7 @@
 function a(){
 
 }
+
+function c(){
+
+}
