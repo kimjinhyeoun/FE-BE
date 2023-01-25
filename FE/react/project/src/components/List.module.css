@@ -1,0 +1,15 @@
+.txt2 {
+    border: 1px solid blue;
+    color: green;
+}
+
+.project {
+    border-collapse: collapse;
+}
+
+.project th, .project td {
+    border: 1px solid #333;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
