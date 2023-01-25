@@ -1,0 +1,52 @@
+믿을 수 있는 G9 상품을 검색해 보세요
+
+홈
+베스트
+해외직구
+백화점몰
+e쿠폰
+여행
+항공권
+쿠폰·혜택
+
+주요서비스
+카테고리
+트렌드메이커
+
+브랜드관
+가전무료배송
+가구무료배송
+스포츠전문관
+지구여행
+지구책방
+
+G9 판매안내 
+이용약관 
+전자금융거래약관 
+개인정보처리방침 
+청소년보호정책 
+G마켓
+
+지구에서 가장 친절한 고객센터 : 1644-5702
+상담가능시간 : 오전 9시 ~ 오후 6시 (토요일 및 공휴일은 휴무)
+주소 : 경기도 부천시 원미구 상동 461 투나 6층
+e-Mail : g9_help@g9.co.kr
+
+(주)이베이코리아
+서울시 강남구 테헤란로 152 (역삼동 강남파이낸스센터)
+대표이사 : 변광윤 Fax : 02-589-8842 
+사업자등록번호 : 220-81-83676
+통신판매업신고 : 강남 10630호
+
+전자금융분쟁처리
+Tel : 1644-5702 Fax : 02-589-8844 
+Mail : gmk_cs@corp.gmarket.co.kr
+저작권침해 신고
+
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+				url('../font/NanumGothic.ttf')format('truetype'),
+				url('../font/NanumGothic.woff')format('woff');
+}
