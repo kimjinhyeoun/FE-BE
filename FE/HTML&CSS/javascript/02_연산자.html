@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>연산자</title>
+<link rel="stylesheet" href="css/layout1.css">
+<script>
+    // 산술연산자 + - * / %
+    var num1 = 20, num2 = 3;
+    document.write("* 산술연산자 *"+"<br>");
+    document.write(num1 + num2); //23
+    document.write("<br>");
+    document.write(num1 - num2); //17
+    document.write("<br>");
+    document.write(num1 * num2); //60
+    document.write(num1 / num2 +"<br>"); //6.666666666666667
+    document.write("올림 : "+Math.ceil(num1/num2) + "<br>"); // 올림 : 7
+    document.write("내림 : "+Math.floor(num1/num2)  + "<br>"); //내림 : 6
+    document.write("반올림 : "+Math.round(num1/num2)  + "<br>"); //반올림 : 7
+    document.write("나머지 : "+num1 % 8);  //나머지 : 4
+    document.write("<hr>");
+
+    //+
+    document.write("123+456" + "<br>"); //123+456
+    document.write(123+456 + "<br>"); //579
+    document.write("123"+456 + "<br>"); //123456
+    document.write(123+"456" + "<br>"); //123456
+    document.write("123"+"456" + "<br>"); //123456
+    document.write("<hr>");
+    //-
+    document.write("123-456" + "<br>"); //123-456
+    document.write(123-456 + "<br>"); //-333
+    document.write("123"-456 + "<br>"); //-333
+    document.write(123-"456" + "<br>"); //-333
+    document.write("123"-"456" + "<br>"); //-333
+    document.write("<hr>");
+    //*
+    document.write("123*456" + "<br>"); //123*456
+    document.write(123*456 + "<br>"); //56088
+    document.write("123"*456 + "<br>"); //56088
+    document.write(123*"456" + "<br>"); //56088
+    document.write("123"*"456" + "<br>"); //56088
+    document.write("<hr>");
+    // /
+    document.write("123/456" + "<br>"); //123/456
+    document.write(123/456 + "<br>"); //0.26973684210526316
+    document.write("123"/456 + "<br>"); //0.26973684210526316
+    document.write(123/"456" + "<br>"); //0.26973684210526316
+    document.write("123"/"456" + "<br>"); //0.26973684210526316
+    document.write("<hr>");
+    //대입연산자 = += -= *= /= %=
+    document.write("* 대입연산자 *","<br>");
+    var num3 = 10;
+    document.write(num3 +"<br>"); //10
+    num3 += 5;
+    document.write(num3 + "<br>"); //15
+    num3 -= 7; //15 - 7
+    document.write(num3 + "<br>"); //8
+    num3 *= 3; //7 *3
+    document.write(num3 + "<br>"); //24
+    num3 /= 2; //24 / 2
+    document.write(num3 + "<br>"); //12
+    num3 %= 5; //12 % 5
+    document.write(num3 + "<br>"); //2
+    document.write("<hr>");
+
+    var type1;
+    type1 = "<ol class='ex1'>"; //같은 따옴표 연속사용 금지.
+    type1 += "<li>html</li>";
+    type1 += "<li>css</li>";
+    type1 += "<li>javascript</li>";
+    type1 += "<li>jquery</li>";
+    type1 += "</ol>";
+    document.write(type1);
+    document.write("<hr>");
+
+    var type2;
+    type2 = "<table class='ex2'>";
+    type2 += "<tr><th>No</th><th>작성자</th><th>내용</th></tr>";
+    type2 += "<tr><td>1</td><td>web1</td><td>내용1</td></tr>";
+    type2 += "<tr><td>2</td><td>web2</td><td>내용2</td></tr>";
+    type2 += "<tr><td>3</td><td>web3</td><td>내용3</td></tr>";
+    type2 += "</table>";
+    document.write(type2);
+    document.write("<hr>");
+
+    //비교연산자 == != >= <= > <
+    document.write("* 비교연산자 *" + "<br>");
+    var num4 = 10, num5 = 20, result4;
+    result4 = num4 > num5;
+    document.write(result4); //false
+    document.write("<br>");
+    result4 = num4 == num5;
+    document.write(result4); //false
+    document.write("<br>");
+    result4 = num4 != num5;
+    document.write(result4); //true
+    document.write("<br>");
+    result4 = num4 <= num5;
+    document.write(result4); //true
+    document.write("<br>");
+    result4 = num4 >= num5;
+    document.write(result4); //false
+    document.write("<hr>");
+    
+    //논리연산자 ! && ||
+    document.write("* 논리연산자 *" + "<br>");
+    var num6 = 20, num7 =  40, result6;
+    result6 = num7 == 40;
+    document.write(result6 +"<br>"); //true
+    result6 = num6 >=15 && num7 >=15;
+    document.write(result6 +"<br>"); //true
+    result6 = ! (num6 >=15 && num7 >=15);
+    document.write(result6 +"<br>"); //false
+    result6 = num6 >=15 || num7 >=50;
+    document.write(result6 +"<br>"); //true
+    result6 = !(num6 >=15 || num7 >=50);
+    document.write(result6 +"<br>"); //false
+    document.write("<hr>");
+
+    //동일(일치) 연산자 ===
+    document.write("* 동일(일치)연산자 *" + "<br>");
+    var k = 10, m = "10", result10;
+    result10 = k == 10;
+    document.write(result10 +"<br>"); //true
+    result10 = k === 10;
+    document.write(result10 +"<br>"); //true
+    result10 = m == 10;
+    document.write(result10 +"<br>"); //true
+    result10 = m === 10;
+    document.write(result10 +"<br>"); //false
+    result10 = k === m;
+    document.write(result10 +"<br>"); //false
+    document.write("<hr>");
+
+    //증감연산자 ===
+    document.write("* 증감연산자 *" + "<br>");
+    var num8 = 30;
+    // alert(num8++); 30
+    // alert(num8++); 31
+    // alert(num8++); 32
+    // alert(num8); 33
+
+    var num9 = 30;
+    // alert(++num9); //31
+    // alert(++num9); //32
+    // alert(++num9); //33
+    // alert(num9); //33
+
+    var num10 = 30;
+    // alert(num10++); //30
+    // alert(++num10); //32
+    // alert(num10--); //32
+    // alert(--num10); //30
+    // alert(num10); //30
+    document.write("<hr>");
+    
+    document.write("* 삼항연산자 *" + "<br>");
+    var num11 = 30;
+    var num12 = 20;
+    num11 > num12 ? alert("num11이 더 큽니다.") : alert("num12가 더 큽니다.");
+</script>
+</head>
+<body>
+    
+</body>
+</html>

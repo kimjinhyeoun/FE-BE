@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math</title>
+    <script>
+        //max
+        var num1 = Math.max(30,89,52);
+        document.write("최댓값 : " + num1);
+
+        document.write("<hr>");
+        //min
+        var num2 = Math.min(30,89,52);
+        document.write("최댓값 : " + num2);
+
+        document.write("<hr>");
+
+        //random
+        var num3 = Math.random();
+        document.write("0~1난수 : "+ num3+"<br>");
+        var num4 = Math.random()*3;
+        document.write("0~1난수 : "+ num4+"<br>");
+
+        //random 이미지 num1.gif ~ num3.gif
+        var num5 = Math.ceil(Math.random()*3);
+        document.write(num5,"<br>");
+        document.write("<img src='images/num1.gif'>");
+        // 아래 num1~3에 해당하는걸 변수 이름으로 지정하면 변수가 변경됨으로 이미지가 바뀌는 걸 확인 할 수가 있다
+        document.write("<img src='images/num"+num5+"_over.gif'>"); 
+        document.write("<hr>");
+
+        //반올림 Math.round();
+        //올림 Math.ceil();
+        // 내림 Math.floor();
+        // 절댓값 Math.abs();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <script>
+        //날짜 객체는 new Date()
+        // getHours() 시간에서 시(0~23)
+        // getMinutes() 시간에서 분(0~59)
+        // getSeconds() 시간에서 초(0~59)
+        document.write(Date()+"<br>");
+        var date1 = new Date();
+        var hour1 = date1.getHours();
+        var minute1 = date1.getMinutes();
+        var second1 = date1.getSeconds();
+        document.write(hour1+"시<br>");
+        document.write(minute1+"분<br>");
+        document.write(second1+"초<br>");
+        document.write("<hr>");
+
+        //현재시간 (12시이전 오전, 12시부터 오후);
+        var date2 = new Date();
+        var hour2 = date2.getHours();
+        if(hour2 < 12){
+            document.write("오전");
+        }
+        else{
+            document.write("오후");
+        }
+        document.write("<hr>");
+        //현재시간(12시이전이면 오전, 18시 이전이면 오후, 18시부터 저녁)
+        var date3 = new Date();
+        var hour3 = date3.getHours();
+        switch(true){
+            case hour3 < 12:
+            document.write("오전");
+                break;
+            case hour3 < 18:
+            document.write("오후");
+                break;
+            default:
+                alert("저녁");
+                break;
+        }
+        document.write("<hr>");
+
+
+        //현재 날짜에서 요일별 이미지 출력
+        //getDay() 날짜에서 요일 0-> 일요일 ~ 6->토요일
+        var date4 = new Date();
+        var day5 = date4.getDay();
+        document.write(day5+"<br>"); //숫자로 출력됨
+        if(day5 == 1){
+            document.write("<img src='images/img1.jpg' title='월요일'>");
+        }
+        else if(day5 == 2){
+            document.write("<img src='images/img2.jpg' title='화요일'>");
+        }
+        else if(day5 == 3){
+            document.write("<img src='images/img3.jpg' title='수요일'>");
+        }
+        else if(day5 == 4){
+            document.write("<img src='images/img4.jpg' title='목요일'>");
+        }
+        else if(day5 == 5){
+            document.write("<img src='images/img5.jpg' title='금요일'>");
+        }
+        else if(day5 == 6){
+            document.write("<img src='images/img6.jpg' title='토요일'>");
+        }
+        else{
+            document.write("<img src='images/img7.jpg' title='일요일'>");
+        }
+        document.write("<hr>");
+
+        // getFullYear 날짜에서 연도
+        var date5 = new Date();
+        var year5 = date5.getFullYear(); //연도
+        document.write("현재 연도 : "+ year5+"<br>");
+        var month5 = date5.getMonth();
+        document.write("현재 월 : "+ month5+"<br>"); //월은 -1 함  0 = 1월임, 1 = 2월
+        var date5_ =date5.getDate(); //일
+        document.write("현재 일 : "+ date5_+"<br>");
+        document.write("<hr>");
+
+        //지금 현재 날짜에서 올해 얼마나 남았나
+        var date6 = new Date(); //현재날짜;
+        var year6 = date6.getFullYear(); //연도
+        var date6_1 = new Date(year6, 11, 31); //연말 정보 가운데 11인건 -1 해줘서 11인거임 표시는 12월로 됨
+        var date6_2 = date6_1 - date6;
+        // document.write(date6_2);
+        // 1초 1,000 ,1분(60초) 1,000 * 60 / 1시간(60분) 1,000 * 60 * 60 / 1일(60분*24) 1,000 * 60 * 60 * 24
+        var result6 = Math.ceil(date6_2/(1000*60*60*24));
+        document.write("내일부터 올해 말 일까지는 "+ result6+"일 남았습니다.");
+
+    </script>
+</head>
+<body>
+</body>
+</html>

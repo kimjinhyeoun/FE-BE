@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <script>
+    //ex2
+    function ex2(i){
+        i.innerHTML ='내용변경쓰';
+    }
+    //ex3
+    function ex3(){
+        document.getElementById("ex3").innerHTML = Date();
+    }
+    //ex5
+    function ex5(){
+        var i = document.getElementById("ex5");
+        i.value = i.value.toUpperCase(); //대문자로 변경하는것 , .toLowerCase 소문자
+    }
+    //ex6 - ex6_1 / ex6_2
+    function ex6_1(j){
+        j.innerHTML = "확인1";
+        j.style.backgroundColor = "#951028";
+    }
+    function ex6_2(j){
+        j.innerHTML = "확인";
+        j.style.backgroundColor = "";
+    }
+    //ex7  - ex7_1 / ex7_2
+    function ex7_1(k){
+        k.style.backgroundColor = "#d9f5a9";
+        k.innerHTML = "확인2";
+    }
+    function ex7_2(k){
+        k.style.backgroundColor = "";
+        k.innerHTML = "확인1";
+    }
+    </script>
+</head>
+<body>
+<p ondblclick="this.innerHTML='내용변경쓰'">클릭쓰</p>
+<hr>
+<p onclick="ex2(this)">클릭쓰</p>
+<hr>
+<p id="ex3">확인</p>
+<p><button type="button" onclick="ex3()">현재날짜</button></p>
+<hr>
+<p id="ex4">확인</p>
+<p><button type="button" id="ex4_btn">현재날짜</button></p>
+<hr>
+<p>id : <input type="text" id="ex5" onblur="ex5()"></p>
+<hr>
+<p onmouseover="ex6_1(this)" onmouseout="ex6_2(this)">확인</p>
+<hr>
+<p onmousedown="ex7_1(this)" onmouseup="ex7_2(this)">확인1</p>
+<script>
+    //ex4
+    document.getElementById("ex4_btn").onclick = ex4_js;
+    function ex4_js(){
+        //2022년 10월 26일 14시 23분 20초;
+        var a1 = new Date(); //현재날짜
+        var a2 = a1.getFullYear(); //연도
+        var a3 = a1.getMonth()+1; //월 <- -1로 표시되기때문에 +1을 해주었다.
+        var a4 = a1.getDate(); //일
+        var a5 = a1.getHours(); //시
+        var a6 = a1.getMinutes(); //분
+        var a7 = a1.getSeconds(); //초
+        document.getElementById("ex4").innerHTML = a2 + "년" + a3 + "월" + a4 + "일" + a5 + "시" + a6 + "분" + a7 + "초";
+    }
+</script>
+</body>
+</html>

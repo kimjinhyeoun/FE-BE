@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if/if~else/if~else if~else</title>
+    <link rel="stylesheet" href="css/layout2.css">
+    <script>
+        // if
+        // 값을 입력받아 70이상이면 합격처리
+        // var num1 = Number(prompt("값을 입력하세요. 1~100"));
+        // if(num1 >= 70){
+        //     alert("합격입니다.");
+        // }
+
+        // if~else
+        // 값을 입력받아 70초과 합격 70이하 불협화음
+        // var num2 = Number(prompt("값 입력."));
+        // if(num2 > 70){
+        //     document.write("화음");
+        // }
+        // else{
+        //     document.write("불협화음");
+        // }
+
+        // 값 입력 (웹개발 or 앱개발)
+        // 웹개발 입력시 : 수강료는 200,000원 입니다
+        // 앱개발 입력시 수강료는 300,00원 입니다
+        // var num3 = prompt("웹? 앱?");
+        // if(num3 == "웹"){
+        //     document.write("수강료 20만원.");
+        // }
+        // else if(num3 == "앱"){
+        //     document.write("수강료 30만원.");
+        // }
+        // else{
+        //     document.write("다시 입력.");
+        // }
+
+        // if~else if ~ else
+        // 숫자를 입력받아 1~100 , 홀수 / 짝수 / 다시입력하세요.
+        // var num3 = Number(prompt("숫자를 입력하세요 1~100"));
+        // if(num3 % 2 == 0){
+        //     alert("짝수입니다");
+        // }
+        // else if(num % 2 ==1){
+        //     alert("홀수입니다.");
+        // }
+        // else{
+        //     alert("다시 입력해주세요.")
+        // }
+
+        // 숫자를 입력받아 (1 or 2 or 3)
+        // 1 : num1.gif     2: num2.gif     3: num3.gif
+        // var num4 = prompt("1 or 2 or 3");
+        // if(num4 == 1){
+        //     document.write("<img src='images/num1.gif' width='30' height='30'>");
+        // }
+        // else if(num4 == 2){
+        //     document.write("<img src='images/num2.gif' width='30' height='30'>");
+        // }
+        // else if(num4 ==3){
+        //     document.write("<img src='images/num3.gif' width='30' height='30'>");
+        // }
+        // else{
+        //     document.write("일치하는 숫자가 아닙니다."+"<img src='images/apple.gif'width='20' height='20'>");
+        // }
+
+        //숫자 입력받아 1-100
+        //90이상 : 92 A학점 입니다.
+        //80이상 : 88 B학점 입니다.
+        //70이상 : 75 C학점 입니다.
+        //60이상 : 62 D학점 입니다.
+        //60미만 : 58 E학점 입니다.
+        // var num5 = Number(prompt("학점을 입력해주세요. 1-100"));
+        // if(num5 >= 90 ){
+        //     alert(num5 + " A학점 입니다.");
+        // }
+        // else if(num5 >= 80 ){
+        //     alert(num5 + " B학점 입니다.");
+        // }
+        // else if(num5 >= 70 ){
+        //     alert(num5 + " C학점 입니다.");
+        // }
+        // else if(num5 >= 60 ){
+        //     alert(num5 + " D학점 입니다.");
+        // }
+        // else{
+        //     alert(num5 + " E학점 입니다.");
+        // }
+        
+
+        //가격을 입력받아 (0이상~)
+        // 할인율 (만원이상 10%, 5천원 이상 5%, 3천원 이상 3%, 3천원미만 1%)
+        // 결과
+        // 입력가는 10,000원입니다.
+        // 할인가는 1,000원입니다.
+        // 계산가는 9,000입니다.
+        // var num6, num7;
+        // num6 = Number(prompt("가격을 입력 0이상."));
+        // if(num6 >= 10000){
+        //     num7 = num6 * 0.1;
+        // }
+        // else if(num6 >= 5000){
+        //     num7 = num6 * 0.05;
+        // }
+        // else if(num6 >= 3000){
+        //     num7 = num6 * 0.03;
+        // }
+        // else{
+        //     num7 = num6 * 0.01;
+        // }
+        // document.write("입력가는 : <span class='txt'>" + num6 +"원</span> 입니다.<br>");
+        // document.write("할인가는 : <span class='txt'>" +  num7 + "원</span> 입니다.<br>");
+        // document.write("계산가는 : <span class='txt'>" + (num6 - num7) + "원</span> 입니다. <br>");
+
+
+        // 첫번째 숫자를 입력하세요 1-100
+        // 두번째 숫자를 입력하세요 1-100
+        // 출력
+        // - 첫번째 입력한 숫자 : ??
+        // - 두번째 입력한 숫자 : ??
+        // - 결과 : 3개중 하나
+            // 첫번쨰 입력한 숫자가 더 큽니다.
+            // 두번째 입력한 숫자가 더 큽니다.
+            // 두 수는 같습니다.
+        // var num8, num9;
+
+        // var num8 = Number(prompt("첫번째 숫자를 입력하세요 1-100"));
+        // document.write("첫번째 입력한 숫자 :<span class='txt'> " + num8 + "</span><br>");
+
+        // var num9 = Number(prompt("두번째 숫자를 입력하세요 1-100"));
+        // document.write("두번째 입력한 숫자 : <span class='txt'>" + num9 + "</span><br>");
+
+        // if((num8 > num9)){
+        //         result8 = "<span class='txt'>첫번째 입력한 숫자가 더 큽니다.</span>";
+        // }
+        // else if((num9 > num8)){
+        //     result8 = "<span class='txt'>두번째 입력한 숫자가 더 큽니다.</span>";
+        // }
+        // else{
+        //     result8 = "<span class='txt'>두 수는 같습니다.</span>";
+        // }
+        // document.write(result8);
+
+
+        //3개의 값을 받아 모두 60초과되면 이미지 출력, 하나라도 60이하이면 텍스트 출력
+        // var num10, num11, num12, result10
+        // num10 = Number(prompt("숫자를 입력하세요."));
+        // num11 = Number(prompt("숫자를 입력하세요."));
+        // num12 = Number(prompt("숫자를 입력하세요."));
+        
+        // if(num10 > 60 && num11 > 60 && num12 > 60){
+        //     result10 = "<img src='images/roll4_1.gif' width='200' height='199'>";
+        // }
+        // else{
+        //     result10 = "60이하가 하나라도 존재합니다";
+        // }
+        // document.write(result10);
+
+
+        //3개의 값을 받아 하나라도 60초과되면 이미지 출력, 그 외엔 텍스트 출력
+        // var num13, num14, num15, result15
+        // num13 = Number(prompt("숫자를 입력하세요."));
+        // num14 = Number(prompt("숫자를 입력하세요."));
+        // num15 = Number(prompt("숫자를 입력하세요."));
+        // if(num13 > 60 || num14 > 60 || num15 > 60){
+        //     result15 = "<img src='images/roll4_1.gif' width='200' height='199'>";
+        // }
+        // else{
+        //     result15 = "60초과가 하나도 없습니다";
+        // }
+        // document.write(result15);
+
+
+
+        //실습 - 성적표
+        // var k,m,e,tot,avg,result14;
+        // k = Number(prompt("국어점수 입력."));
+        // m = Number(prompt("수학점수 입력."));
+        // e = Number(prompt("영어점수 입력."));
+        // tot = k + m + e; //총점
+        // avg = Math.round(tot / 3); //평균 //Math.ceil 올림, Math.round 반올림, Math.floor 내림
+        // if(avg >= 70){ //결과
+        //     result14 = "합격";
+        // }
+        // else{
+        //     result14 = "불합격";
+        // }
+        // var tb;
+        // tb = "<table class='score'>";
+        // tb += "<tr><th>국어</th><td>"+k+"</td></tr>";
+        // tb += "<tr><th>수학</th><td>"+m+"</td></tr>";
+        // tb += "<tr><th>영어</th><td>"+e+"</td></tr>";
+        // tb += "<tr><th>총점</th><td>"+tot+"</td></tr>";
+        // tb += "<tr><th>평균</th><td>"+avg+"</td></tr>";
+        // tb += "<tr><th>결과</th><td class='result_t'>"+result14+"</td></tr>";
+        // tb += "</tabel>"
+        // document.write(tb);
+
+
+        // 아이디 / 비밀번호
+        //window.location 브라우저의 현재 url 주소값에 대한 정보 제공 객체(window생략가능)
+        //location.reload() 브라우저 새로고침
+        var id = "abc"
+        var pwd = "1234"
+        var u_id = prompt("아이디를 입력해주세요.","")
+        var u_pwd = prompt("비밀번호를 입력해주세요.","")
+        if(id == u_id){
+            if(pwd == u_pwd)
+            {
+            document.write(u_id + "님 반갑습니다.");
+            }
+            else
+            {
+            alert("비밀번호가 일치하지 않습니다.");
+            location.reload();
+        }
+        }else{
+            alert("아이디가 일치하지 않습니다.");
+            location.reload();
+        }
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

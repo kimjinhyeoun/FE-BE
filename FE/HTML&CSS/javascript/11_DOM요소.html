@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM(document Object Model)요소</title>
+<script>
+    //ex4
+    function ex4_js(){
+        //document.getElementById(id).attribute = new Value : 속성
+        //ex4 클릭시 이미지 바뀜 roll1_1 -> roll3_1로
+        document.getElementById("ex4").src="images/roll3_1.gif";
+    }
+
+    //ex5
+    function ex5_js(){
+        //document.getElementByClassName("class명")
+        var a = document.getElementsByClassName("ex5_1"); //확인3, 확인4
+        a[0].style.color="blue"; //a 첫번째(인덱스번호임)
+        a[1].innerHTML="변경됐나요?"; //a 두번째(인덱스번호임)
+        //a 개수를 p태그(ex5_result)에 넣어라 출력내용 : 2
+        document.getElementById("ex5_result").innerHTML = a.length;
+    }
+
+    //ex6
+    function ex6_js(){
+        var b = document.getElementsByClassName("ex6"); //확인2,확인4,확인5,확인6
+        var i;
+        for(i=0; i < b.length; i++){
+            b[i].style.backgroundColor = "orange"; // b[i] = b[0] b[1] b[2] b[3] 
+        }
+    }
+
+    //ex7
+    function ex7_js(){
+        //document.getElementsByTagName("태그명")
+        var c = document.getElementsByTagName("h5");
+        c[0].innerHTML = "변경됐나?"; //첫번째 h5에 (인덱스번호는 0) 확인1
+        document.getElementById("ex7_result").innerHTML = c[1].innerHTML; //확인2
+    }
+
+    //ex10
+    function ex10(){
+        var g = document.querySelectorAll("h4");
+        g[2].style.border = "3px solid red"; //내용3
+    }
+    //ex11
+    function ex11(){
+        var h = document.querySelectorAll(".ex11"); //내용2 , 내용4
+        h[0].style.color = "orange"; // 내용2랑 4중에 0번째 = 내용2
+    }
+    //ex12
+    function ex12(){
+        var k = document.querySelectorAll("a[target]");
+        var m;
+        for(m = 0; m < k.length; m++){
+            k[m].style.border = "5px double orange"; //링크2, 링크3
+        } //k[0] k[1]
+    }
+</script>
+</head>
+<body>
+<p id="ex1">안녕하세요!!!</p>
+<hr>
+<p id="ex2">확인</p>
+<p><button type="button" onclick="document.getElementById('ex2').style.color='blue'">클릭해봐</button></p>
+<hr>
+<p id="ex3">확인</p>
+<hr>
+<p><img src="images/roll1_1.gif" alt="#" width="200" height="201" id="ex4"></p>
+<p><button type="button" onclick="ex4_js()">클릭</button></p>
+<hr>
+<ul>
+    <li id="ex5">확인1</li>
+    <li>확인2</li>
+    <li class="ex5_1">확인3</li>
+    <li class="ex5_1">확인4</li>
+    <li>확인5</li>
+</ul>
+<p id="ex5_result">확인</p>
+<p><button type="button" onclick="ex5_js()">클릭</button></p>
+<hr>
+
+<div>
+    <p >확인1</p>
+    <p class="ex6">확인2</p>
+    <p>확인3</p>
+    <p class="ex6">확인4</p>
+    <p class="ex6">확인5</p>
+    <p class="ex6">확인6</p>
+    <p>확인7</p>
+    <p><button type="button" ondblclick="ex6_js()">더블클릭</button></p>  <!--더블클릭은 ondblclick-->
+</div>
+<hr>
+<div>
+    <h5>확인1</h5>
+    <h5>확인2</h5>
+    <h5>확인3</h5>
+    <h5>확인4</h5>
+    <h5>확인5</h5>
+    <p id="ex7_result">확인</p>
+    <p><button type="button" onclick="ex7_js()">클릭</button></p> 
+</div>
+<hr>
+<div id="ex8">
+    <p>내용1</p>
+    <p>내용2</p>
+    <p>내용3</p>
+</div>
+<hr>
+<p class="ex9">내용1</p>
+<p class="ex9">내용2</p>
+<p id="ex9_r">확인</p>
+<hr>
+<h4>내용1</h4>
+<h4>내용2</h4>
+<h4>내용3</h4>
+<p><button type="button" onclick="ex10()">확인</button></p>
+<hr>
+<ul>
+    <li>내용1</li>
+    <li class="ex11">내용2</li>
+    <li>내용3</li>
+    <li class="ex11">내용4</li>
+    <li>내용5</li>
+</ul>
+<p><button type="button" onclick="ex11()">확인</button></p>
+<hr>
+<div>
+    <a href="#">링크1</a>
+    <a href="#" target="_blank">링크2</a>
+    <a href="#" target="_self">링크3</a>
+    <p><button type="button" onclick="ex12()">확인</button></p>
+</div>
+<script>
+    //ex1 
+    //Hello World! 로 변경되었음 위치는 ex1을 먼저 찾고 이걸 실행되어야하기 때문에 이렇게 ex1 밑에 사용해야함
+    //css랑 태그명이 다르기때문에 js property에 내용 찾아봐야함
+    document.getElementById("ex1").innerHTML = "Hello World!"; //내용변경
+    document.getElementById("ex1").style.color = "red"; //글자색 변경
+    document.getElementById("ex1").style.fontFamily = "Arial"; //Arial 글자체로 변경하겠다.
+    document.getElementById("ex1").style.fontSize = "30px"; //font-size를 30px로 변경
+
+
+    //ex3
+    var element = document.getElementById("ex3");
+    element.innerHTML = "ex3 내용변경"; //ex3 확인이란 내용이 ex3 내용변경으로 변경되었음;
+
+    //ex8
+    var d = document.getElementById("ex8");
+    var e =d.getElementsByTagName("p");
+    e[1].style.backgroundColor = "pink"; //내용2
+
+    //ex9
+    //querySelectorAll("id, class,속성 등등") ie9이상 지원
+    var f = document.querySelectorAll(".ex9"); //이건 css처럼 .ex9
+    f[0].style.backgroundColor ="green"; //내용1
+
+</script>
+</body>
+</html>

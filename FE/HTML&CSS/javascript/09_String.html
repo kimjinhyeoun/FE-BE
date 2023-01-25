@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>String</title>
+<script>
+    var text1 = "자바스크립트 JavaScriapt"; //(0부터시작 ~ 17)
+    document.write(text1+"<br>");
+    document.write(text1.bold()+"<br>"); //굵게
+    document.write(text1.link("http://m.naver.com")+"<br>"); //링크
+    document.write(text1.length+"<br>"); //글자 개수(띄어쓰기 포함)
+    document.write(text1.toLowerCase()+"<br>"); //대문자를 소문자로 바꿔줌
+    document.write(text1.toUpperCase()+"<br>"); //소문자를 대문자로 바꿔줌
+    document.write(text1.indexOf("J")+"<br>"); //괄호안에 해당하는 문자 인덱스번호(위치순서 번째)를 출력
+    document.write(text1.indexOf("a")+"<br>"); //a가 두개있는데 최초 앞에 있는것만 인덱스번호 나옴(8)
+    document.write(text1.indexOf("o")+"<br>"); // 'o'라는값이 없음, 없으면 -1로 출력됨
+    document.write(text1.lastIndexOf("a")+"<br>"); //a가 두개있는데 끝에서부터 찾는다 그래서 15로 나옴
+    document.write(text1.charAt(3)+"<br>"); //3번에 해당하는 인덱스 번호(0부터 시작임) 글자를 출력
+    document.write(text1.substring(7,10)+"<br>"); //Jav 7번부터 9번까지 출력(7,10으로 출력했지만 끝에 10은 -1 해줘야함)
+    document.write(text1.substr(5,4)+"<br>"); //인덱스 5번부터 총 4글자 출력 띄어쓰기 포함이기때문에 '트 Ja'가 출력됨
+    document.write(text1.replace("Java","aaaa")+"<br>"); //Java 라는 글자를 aaaa로 반환시킴
+    document.write(text1.slice(3,10)+"<br>"); //크립트 Jav 인덱스번호 3부터 시작해서 9번까지(마찬가지로 뒤에 숫자 10은 -1 해줘야함) 
+    document.write(text1.concat("Sc")+"<br>"); //괄호 안에 내용이 맨 끝에 결합이 됨
+    document.write(text1.split(" ")+"<br>"); //괄호안에 띄어쓰기를 넣었다 결과값은 띄어쓰기가 쉼표로 바뀌었다. 그렇다 이건 쉼표로 바꿔준다.
+    document.write(text1.split("a")+"<br>"); //마찬가지로 a가 있던자리에 쉼표로 변경되어있다.
+</script>
+</head>
+<body>
+    
+</body>
+</html>

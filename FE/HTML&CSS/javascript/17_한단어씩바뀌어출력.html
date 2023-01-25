@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한단어씩바뀌어출력</title>
+<script>
+var txt =["오늘의 이벤트","50% 할인 쿠폰 지급","로그인 이벤트","후기 작성 포인트"];
+var wrap;
+var count;
+
+window.onload=function(){ // onload:문서를 모두 불러오고 나서 발생
+    wrap=document.getElementById("wrap");
+    count=0;
+
+    //초기값
+    wrap.innerHTML = txt[0];
+
+    setInterval(function(){
+        count++;
+        if(count >=txt.length){ //4이상이 되면
+            count=0;
+        }
+        wrap.innerHTML=txt[count];
+    },1000);
+}
+</script>
+</head>
+<body>
+<p id="wrap">이곳에 출력</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.ex1{
+    padding-left:20px;
+    color:#cc66ff;
+}
+.ex1 li:first-child{
+    background-color:#ff9510;
+}
+.ex1 li:nth-child(2){
+    background-color:#95ff10;
+}
+.ex1 li:nth-child(3){
+    background-color:#9510bb;
+}
+.ex1 li:last-child{
+    background-color:#f9f150;
+}
+.ex2{
+    border-collapse:collapse;
+}
+.ex2 th, .ex2 td{
+    border:1px solid #333;
+    width:100px;
+    height:20px;
+}
+.ex2 th{
+    background-color:#eaeaea;
+}
+.ex2 td{
+    text-align:center;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지좌우로 움직이기</title>
+    <style>
+        #wrap{
+            border:1px solid green;
+            width: 300px;
+            height:200px;
+            position: relative;
+        }
+        #arrow{
+            width: 50px;
+            height: 80px;
+            position: absolute;
+            left:25px;
+            top:50px;
+            }
+    </style>
+    <script>
+        var arrow;
+        var x;
+        var stepX;
+
+        window.onload=(function(){
+            arrow=document.getElementById("arrow");
+            x=0;
+            stepX=2;
+            setInterval(function(){
+                x+=stepX;
+                //console.log(x); //콘솔테스트
+                if(x>=250){
+                    stepX=-2;
+                    arrow.getElementsByTagName("img")[0].src="images/left_btn.png";
+                }
+                if(x<=0){
+                    stepX=2;
+                    arrow.getElementsByTagName("img")[0].src="images/right_btn.png";
+                }
+                arrow.style.left=x+"px"; //css .style.left=2px씩 증가
+            },30)
+        })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <p id="arrow"><img src="images/right_btn.png" alt="#" width="50" height="80"></p>
+    </div> <!--wrap-->
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>배열</title>
+<script>
+    // Array
+    // 1.var 변수 = new Array();
+    var i = new Array();
+    i[0] = 'aa';
+    i[1] = 'bb';
+    i[2] = 'cc';
+    i[3] = 'dd';
+    i[4] = 'ee';
+    document.write(i+"<br>");
+    document.write(i[3]);
+    document.write("<hr>");
+
+    //2.var 변수 = new Array(값);
+    var day1 = new Array('일','월','화','수','목','금','토');
+    document.write(day1+"<br>");
+    document.write(day1[3]+"<br>");
+    var today1 = new Date();
+    document.write(today1+"<br>");
+
+    var yoil = day1[today1.getDay()]; //getDay() 날짜에서 요일 0->일요일 6->토요일
+    document.write(yoil);
+    document.write("<hr>");
+
+
+
+    //3. var 변수 = [값1,값2,값3,값4];
+    var txt = ['웹개발',123,'웹접근성',45,'web'];
+    document.write(txt[0],"<br>");
+    document.write(txt[1],"<br>");
+    document.write(txt[2],"<br>");
+    document.write(txt[3],"<br>");
+    document.write(txt[4],"<br>");
+
+    //
+    var txt2 = [1,"홍길동",true]; //3개의 데이터, 인덱스로는 0~2번까지
+    for(var k = 0; k < txt2.length; k++){
+        // document.write(k+" ");
+        document.write(txt2[k]+"<br>");
+    }
+    document.write("<hr>");
+
+    // 누적합
+    var num = [100,100,200,50,600,80];
+    var n = num.length; //개수
+    document.write(num+"<br>"); //100,100,200,50,600,80
+    document.write(n); //6
+    document.write("<hr>");
+
+    var total = 0;
+    for(var j = 0; j < n; j++){
+        // document.write(j+"<br>"); //0 1 2 3 4 5
+        total = total+num[j]
+        // document.write(total+"<br>"); //100 200 400 450 1050 1130
+    }
+    document.write(total+"<br>"); //최종 누적합만 출력;
+    document.write("<hr>");
+
+
+    var t1 = ['a','b','c','d','e'];
+    t1.reverse(); //역순 메서드
+    document.write(t1); // e, d, c, b, a
+    document.write("<hr>");
+
+    var t2_1 = ['2b','1b','4c','3d','5e']
+    var t2_2 = ['aa','da','ba','3a','bb']
+    t2_1.sort();    //오름차순 메서드
+    t2_2.sort();    //오름차순 메서드
+    document.write(t2_1+" / "+t2_2); // 1b,2b,3d,4c,5e / 3a,aa,ba,bb,da
+    document.write("<hr>");
+
+    var t3_1 = ['ba','cb','bc','ed','fe'];
+    var t3_2 = ['2a','1b','4c','3d','5e'];
+    var result3 = t3_1.concat(t3_2); //결합시켜주는 메서드
+    document.write(result3); //ba,cb,bc,ed,fe,2a,1b,4c,3d,5e
+    document.write("<hr>");
+
+
+    var t4 = ['a','b','c','d','e'];
+    var result4 = t4.slice(2,4); //인덱스1~ 인덱스2-1
+    document.write(result4); // c,d
+    document.write("<hr>");
+
+
+    var t5 = ['a','b','c','d','e'];
+    var result_1 = t5.join("*"); //구분자로 연결하여 결합
+    var result_2 = t5.join("/");
+    document.write(result_1+" "+result_2); // a*b*c*d*e a/b/c/d/e 사이 공백은 " " 이것때문
+    document.write("<hr>");
+
+
+
+    var t6 = ['a','b','c','d','e'];
+    t6.shift(); //인덱스 0 번 데이터 삭제
+    document.write(t6); //b,c,d,e
+    document.write("<hr>");
+
+
+    var t7 = ['a','b','c','d','e'];
+    var t7_2 = 'ff';
+    t7.unshift(t7_2); //인덱스 0번 맨 앞에 t7_2를 추가시켜줌
+    document.write(t7); //ff,a,b,c,d,e
+    document.write("<hr>");
+
+
+    var t8 = ['a','b','c','d','e'];
+    t8.pop(); //인덱스 마지막 데이터 삭제
+    document.write(t8); //a,b,c,d
+    document.write("<hr>");
+
+
+    var t9 = ['a','b','c','d','e'];
+    var t9_2 = 'ff';
+    t9.push(t9_2); //인덱스 마지막에 t9_2를 추가시켜줌
+    document.write(t9); //a,b,c,d,e,ff
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
