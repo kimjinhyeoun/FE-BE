@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+
+#wrap > h3{
+  margin:10px;
+}
+#wrap > div{
+  border:1px solid red;
+}
+
+/*예제1*/
+#ex1{
+  display:flex;
+}
+#ex1 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제2*/
+#ex2{
+  display:flex;
+  flex-direction:column; /*수직*/
+}
+#ex2 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제3*/
+#ex3{
+  display:flex;
+  flex-direction:column-reverse; /*역순으로 수직*/
+}
+#ex3 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제4*/
+#ex4{
+  display:flex;
+  flex-direction:row; /*수평(디스플레이:플렉스랑 똑같이나옴)*/
+}
+#ex4 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제5*/
+#ex5{
+  display:flex;
+  flex-direction:row-reverse; /*수평(역순),(오른쪽으로 붙어버림)*/
+  width:300px; 
+}
+#ex5 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제6*/
+#ex6{
+  display:flex;
+  flex-wrap:wrap; /*브라우저 너비를 줄이면 다음줄로 배치됨*/
+}
+#ex6 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제7*/
+#ex7{
+  display:flex;
+  flex-wrap:nowrap; /*브라우저 너비를 줄이면 안내려감*/
+}
+#ex7 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제8*/
+#ex8{
+  display:flex;
+  flex-wrap:wrap-reverse; /*브라우저 너비를 줄이면 역순으로 위로 배치됨*/
+}
+#ex8 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제9*/
+#ex9{
+  display:flex;
+  justify-content:center;/*중앙(가로)가운데로 배치됨*/
+}
+#ex9 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제10*/
+#ex10{
+  display:flex;
+  justify-content:flex-start;/*가로 왼쪽으로 배치됨 (default)*/
+}
+#ex10 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제11*/
+#ex11{
+  display:flex;
+  justify-content:flex-end;/*가로 오른쪽으로 배치됨*/
+}
+#ex11 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제12*/
+#ex12{
+  display:flex;
+  justify-content:space-around;/*좌우 간격이 동일하게 들어감*/
+}
+#ex12 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제13*/
+#ex13{
+  display:flex;
+  justify-content:space-between;/*양쪽맞춤으로 들어감*/
+}
+#ex13 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제14*/
+#ex14{
+  display:flex;
+  height:300px;;
+  align-items:center;/*부모 높이 안에서 세로 중앙정렬함*/
+}
+#ex14 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제15*/
+#ex15{
+  display:flex;
+  height:300px;;
+  align-items:flex-start;/*부모 높이 안에서 세로 위쪽으로 정렬함*/
+}
+#ex15 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제16*/
+#ex16{
+  display:flex;
+  height:300px;;
+  align-items:flex-end;/*부모 높이 안에서 세로 아래쪽으로 정렬함*/
+}
+#ex16 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제17*/
+#ex17{
+  display:flex;
+  height:300px;;
+  align-items:stretch;/*자식에 높이 설정안하고 설정시 부모 높이만큼 세로로 늘어남*/
+}
+#ex17 > div{
+  background-color:pink;
+  width:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제18*/
+#ex18{ /*다음줄인 세로 위 아래 양쪽맞춤으로 진행 됨 햄버거마냥*/
+  display:flex;
+  height:600px;;
+  flex-wrap:wrap;
+  align-content:space-between;
+}
+#ex18 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제19*/
+#ex19{ /*다음줄인 세로 위 아래 좌우간격이 일정하게 진행 됨*/
+  display:flex;
+  height:600px;;
+  flex-wrap:wrap;
+  align-content:space-around;
+}
+#ex19 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제20*/
+#ex20{ /*다음줄인 세로 위 아래 꽉차게 늘어나서 진행 됨 자식요소에 높이 지워야지*/
+  display:flex;
+  height:600px;;
+  flex-wrap:wrap;
+  align-content:stretch;
+}
+#ex20 > div{
+  background-color:pink;
+  width:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제21*/
+#ex21{ /*브라우저 줄이면 세로 가운데로 모여서 배치됨*/
+  display:flex;
+  height:600px;;
+  flex-wrap:wrap;
+  align-content:center;
+}
+#ex21 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제22*/
+#ex22{ 
+  display:flex;
+  height:300px;;
+  justify-content:center; /*가로 가운데로 정렬*/
+  align-items:center;/*세로 가운데로 정렬*/
+}
+#ex22 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제23*/
+#ex23{ /*html에 순서변경함 확인해보셈*/
+  display:flex;
+}
+#ex23 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제24*/
+#ex24{ /*html에 길이변경함 결과값 브라우저 늘려서 확인해보셈*/
+  display:flex;
+}
+#ex24 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제25*/
+#ex25{ /*html에 길이변경함 결과값 브라우저 줄여서 확인해보셈*/
+  display:flex;
+}
+#ex25 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
+/*예제26*/
+#ex26{ /*html에 너비지정함 브라우저 줄였다 늘렸다 확인해보셈*/
+  display:flex;
+}
+#ex26 > div{
+  background-color:pink;
+  width:100px;
+  height:100px;
+  font-size:30px;
+  text-align:center;
+  line-height:100px;
+  border:1px solid black;
+}
