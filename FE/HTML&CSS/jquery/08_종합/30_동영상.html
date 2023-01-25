@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동영상</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        //movie
+        var x = $("#movie video")[0];
+        $(".play").click(function(){
+            x.play(); //실행시켜라
+        });
+        $(".stop").click(function(){
+            x.pause(); //중지
+        });
+
+        //movie2
+        var x2 = $("#movie2 video")[1];
+        $(".play2").click(function(){
+            x2.play(); //실행시켜라
+        });
+        $(".stop2").click(function(){
+            x2.pause(); //중지
+        });
+
+    });
+    </script>
+</head>
+<body>
+    <p><span class="play">play</span><span class="stop">stop</span></p>
+    <div id="movie">
+        <video width="400" height="300" loop muted poster="images/m_bg.jpg">
+            <source src="media/spring.mp4" type="video/mp4">
+            <source src="media/spring.webm" type="video/webm">
+        </video>
+    </div><!--movie-->
+    <hr>
+    <p><span class="play2">play</span><span class="stop2">stop</span></p>
+    <div id="movie2">
+        <video width="400" height="300" loop muted poster="images/m_bg.jpg">
+            <source src="media/spring.mp4" type="video/mp4">
+            <source src="media/spring.webm" type="video/webm">
+        </video>
+        <video width="400" height="300" loop muted poster="images/m_bg.jpg">
+            <source src="media/spring.mp4" type="video/mp4">
+            <source src="media/spring.webm" type="video/webm">
+        </video>
+    </div><!--movie2-->
+</body>
+</html>

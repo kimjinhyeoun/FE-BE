@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별점</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <style>
+        .star{
+            background:url(images/review2.png) no-repeat;
+            width: 50px;
+            height: 49px;
+            display:inline-block;
+            text-indent:-9999px;
+            cursor: pointer;
+        }
+        .on{
+            background-image:url(images/review1.png);  
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#review span").click(function(){
+                $("#review span").removeClass("on");
+                $(this).addClass("on");
+                $(this).prevAll("span").addClass("on"); //prevAll 선택한거 앞에 전체
+            })
+        });
+    </script>
+</head>
+<body>
+    <p id="review">
+        <span class="star on">별1</span>
+        <span class="star">별2</span>
+        <span class="star">별3</span>
+        <span class="star">별4</span>
+        <span class="star">별5</span>
+    </p><!--review-->
+</body>
+</html>

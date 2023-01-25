@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mousewheel</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .test{
+            height:2000px;
+        }
+        #wrap{
+            width:1920px;
+            height:825px;
+            position: relative;
+        }
+        .txt1{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50, -50%);
+            z-index:10;
+            cursor:pointer;
+        }
+        .txt2{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50, -50%);
+            background-color: #fff;
+            width:300px;
+            height:300px;
+            border-radius:20px;
+            z-index:20;
+        }
+        .bg{
+            width:100%;
+            height:100%;
+            background-color:#000;
+            position: fixed;
+            left:0;
+            top:0;
+            opacity:0.65;
+            z-index:15;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("body").append("<div class='bg'></div>");
+            $(".bg").fadeOut(0);
+            $(".txt2").fadeOut(0);
+            
+            $(".txt1").click(function(){
+                $(".bg").fadeIn(1000);
+                $(".txt2").fadeIn(1000);
+            });
+
+            $(".txt2 a").click(function(){
+                $(".bg").fadeOut(1000);
+                $(".txt2").fadeOut(1000);
+            });
+
+            $(".txt2, .bg").mousewheel(function(e, delta){
+                var n = 1;
+                if(n == 1){
+                    return false;
+                }
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+<div id="wrap">
+    <p><img src="images/bg01.png" alt="#" width="1920" height="825"></p>
+    <p class="txt1">클릭해봐</p>
+    <div class="txt2">
+        클릭해봐 내용 <a href="#">닫기</a>
+    </div><!--txt2-->
+</div><!--wrap-->
+<p class="test">임시공간</p>
+</body>
+</html>

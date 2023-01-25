@@ -1,0 +1,92 @@
+﻿<div id="top_wrap1">
+    <header id="top">
+        <h1><a href="#"><img src="images/logo.png" alt="#" width="173" height="34"></a></h1>
+       <ul class="quick">
+ 			<li><a href="#">오시는 길</a></li> 
+			<li><a href="#">운영시간</a></li>  
+			<li><a href="#">이벤트</a></li>  
+			<li><a href="#">ENG</a></li>          
+       </ul> <!--quick-->
+    </header><!--top-->
+</div>   <!-- top_wrap1-->
+
+<div id="top_wrap2">
+    <nav id="main_menu">
+    <ul>
+			<li><a href="#">세빛섬</a>
+				<ul class="sub">
+					<li><a href="#">세빛섬 소개</a></li>
+					<li><a href="#">운영시간 안내</a></li>
+					<li><a href="#">세빛 멤버십 안내</a></li>
+					<li><a href="#">홍보영상</a></li>
+					<li><a href="#">갤러리</a></li>
+					<li><a href="#">오시는 길</a></li>
+				</ul>
+			</li><!--세빛섬 --> 
+			<li><a href="#">가빛 </a>
+				<ul class="sub">
+					<li><a href="#">가빛 소개</a></li>
+					<li><a href="#">1F - Ola</a></li>
+					<li><a href="#">1F - CNN Cafe</a></li>
+					<li><a href="#">1F - 튜브스터</a></li>
+					<li><a href="#">1F - 골든블루마리나</a></li>
+					<li><a href="#">1F - 굿윌스토어</a></li>
+					<li><a href="#">2F - FIC 웨딩/연회</a></li>
+					<li><a href="#">3F - Vista Restaurant</a></li>
+				</ul>
+			</li> <!-- 가빛--> 
+			<li><a href="#">채빛</a>
+				<ul class="sub">
+					<li><a href="#">채빛 소개</a></li>
+					<li><a href="#">1F - @chavit</a></li>
+					<li><a href="#">2F - chavit cuisine</a></li>
+					<li><a href="#">3F - chavit PDR</a></li>
+			  </ul>
+			</li> <!--채빛 -->  
+			<li><a href="#">솔빛</a>
+				<ul class="sub">         
+					<li><a href="#">솔빛 소개</a></li>
+					<li><a href="#">솔빛 시설안내</a></li>
+					<li><a href="#">행사 일정</a></li>
+				</ul>			
+			</li><!-- 솔빛-->    
+			<li><a href="#">예빛</a>
+				   <ul class="sub"> 
+					  <li><a href="#">예빛 소개</a></li>
+					  <li><a href="#">예빛 시설안내</a></li>
+					  <li><a href="#">프로포즈 이벤트</a></li>
+					  <li><a href="#">행사 일정</a></li> 
+				 </ul>		
+			</li> <!-- 예빛-->   
+			<li><a href="#">커뮤니티</a>
+				  <ul class="sub"> 
+						<li><a href="#">이벤트</a></li>
+						<li><a href="#">SNS Room</a></li>
+						<li><a href="#">세빛섬 소식</a></li>
+						<li><a href="#">요리하는 세빛섬</a></li>
+						<li><a href="#">시설사용 및 예약문의</a></li>
+						<li><a href="#">고객의 소리</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">입점문의</a></li>
+				  </ul>
+			</li><!--커뮤니티 -->  
+		</ul>
+    </nav><!--main_menu-->
+</div><!--top_wrap2-->
+
+<div class="main_img">
+	<img src="images/visual.jpg" alt="#" width="1920" height="653">
+</div><!--main_img-->
+-----------
+@charset "utf-8";
+
+/*reset*/
+body{font:normal 12px/1.5em "nanum",sans-serif; color:#333333;}
+a{color:#333333;}
+
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+				url('../font/NanumGothic.ttf')format('truetype'),
+				url('../font/NanumGothic.woff')format('woff');}

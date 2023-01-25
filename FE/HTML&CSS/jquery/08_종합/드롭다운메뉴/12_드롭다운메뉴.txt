@@ -1,0 +1,77 @@
+<div id="wrap">
+    <header id="top">
+        <h1><a href="#"><img src="images/h_logo.jpg" alt="#" width="104" height="38"></a></h1>
+        <nav id="top_navi">
+          <ul id="menu">
+				<li><a href="#">회사소개</a>
+					<ul class="submenu">
+						<li><a href="#">개요</a></li>
+						<li><a href="#">경영이념</a></li>
+						<li><a href="#">CEO 인사말</a></li>
+						<li><a href="#">CI</a></li>
+						<li><a href="#">연혁</a></li>
+						<li><a href="#">사업장 안내</a></li>
+					</ul>
+				</li><!-- 회사소개 -->
+				<li><a href="#">사업소개 </a>
+					<ul class="submenu">
+						<li><a href="#">공작기계</a></li>
+						<li><a href="#">자동차부품</a></li>
+						<li><a href="#">방위산업</a></li>
+						<li><a href="#">산업기계</a></li>
+					</ul>				
+				</li><!-- 사업소개 -->
+				<li><a href="#">투자정보 </a>
+					<ul class="submenu">
+						<li><a href="#">경영정보</a></li>
+						<li><a href="#">재무정보</a></li>
+						<li><a href="#">IR 정보</a></li>
+						<li><a href="#">전자공고</a></li>
+						<li><a href="#">주가정보</a></li>
+						<li><a href="#">공시자료</a></li>					
+					</ul>
+				</li><!--투자정보  -->
+				<li><a href="#">지속가능경영 </a>
+					<ul class="submenu">
+						<li><a href="#">사회공헌</a></li>
+						<li><a href="#">동반성장</a></li>
+						<li><a href="#">신뢰경영</a></li>
+						<li><a href="#">안전환경경영</a></li>
+					</ul>
+				</li><!--지속가능경영  -->
+				<li><a href="#">PR센터</a>
+					<ul class="submenu">
+						<li><a href="#">뉴스</a></li>
+						<li><a href="#">사보</a></li>
+						<li><a href="#">광고</a></li>
+						<li><a href="#">PR자료실</a></li>
+					</ul>
+				</li><!--PR센터  -->
+				<li><a href="#">고객지원</a>
+					<ul class="submenu">
+						<li><a href="#">자주하는 질문</a></li>
+						<li><a href="#">질문하기</a></li>
+						<li><a href="#">공장견학</a></li>
+						<li><a href="#">인증현황</a></li>
+					</ul>							
+				</li><!--  고객지원-->
+				<li><a href="#">인재채용</a></li><!--인재채용 -->
+			</ul><!-- menu -->
+        </nav><!--top_navi-->
+        <p class="menu_wrap">
+            <img src="images/menu_web.png" alt="#" width="59" height="58">
+        </p><!--menu_wrap 전체메뉴-->
+    </header><!--top-->
+    <p class="main_img">
+        <img src="images/h_main.jpg" alt="#" width="1575" height="673">
+    </p><!--main_img-->
+</div><!--wrap-->
+----------
+body{font:normal 12px/1.5em "nanum",sans-serif;}
+
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+				url('../font/NanumGothic.ttf') format('truetype'),
+				url('../font/NanumGothic.woff') format('woff');}

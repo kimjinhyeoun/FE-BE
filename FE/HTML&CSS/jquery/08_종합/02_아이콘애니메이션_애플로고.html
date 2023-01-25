@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이콘애니메이션</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--아이콘 가져오는 사이트-->
+    <script>
+        $(document).ready(function(){
+            //ex1
+            var ex1 = setInterval(function(){
+                $("#ex1").html("&#xf251");
+            setTimeout(function(){
+                $("#ex1").html("&#xf252");
+            },1000);
+            setTimeout(function(){
+                $("#ex1").html("&#xf253");
+            },2000);
+            },3000);
+
+            //ex2
+            var ex2 = setInterval(function(){
+                $("#ex2").html("&#xf0c1");
+            setTimeout(function(){
+                $("#ex2").html("&#xf127");
+            },1000);
+            },2000);
+
+        });
+
+        
+    </script>
+    <style>
+        #ex1{
+            font-size:48px;
+            color:red;
+        }
+        #ex2{
+            font-size:48px;
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="ex1" class="fa">&#xf251;</p>
+    <hr>
+    <p id="ex2" class="fa">&#xf0c1;</p>
+    <hr>
+    <p id="ex3" class="fa">	&#xf179;</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrollTop</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            $(".txt").text(parseInt($(this).scrollTop())); //확인해야하니까 임시출력임
+            if($(this).scrollTop() > 100){
+                $("#contents").addClass("s_txt");
+            }
+            else{
+                $("#contents").removeClass("s_txt"); //다시 올라가면 백그라운드 준 클래스사라지고
+            }
+        });
+    });
+    </script>
+    <style>
+body,p{
+    margin:0;
+    padding:0;
+}
+body{
+    height:1600px;
+}
+.txt{
+    position:fixed;
+    left:0;
+    top:0;
+}
+#contents{
+    position:fixed;
+    left:0;
+    top:100px;
+}
+/* js */
+.s_txt{
+    background-color:pink;
+}
+    </style>
+</head>
+<body>
+    <p class="txt">출력</p>
+    <p id="contents">내용입니다.</p>
+</body>
+</html>

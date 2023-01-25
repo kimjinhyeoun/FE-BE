@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrollTop</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //$(selector).offset().left selector의 left위치(document 기준)
+            //$(selector).offset().top selector의 left위치(document 기준)
+            $("#btn_wrap button").click(function(){
+                var no = $(this).attr("data-no");
+                $("html, body").stop().animate({scrollTop : $("#img_wrap > p > img").eq(no).offset().top},500, "linear");
+            });
+
+            $(".top_btn").click(function(){
+                $("html, body").stop().animate({scrollTop : 0},1000);
+            });
+            
+        });
+    </script>
+    <style>
+        #btn_wrap{
+            height:300px;
+        }
+        .top_btn{
+            position: fixed;
+            right:500px;
+            bottom:100px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <p id="btn_wrap">
+        <button type="button" data-no="0">첫번째 이미지 위치로 이동</button>
+        <button type="button" data-no="1">두번째 이미지 위치로 이동</button>
+        <button type="button" data-no="2">세번째 이미지 위치로 이동</button>
+    </p><!--btn_wrap-->
+    <div id="img_wrap">
+        <p><img src="images/image1.jpg" alt="#" width="730" height="500"></p>
+        <p><img src="images/image2.jpg" alt="#" width="730" height="500"></p>
+        <p><img src="images/image3.jpg" alt="#" width="730" height="500"></p>
+        <p><img src="images/image1.jpg" alt="#" width="730" height="500"></p>
+    </div><!--img_wrap-->
+    <p><img src="images/quick2.png" alt="#" width="25" height="26" class="top_btn"></p>
+</body>
+</html>

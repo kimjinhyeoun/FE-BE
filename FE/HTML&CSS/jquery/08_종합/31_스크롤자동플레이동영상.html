@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>스크롤자동플레이동영상</title>
+<script src="js/jquery-3.6.1.min.js"></script>
+<style>
+    .text{
+        height:700px;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $("#movie").before("<p class='txt'>0</p>"); //임시출력
+    $(".txt").css({"position":"fixed","left":"10%","top":"10%","color":"red"}); //임시출력
+
+    var i = $("#movie video").get(0); //$(selector).get(index); 지정된 DOM 요소를 가져옴, 요소의 이름과 값을 가져옴
+    $(window).scroll(function(){
+    var scroll = $(window) .scrollTop();
+    $(".txt").text(parseInt($(this).scrollTop())); //임시출력
+    if(scroll > 300 && scroll <= 700){ // 301~700
+        i.play();
+    }
+    else{
+        i.pause();
+    }
+    });
+});
+</script>
+</head>
+<body>
+<div class="text">상단</div>
+
+    <div id="movie">
+        <video width="400" height="300" loop muted poster="images/m_bg.jpg">
+            <source src="media/spring.mp4" type="video/mp4">
+            <source src="media/spring.webm" type="video/webm">
+        </video>
+    </div><!--movie-->
+
+<div class="text">하단</div>
+</body>
+</html>

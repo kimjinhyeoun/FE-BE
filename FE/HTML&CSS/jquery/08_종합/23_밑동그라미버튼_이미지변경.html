@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동그라미버튼+이미지변경</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/js23.js"></script>
+    <link rel="stylesheet" href="css/js23.css">
+</head>
+<body>
+    <div id="wrap">
+        <ul class="photo">
+            <li class="no1"><img src="images/photo1.jpg" alt="#" width="1024" height="400"></li>
+            <li class="no2"><img src="images/photo2.jpg" alt="#" width="1024" height="400"></li>
+            <li class="no3"><img src="images/photo3.jpg" alt="#" width="1024" height="400"></li>
+            <li class="no4"><img src="images/photo4.jpg" alt="#" width="1024" height="400"></li>
+            <li class="no5"><img src="images/photo5.jpg" alt="#" width="1024" height="400"></li>
+        </ul><!--photo-->
+        <p>
+            <button type="button" class="prev">&lt;</button>
+            <button type="button" class="next">&gt;</button>
+        </p>
+        <ul class="btn_wrap">
+            <li><button type="button" title="1번버튼" data-n="1" class="btn btn1 active">1</button></li>
+            <li><button type="button" title="2번버튼" data-n="2" class="btn btn2">2</button></li>
+            <li><button type="button" title="3번버튼" data-n="3" class="btn btn3">3</button></li>
+            <li><button type="button" title="4번버튼" data-n="4" class="btn btn4">4</button></li>
+            <li><button type="button" title="5번버튼" data-n="5" class="btn btn5">5</button></li>
+        </ul><!--btn_wrap-->
+    </div><!--wrap-->
+</body>
+</html>

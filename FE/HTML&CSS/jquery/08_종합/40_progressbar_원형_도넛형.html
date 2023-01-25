@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>40_progressbar_원형_도넛형</title>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/jquery.circliful.js"></script>
+<style>
+div,p{
+    margin:0;
+    padding:0;
+}
+#wrap{
+    width:900px;
+    height:300px;
+    border:1px solid green;
+    margin:50px;
+}
+#wrap p{
+    float:left;
+    width:300px;
+    height:300px;
+}
+</style>
+<script>
+    $(document).ready(function(){
+        //https://github.com/0906020115/jquery-plugin-circliful    옵션
+        $("#circle1").circliful({
+            // animation : 0, //1 : 실행 0 : 중지
+            animation : 1,  //1 : 실행 0 : 중지
+            animationStep : 5,  //속도
+            foregroundBorderWidth : 50,  //움직이는 게이지 크기
+            foregroundColor : "rgba(0,0,0,0.8)", // 움직이는 게이지 색상
+        });
+        $("#circle2").circliful({
+            animation : 1,
+            animationStep : 7,
+            backgroundBorderWidth : 30,  //가만히있는 게이지바 크기
+            percent : 100,
+            fillColor : "rgba(41,7,3,0.8)", //가운데 퍼센트률 색상
+            fontColor : "darkblue",
+            icon : '끽',
+            iconSize : "12px",
+            percentageTextSize : 40, //퍼센트 글자크기
+        });
+        $("#circle3").circliful({
+            animation : 1,
+            animationStep : 10, 
+            percent : 100, //퍼센트
+        });
+    });
+</script>
+</head>
+<body>
+<div id="wrap">
+    <p id="circle1">HTML5</p>
+    <p id="circle2">CSS</p>
+    <p id="circle3">JQUERY</p>
+</div><!--wrap-->
+</body>
+</html>

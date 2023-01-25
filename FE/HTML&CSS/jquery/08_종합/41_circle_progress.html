@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle-progress</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/circle-progress.js"></script>
+    <style>
+        div,strong,span{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font:normal 12px/1.5em "arial",sans-serif;
+            color:#333;
+        }
+        #wrap{
+            width:760px;
+            height:350px;
+            margin:50px;
+            border:1px solid green;
+        }
+        .circle{
+            width:220px;
+            height:250px;
+            float:left;
+            position: relative;
+        }
+        .circle strong{
+            display:block;
+            position: absolute;
+            left:80px;
+            top:90px;
+            font-size:20px;
+        }
+        .circle span{
+            display:block;
+            text-align:center;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            // https://github.com/kottenator/jquery-circle-progress   옵션
+            $(".cir1").circleProgress({
+                value : 0.8,   //퍼센트 수치
+                size : 100,    //그래프 크기
+                thickness : 20, //게이지 두께
+                fill : "#f00000", //게이지 색상
+                startAngle : 100, //게이지 시작점
+            });
+            $(".cir2").circleProgress({
+                value : 0.5,
+                size : 150,
+                thickness : 35,
+                fill : { gradient : ["skyblue", "blue", "pink"]},
+                startAngle : 200,
+            }).on("circle-animation-progress", function(event,k){
+                $(this).find("strong").html(Math.roudn(80*k)+"<em>%</em>");
+            });
+            $(".cir3").circleProgress({
+                value : 0.7,
+                size : 100,
+                thickness : 25,
+                emptyFill : "rgba(0,15,255,0.3)", //뒷배경색
+                startAngle : 60,
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="cir1 circle">
+            <strong>80%</strong><span>HTML5</span>
+        </div>
+        <div class="cir2 circle">
+            <strong>50%</strong><span>JAVASCRIPT</span>
+        </div>
+        <div class="cir3 circle">
+            <strong>70%</strong><span>JQUERY</span>
+        </div>
+    </div><!--wrap-->
+</body>
+</html>

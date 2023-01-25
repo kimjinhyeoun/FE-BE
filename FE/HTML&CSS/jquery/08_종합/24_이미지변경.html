@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지변경</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <style>
+        div,ul,li,p,a{
+            margin:0;
+            padding:0;
+        }
+        ul,li{
+            list-style:none;
+        }
+        a{
+            text-decoration:none;
+        }
+        .s_banner_wrap{
+            width:600px;
+            height:300px;
+            position:relative;
+        }
+        .banner_01{
+            width:600px;
+            height:300px;
+            background-color:olive;
+        }
+        .banner_02{
+            width:600px;
+            height:300px;
+            background-color:rgb(5, 75, 20);
+        }
+        .banner_03{
+            width:600px;
+            height:300px;
+            background-color:rgb(23, 200, 245);
+        }
+        .banner_04{
+            width:600px;
+            height:300px;
+            background-color:#ac2cfb;
+        }
+
+        #bx-pager1{
+            position:absolute;
+            left:50%;
+            bottom:10px;
+            transform:(-50%,0);
+            overflow:hidden;
+        }
+        #bx-pager1 a{
+            float:left;
+            width:20px;
+            height:20px;
+            display:block;
+            background-color:#999;
+            color:#333;
+            margin:0 2px;
+            border-radius:50%;
+            font-size:12px;
+            text-align:center;
+            line-height:20px;
+        }
+        #bx-pager1 a:hover,   #bx-pager1 a:active{
+            background-color:red;
+            color:#fff;
+        }
+        #bx-pager1 a.active{
+            background-color:red;
+            color:#fff;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            // https://bxslider.com/options
+            //auto 자동, mode(horizontal/vertical/fade)
+            var slider = $(".bxslider").bxSlider({auto : true, mode : 'fade',}); 
+            var slider1 = $(".bxslider_01").bxSlider({auto : true, mode : 'horizontal',});
+            //pager 현재 위치 알리는 동그라미버튼(true / false)
+            var slider2 = $(".bxslider_02").bxSlider({auto : true, mode : 'horizontal', pager : false,});
+            //controls 이전/다음버튼(true / false)
+            var slider3 = $(".bxslider_03").bxSlider({auto : true, mode : 'vertical', controls : false,});
+            var slider4 = $(".bxslider_04").bxSlider({auto : true, mode : 'fade', pagerCustom : '#bx-pager1',});
+        
+        $(document).on('click mouseover','.bx-prev, .bx-next, .bx-pager, #bx-pager1', function(){
+            slider.startAuto();
+            slider1.startAuto();
+            slider2.startAuto();
+            slider3.startAuto();
+            slider4.startAuto();
+        });
+        $(document).on('click','.bx-pager, #bx-pager1',function(){
+            return false;
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="s_banner_wrap">
+        <ul class="bxslider">
+            <li class="banner_01">1</li>
+            <li class="banner_02">2</li>
+            <li class="banner_03">3</li>
+            <li class="banner_04">4</li>
+        </ul><!--bxslider-->
+    </div><!--s_banner_wrap-->
+    <hr>
+    <div class="s_banner_wrap">
+        <ul class="bxslider_01">
+            <li class="banner_01">1</li>
+            <li class="banner_02">2</li>
+            <li class="banner_03">3</li>
+            <li class="banner_04">4</li>
+        </ul><!--bxslider_01-->
+    </div><!--s_banner_wrap-->
+    <hr>
+    <div class="s_banner_wrap">
+        <ul class="bxslider_02">
+            <li class="banner_01">1</li>
+            <li class="banner_02">2</li>
+            <li class="banner_03">3</li>
+            <li class="banner_04">4</li>
+        </ul><!--bxslider_02-->
+    </div><!--s_banner_wrap-->
+    <hr>
+    <div class="s_banner_wrap">
+        <ul class="bxslider_03">
+            <li class="banner_01">1</li>
+            <li class="banner_02">2</li>
+            <li class="banner_03">3</li>
+            <li class="banner_04">4</li>
+        </ul><!--bxslider_03-->
+    </div><!--s_banner_wrap-->
+    <hr>
+    <div class="s_banner_wrap">
+        <ul class="bxslider_04">
+            <li class="banner_01">1</li>
+            <li class="banner_02">2</li>
+            <li class="banner_03">3</li>
+            <li class="banner_04">4</li>
+        </ul><!--bxslider_03-->
+        <p id="bx-pager1">
+            <a data-slide-index="0" href="#">1</a>
+            <a data-slide-index="2" href="#">2</a>
+            <a data-slide-index="3" href="#">3</a>
+            <a data-slide-index="4" href="#">4</a>
+        </p><!--bx_pager1-->
+    </div><!--s_banner_wrap-->
+</body>
+</html>

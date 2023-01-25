@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이미지변경</title>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/js17.js"></script>
+<style>
+#img_wrap{
+    width:1024px;
+    height:400px;
+    position: relative;
+    border:1px solid #ccc;
+}
+#img_wrap p{
+    margin:0;
+    padding:0;
+    width:1024px;
+    height:400px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#img_wrap p.selected{
+    z-index: 1;
+}
+#img_wrap p span{
+    display:block;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);    
+    background-color: rgba(0,0,0,0.5);
+    padding:10px;
+    color:#fff;
+}
+</style>
+</head>
+<body>
+    <div id="img_wrap">
+        <p class="selected"><img src="images/photo1.jpg" alt="#" width="1024" height="400"><span>1번 이미지 설명</span></p>
+        <p><img src="images/photo2.jpg" alt="#" width="1024" height="400"><span>2번 이미지 설명</span></p>
+        <p><img src="images/photo3.jpg" alt="#" width="1024" height="400"><span>3번 이미지 설명</span></p>
+        <p><img src="images/photo4.jpg" alt="#" width="1024" height="400"><span>4번 이미지 설명</span></p>
+        <p><img src="images/photo5.jpg" alt="#" width="1024" height="400"><span>5번 이미지 설명</span></p>
+    </div><!--img_wrap-->
+</body>
+</html>

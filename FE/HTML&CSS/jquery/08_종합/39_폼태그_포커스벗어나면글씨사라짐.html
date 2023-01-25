@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/js39.js"></script>
+    <link rel="stylesheet" href="css/js39.css">
+</head>
+<body>
+    <p>*비밀번호 : <input type="password" id="pwd1"><span class="pwd1_con">*소문자로 특수문자 포함하여 8글자이상 입력하세요!</span></p>
+    <hr class="clear_line">
+
+    <p>*수강과목명 : <input type="text" placeholder="수강과목 입력" autocomplete="off"></p>
+    <p>*수강과목명 : <input type="text" id="name2" autocomplete="off"></p>
+    <hr class="clear_line">
+
+    <p>* 신청자 :
+        <select id="select3">
+            <option value="이름">개인</option>
+            <option value="회사명">법인</option>
+        </select>
+    </p>
+    <p id="txt3"><span>이름</span><input type="text" id="name3"></p>
+    <hr class="clear_line">
+
+
+    <p id="email4">이메일
+        <input type="email" id="email_1">@
+        <span><input type="email"></span>
+        <select id="email_list">
+            <option value="">직접입력</option>
+            <option value="naver.com">네이버</option>
+            <option value="daum.net">다음</option>
+            <option value="nate.com">네이트</option>
+        </select>
+    </p>
+    <hr class="clear_line">
+
+    <p>* 수강과목 선택:
+        <select name="list5">
+            <option value="">선택하세요</option>
+            <option value="illustrator">일러스트레이터</option>
+            <option value="photoshop">포토샵</option>
+            <option value="flash">플래시</option>
+            <option value="dreamweaver">드림위버</option>
+        </select>
+    </p>
+    <p>* 수강과목 : <input type="text" id="list5_1">,
+        * 수강료 : <input type="text" id="list5_2">
+    </p>
+    <hr class="clear_line">
+
+    <p>* 선택 : 
+        <select id="select6">
+            <option value="images/banner1.jpg">이미지1</option>
+            <option value="images/banner2.jpg">이미지2</option>
+            <option value="images/banner3.jpg">이미지3</option>
+        </select>
+        <p id="photo6"><img src="images/banner1.jpg" alt="#" width="300" height="200"></p>
+    </p>
+    <hr class="clear_line">
+
+    <p>* 선택
+        <select id="select7">
+            <option value="1">내용1</option>
+            <option value="2">내용2</option>
+            <option value="3">내용3</option>
+        </select>
+    </p>
+    <div id="con_wrap7">
+        <p id="co1">목록1 입니다.<br><img src="images/best1.png" alt="#" width="150" height="150"></p>
+        <p id="co2">목록2 입니다.<br><img src="images/best2.png" alt="#" width="150" height="150"></p>
+        <p id="co3">목록3 입니다.<br><img src="images/best3.png" alt="#" width="150" height="150"></p>
+    </div><!--con_wrap7-->
+    <hr class="clear_line">
+
+    <p>* 나이 :
+        <select name="select8">
+            <option value="">선택하세요</option>
+            <option value="10">10대</option>
+            <option value="20">20대</option>
+            <option value="30">30대</option>
+            <option value="40">40대</option>
+            <option value="50">50대이상</option>
+        </select>
+    </p>
+    <p>* 좋아하는 맥주 : <input type="text" id="sel_t"></p>
+    <hr class="clear_line">
+
+    <p>* 지역선택 :
+        <select id="select9_1">
+            <option>선택하세요</option>
+            <option value="1">서울</option>
+            <option value="2">인천</option>
+            <option value="3">경기도</option>
+        </select>
+        <select id="select9_2">
+        <option>선택하세요</option>
+        <option value="1" class="s1">서초구</option>
+        <option value="1" class="s1">마포구</option>
+        <option value="1" class="s1">서대문구</option>
+        <option value="2" class="s2">중구</option>
+        <option value="2" class="s2">서구</option>
+        <option value="3" class="s3">수원시</option>
+        <option value="3" class="s3">안산시</option>
+        <option value="3" class="s3">부천시</option>
+        </select>
+    </p>
+    <hr class="clear_line">
+
+    <form action="ok.html" method="post" id="frm10">
+        <p>* 이름 : <input type="text" id="name10"></p>
+        <p><input type="submit" value="전송"></p>
+    </form>
+    <hr class="clear_line">
+
+    <p>* <input type="submit" value="전송" id="btn11_1"></p>
+    <p>* <input type="reset" value="다시작성" id="btn11_2"></p>
+    <hr class="clear_line">
+
+    <p>
+        <input type="radio" value="웹표준" name="chk12" id="chk12_1">
+        <label>웹표준</label>
+        <input type="radio" value="웹접근성" name="chk12" id="chk12_2">
+        <label>웹접근성</label>
+        <input type="text" id="chk12">
+    </p>
+    <hr class="clear_line">
+
+    <p id="radio_all">* 과목 <br>
+    <input type="radio" value="html" name="chk13" id="chk13_1">
+    <label for="chk13_1" class="list13">HTML</label>
+
+    <input type="radio" value="css" name="chk13" id="chk13_2">
+    <label for="chk13_2" class="list13">CSS</label>
+
+    <input type="radio" value="javascript" name="chk13" id="chk13_3">
+    <label for="chk13_3" class="list13">JAVASCRIPT</label>
+    </p>
+    <hr class="clear_line">
+
+    <p>* <label for="chk14">Checkbox : </label>
+        <input type="checkbox" id="chk14">
+    </p>
+    <p id="txt14">내용입니다.</p>
+    <hr class="clear_line">
+
+    <div id="ex15">
+        <button type="button" id="plus">▲</button>
+        <span class="num_txt">1</span>
+        <button type="button" id="minus">▼</button>
+    </div><!--ex15-->
+    <hr class="clear_line">
+
+    <div id="ex16">
+        <p>Password : <input type="password" id="pwd16">
+            <input type="checkbox" id="chk16"> Show Password
+        </p>
+    </div>
+    <hr class="clear_line">
+</body>
+</html>

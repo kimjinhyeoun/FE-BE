@@ -1,0 +1,72 @@
+﻿<div id="top_wrap">
+        <header id="top">
+            <h1><a href="#"><img src="images/hylogo.png" alt="#" width="122" height="42"></a></h1>
+            <nav id="main_navi">
+   			<ul id="menu">
+				<li data-n="1"><a href="#">이용안내</a>
+						<ul class="sub">
+						  <li><a href="#">관람안내</a></li>
+						  <li><a href="#">층별안내</a></li>
+						  <li><a href="#">편의시설</a></li>
+						  <li><a href="#">서비스센터</a></li>
+						</ul>
+				</li> <!-- 이용안내-->
+				<li data-n="2"><a href="#">전시</a>
+					 <ul class="sub" >
+						<li><a href="#">공작기계</a></li>
+						<li><a href="#">테마전시</a></li>
+						<li><a href="#">하이라이트</a></li>
+					 </ul>				
+				</li><!-- 전시-->   
+				<li data-n="3"><a href="#">프로그램</a>
+				      <ul class="sub">
+						  <li><a href="#">테마시승</a></li>
+						  <li><a href="#">가이드투어</a></li>
+						  <li><a href="#">이벤트</a></li>
+					</ul>
+				</li> <!-- 프로그램-->  
+				<li data-n="4"><a href="#" >소개</a>
+				      <ul class="sub" >
+						  <li><a href="#">비전</a></li>
+						  <li><a href="#">스토리</a></li>
+						  <li><a href="#">새소식</a></li>
+						  <li><a href="#">자주 찾는 질문</a></li>
+					</ul>
+				</li> <!-- 소개-->  
+				<li data-n="5"><a href="#">나만의 페이지</a>
+					<ul class="sub">
+					  <li><a href="#">상설전시 예약</a></li>
+					  <li><a href="#">가이드투어 예약</a></li>
+					  <li><a href="#">테마시승 예약</a></li>
+					</ul>
+				</li><!-- 나만의 페이지--> 
+			</ul><!--menu-->
+            </nav><!--main_navi-->
+            <ul class="quick">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li class="lang_li"><a href="#">Language</a><span>▼</span><!-- ㅁ 한자-->
+                    <ul>
+                        <li><a href="#">한국어</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">汉语</a></li>
+                    </ul>
+                </li> <!--Language-->
+            </ul><!--quick-->
+        </header><!--top-->
+</div>    <!--top_wrap-->
+<div class="main_img">
+    <img src="images/hyvisual.jpg" alt="#" width="1200" height="514">
+</div><!--main_img-->
+------------
+@charset "utf-8";
+
+body{font:normal 12px/1.5em "nanum",sans-serif; color:#333333;}
+a{color:#333333;}
+
+@font-face{
+		font-family:nanum;
+		src:url('../font/NanumGothic.eot');
+		src:url('../font/NanumGothic.eot?#iefix')format('embedded-opentype'),
+				url('../font/NanumGothic.ttf')format('truetype'),
+				url('../font/NanumGothic.woff')format('woff');}

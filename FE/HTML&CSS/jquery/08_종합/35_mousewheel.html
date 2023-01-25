@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mousewheel</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <style>
+        body,html{
+            height:100%;
+        }
+        body,div{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            width:100%;
+            height:100%;
+        }
+        .box1{
+            background-color:green;
+        }
+        .box2{
+            background-color:rgb(13, 81, 184);
+        }
+        .box3{
+            background-color:rgb(128, 109, 0);
+        }
+        .box4{
+            background-color:rgb(241, 25, 54);
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            var n =1;
+            $(".box").on("mousewheel", function(event, delta){
+                n = $(this).attr("data-n") - delta;
+                var target = $(".box"+n).offset().top;
+                $("body,html").stop().animate({"scrollTop": target},500)
+                return false;
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div data-n="1" class="box box1">1</div>
+    <div data-n="2" class="box box2">2</div>
+    <div data-n="3" class="box box3">3</div>
+    <div data-n="4" class="box box4">4</div>
+</body>
+</html>

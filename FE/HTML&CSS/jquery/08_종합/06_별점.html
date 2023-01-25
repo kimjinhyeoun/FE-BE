@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별점</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <style>
+        .star1{
+            background: url(images/review2.png) no-repeat 0 0;
+            width:25px;
+            height:49px;
+            float:left;
+            text-indent:-9999px;
+            cursor:pointer;
+            overflow: hidden;
+        }
+        .star2{
+            background: url(images/review2.png) no-repeat -25px 0;
+            width:25px;
+            height:49px;
+            float:left;
+            text-indent:-9999px;
+            cursor:pointer;
+            overflow: hidden;
+        }
+        .star1.on{
+            background-image: url(images/review1.png);
+        }
+        .star2.on{
+            background-image: url(images/review1.png);
+        }
+    </style>
+    <script>
+       $(document).ready(function(){
+            $("#review span").click(function(){
+                $("#review span").removeClass("on");
+                $(this).addClass("on"); //클릭한 span
+                $(this).prevAll("span").addClass("on"); //클릭한 span앞 span전체/prevAll 선택한거 앞에 전체
+            })
+        }); 
+    </script>
+</head>
+<body>
+    <div id="review">
+        <span class="star1 on">별1_왼쪽</span>
+        <span class="star2">별1_오른쪽</span>
+        <span class="star1">별2_왼쪽</span>
+        <span class="star2">별2_오른쪽</span>
+        <span class="star1">별3_왼쪽</span>
+        <span class="star2">별3_오른쪽</span>
+        <span class="star1">별4_왼쪽</span>
+        <span class="star2">별4_오른쪽</span>
+        <span class="star1">별5_왼쪽</span>
+        <span class="star2">별5_오른쪽</span>
+    </div><!--review-->
+</body>
+</html>
