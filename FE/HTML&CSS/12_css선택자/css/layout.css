@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/*초기화 reset*/
+a{
+    color:#000000; /*모든a태그 검정글씨*/
+    text-decoration:none; /*모든 a태그 밑줄 사라짐*/
+} 
+/*ex1*/
+/*#ex1 li a[target]{
+    background-color:#768654;
+}*/
+/*#ex1 li a[title="naver"]{
+    background-color:#678585;
+}*/
+/*#ex1 li a[title~="daum"]{
+    background-color:#ff0066;
+}*/
+/*#ex1 li a[title|="nate"]{ 하이픈 뒤에있는 nate는 적용안됨
+    text-decoration:line-through;
+}*/
+/*#ex1 li a[title$="nate"]{
+    color:red;
+}*/
+/*#ex1 li a[title^="nate"]{
+    color:green;
+}*/
+#ex1 li a[title*="daum"]{
+    color:blue;
+}
+/*ex2*/
+#ex2 img[src$="png"]{
+    border:solid 3px #cc0066;
+}
+#ex2 img[src*="node"]{
+    border: 2px #ff6633 dotted;
+}
+#ex2 img[src="images/ux1.gif"]{
+    border:4px #3399ff double;
+}
+/*ex3*/
+.ex3 li a[title^="자유"]{
+    background-color:#cc0066;
+}
+.ex3 li a[title="회원 장터"]{
+    background-color:#ff6633;
+}
+.ex3 li a[title$="레시피"]{
+    background-color:#3399ff;
+}
+/*ex4*/
+.ex4 > span{ /*자식 선택자 사용*/
+    color:#ff0099;
+    border-bottom:3px double #995566;
+}
+.ex4 span{ /*위와같이 동일하게 나온다*/
+    background-color:yellow;
+}
+/*ex5*/
+#ex5 > h5 { /*ex5_2밑에있는 h5는 안들어간다.*/
+    background-color:#996699;
+}
+/*#ex5 h5{ ex5안에있는 h5전체 태그들이 적용된다
+    color:red;
+}*/
+#ex5 > #ex5_2 > h5{ /*ex5_2안에 있는 h5만 적용 할 경우*/
+    color:blue;
+}
+#ex5_2 > h5{ /*ex5를 생략하고 ex5_2로 시작해도 된다.*/
+    background-color:orange;
+}
+/*ex6/ex7/ex8*/
+.ex6 li + li{ /*첫번쨰 li 빼고 두번째 li부터 전체 적용*/
+    background-color:#ff00ff;
+    color:#cccccc
+}
+.ex7 h5 + h6{ /*h5밑에있는 h6태그 하나만 적용*/
+    text-decoration:line-through;
+    color:red;
+}
+.ex8 h5 ~ h6{ /*h5 밑에있는 h6 전체를 적용*/
+    color:green;
+}
+/*ex9*/
+#ex9 li a:hover{ /*마우스 커서를 올려놨을때*/
+    text-decoration:underline;
+    color:#ff0000;
+}
+#ex9 li a:active{ /*마우스 커서를 누르고 있을떄*/
+    background-color:#99ccff;
+}
+.ex9_a:hover{ /*커서를 올려놨을때 default값으로 나옴*/
+    cursor:default;
+}
+.ex9_b:hover{
+    cursor:pointer;
+}
+.ex9_c:hover{
+    cursor:move;
+}
+.ex9_d:hover{
+    cursor:url(../images/cursor.cur),auto; /*커서모양 이미지파일 불러오기*/
+}
+/*ex10*/
+.ex10:focus{ /*입력칸(input)  css적용*/
+    border:3px solid #9900ff; /*테두리 선 변경*/
+    background-color:#ffffcc; /*입력칸(input) 배경색설정*/
+    outline:none; /*입력칸 아웃라인(테두리)없애기*/
+}
+.ex10:not([type="password"]){ /*타입 password빼고 css설정*/
+    background-color:skyblue;
+}
+
+/*ex11*/
+#ex11 li:first-child{ /*첫번째 위치 css설정*/
+    background-color:#33ff66;
+}
+#ex11  > li:first-child{ /*첫번쨰 위치 css설정 ">" 이거를 사용해도 됨*/
+    color:red;
+}
+#ex11 li:last-child{ /*마지막번쨰 위치 css설정*/
+    background-color:#cc6699;
+}
+#ex11 > li:nth-child(2){ /*2번째위치 css설정*/
+    background-color:#bbcc66;
+}
+#ex11 li:nth-child(even){ /*짝수번쨰 1부터시작 설정*/
+    color:blue;
+}
+#ex11 li:nth-child(odd){ /*홀수번째 1부터시작 설정*/
+    color:purple;
+}
+#ex11 li:nth-child(4n){ /*4의 배수번째 css설정 */
+    border:2px solid orange;
+}
+#ex11 li:nth-child(4n+1){ /*1적용되고 4씩더한곳 1,5,9 css설정 */
+    background-color:pink;
+}
+#ex11 li:nth-child(3n+1){ /*1적용되고 3씩 더한 곳 1,4,7,10 css설정 */
+    background-color:green;
+}
+#ex11 li:nth-child(3n+2){ /* 2적용되고 3씩 더한 곳 2,5,8 설정 */
+    background-color:blue;
+}
+/*ex12*/
+#ex12 > p:nth-of-type(3){ /*ex12안에 p태그 3번째껄 css설정*/
+    background-color:#cc99ff;
+}
+#ex12 > h5:nth-of-type(1){ /*ex12안에 h5태그 1번째 css설정*/
+    background-color:lightgreen;
+}
+/*ex13*/
+.ex13::first-line, .ex13:first-line{ /*문자 첫번쨰줄 css설정*/
+    font-size:19px;
+    color:blue;
+    font-weight:bold;
+}
+.ex13::first-letter, .ex13:first-letter{
+    background-color:lightpink;
+    font-size:30px;
+    font-weight:bold;
+    color:red;
+    border:3px solid #ff9955;
+}
+.ex13_2::selection{ /*마우스로 내용 드래그했을떄 css설정*/
+    color:yellow;
+    background-color:#ff7473;
+}
+/*ex14*/
+.ex14::before, .ex14:before{ /*ex14 문자열 앞에 수강과목추가*/
+    content:"수강과목:";
+    color:#cc6600;
+    font-weight:bold;
+}
+.ex14::after, .ex14:after{ /*ex14 문자열 뒤에 수강과목추가*/
+    content:"/";
+    color:#fc6000;
+}
+/*ex15*/
+.ex15[type="checkbox"]:checked+label{ /*check된 input태그 바로 뒤 label에 글자색상과 굵기를 변경하라는 뜻*/
+    color:#fc6000;
+    font-weight:bold;
+}
+/*ex16*/
+.ex16:disabled{
+    background-color:#ffcc66;
+}
+.ex16:enabled{
+    border:3px solid blue;
+/*    outline:none;*/ /*아웃라인제거*/
+}
+p.ex17{
+    background-color:#ccffcc;
+    border-bottom:3px double #cc3333;
+    color:#666699;
+}
+/*.ex17{ p가 빠져서 변경되지않았음 그래서 important를 쓴거임
+    text-decoration:line-through;
+    color:#000000 !important; 강제변환
+    background-color:#ff6600 !important; 강제변환
+}*/
+p.ex17{ /*뭔가 변경시켜줄땐 셀렉터를 똑같이 써야한다.*/
+    text-decoration:line-through;
+    color:#000000;
+    background-color:#ff6600;
+}

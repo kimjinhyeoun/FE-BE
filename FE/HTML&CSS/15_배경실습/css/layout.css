@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+#wrap{
+    border-top:solid 1px #dfdfdf;
+    padding:0;
+    margin:0;
+}
+#wrap > h1{
+    margin-top:15px;
+}
+#wrap > h1 > img{
+    box-shadow:-1px -1px 1px 1px #c9c9c9;
+    margin-right:10px;
+    padding:6px 7px;
+    border:solid 1px #c9c9c9;
+    border-radius:50%;
+}
+#wrap > h1 > span{
+    color:#bdb9b6;
+    font-size:15px;
+    margin-left:12px;
+}
+
+#wrap > h2{
+    padding-left:17px;
+    background:url(../images/icon.gif) no-repeat left center;
+    color:#3d25eb;
+}
+#wrap > p{
+    color:#5f5b5c;
+}
+#job > div{
+    width:230px;
+    height:75px;
+    border-radius:6px;
+    padding-left:100px;
+}
+#job > div > h3{
+    font-size:14px;
+    color:#6276d9;
+    padding-top:9px;
+    margin-bottom:1px;
+}
+#job > div > p{
+    font-size:12px;
+    margin-top:1px;
+}
+#job div:nth-child(1){
+    background:#e4ebf5 url(../images/bg_1.png) no-repeat 20px center;
+}
+#job div:nth-child(2){
+    background:#e4ebf5 url(../images/bg_2.png) no-repeat 20px center;
+}
+#job div:nth-child(3){
+    background:#e4ebf5 url(../images/bg_3.png) no-repeat 20px center;
+}
+#job div:nth-child(4){
+    background:#e4ebf5 url(../images/bg_4.png) no-repeat 20px center;
+}

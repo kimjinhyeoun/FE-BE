@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>selector</title>
+<link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+<h3>*속성 선택자*</h3>   
+<ul id="ex1">
+    <li><a href="#" title="nate" target="_blank">네이트</a></li>
+    <li><a href="#" title="daum" target="_self">다음</a></li>
+    <li><a href="#" title="naver">네이버</a></li>
+    <li><a href="#" title="potal daum site" target="_self">다음</a></li>
+    <li><a href="#" title="nate-mobile">네이트</a></li>
+    <li><a href="#" title="mobile-nate">네이트</a></li>
+    <li><a href="#" title="dreamwiz" target="_blank">드림위즈</a></li>
+    <li><a href="#" title="yahoo">야후</a></li>
+    <li><a href="#" title="thebestgoogleweb" target="_self">구글</a></li>
+</ul> <!--ex1-->
+<hr>
+<p id="ex2">
+    <img src="images/jajq.png" alt="#" width="100" height="100">
+    <img src="images/node.jpg" alt="#" width="100" height="100">
+    <img src="images/ux1.gif" alt="#" width="100" height="100">
+</p><!--ex2-->
+<div class="ex3">
+    <ul>
+        <li><a href="#" title="자유게시판">자유게시판</a></li>
+        <li><a href="#" title="회원 장터">회원 장터</a></li>
+        <li><a href="#" title="나만의 레시피">나만의 레시피</a></li>
+        <li><a href="#" title="나후의 레시피">불후의 레시피</a></li>
+    </ul>
+</div><!--ex3-->
+<hr>
+<h3>*자식 선택자*</h3>
+    <p class="ex4">illu<span>stra</span>tor</p>
+<p class="ex4">photoshop</p>
+    <p class="ex4">fl<span>as</span>h</p>
+    <p class="ex4">dr<span>eam</span>weaver</p>
+<p class="ex4">premier</p>
+<hr>
+<div id="ex5">
+    <h5>웹표준</h5>
+    <div id="ex5_2">
+        <h5>웹접근성</h5>
+    </div><!--ex5_2-->
+</div><!--ex5-->
+<hr>
+<h3>*인접형제 선택자*</h3>
+<ul class="ex6">
+    <li>illustrator</li>
+    <li>photoshop</li>
+    <li>flash</li>
+    <li>dreamweaver</li>
+    <li>premier</li>
+</ul> <!--ex6-->
+<hr>
+<div class="ex7">
+    <h5>illustrator</h5>
+    <h6>photoshop</h6>
+    <h6>flash</h6>
+    <h6>dreamweaver</h6>
+    <h6>premier</h6>
+</div> <!--ex7-->
+<hr>
+<div class="ex8">
+    <h5>illustrator</h5>
+    <h6>photoshop</h6>
+    <h6>flash</h6>
+    <h6>dreamweaver</h6>
+    <h6>premier</h6>
+</div> <!--ex8-->
+<hr>
+<h3>*사용자 동작에 반응하는 선택자*</h3>
+<ul id="ex9">
+    <li><a href="http://m.nate.com">네이트</a></li>
+    <li><a href="http://m.naver.com.com">네이버</a></li>
+    <li><a href="http://m.daum.net">다음</a></li>
+</ul> <!--ex9-->
+<ul id="ex9_2">
+    <li class="ex9_a">Ezen Web</li>
+    <li class="ex9_b">Ezen Web</li>
+    <li class="ex9_c">Ezen Web</li>
+    <li class="ex9_d">Ezen Web</li>
+</ul><!--ex9_2-->
+<p><label for="ex10_1">이름</label><input type="text" class="ex10" id="ex10_1"></p>
+<p><label for="ex10_2">비밀번호</label><input type="password" class="ex10" id="ex10_2"></p>
+<p><label for="ex10_3">주소</label><input type="text" class="ex10" id="ex10_3"></p>
+<hr><!--ex10-->
+<h3>*일반구조 선택자*</h3>
+<ul id="ex11">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+</ul><!--ex11-->
+<hr>
+<h3>*형태구조 선택자*</h3>
+<div id="ex12">
+    <h4>제목</h4>
+    <p>illustrator</p>
+    <p>photoshop</p>
+    <h5>제목1</h5>
+    <p>dreamweaver</p>
+    <p>flash</p>
+    <h5>제목2</h5>
+</div><!--ex12-->
+<hr>
+<h3>*문자선택자*</h3>
+<h4>*시작문자 선택자*</h4>
+<p class="ex13">벡터 도형 처리 기반의 애니메이션 저작용 소프트웨어.<br>전화면 내비게이션 인터페이스, 그래픽 도해 설명(illustration), 그리고 일반 모뎀을 통해 전송되는 반 에일리어싱 파일의 단순한 상호 작용 등이 수반된다. <br>
+속도가 빠르고, 다양한 화면 크기와 해상도로 인해 그래픽 제작이 가능하며, GIF나 제이페그(JPEG)와 달리 간결하고 효율적이다</p>
+<p class="ex13_2">벡터 도형 처리 기반의 애니메이션 저작용 소프트웨어.<br>전화면 내비게이션 인터페이스, 그래픽 도해 설명(illustration), 그리고 일반 모뎀을 통해 전송되는 반 에일리어싱 파일의 단순한 상호 작용 등이 수반된다. <br>
+속도가 빠르고, 다양한 화면 크기와 해상도로 인해 그래픽 제작이 가능하며, GIF나 제이페그(JPEG)와 달리 간결하고 효율적이다</p>
+<hr><!--ex13-->
+<h4>*전후문자 선택자*</h4>
+<p class="ex14">HTML5</p>
+<p class="ex14">CSS1~3</p>
+<hr><!--ex14-->
+<h3>*상태 선택자*</h3>
+<div>
+    <input type="checkbox" name="chk" class="ex15" id="chk1">
+    <label for="chk1">웹표준</label>
+    <input type="checkbox" name="chk" class="ex15" id="chk2">
+    <label for="chk2">웹접근성</label>
+    <input type="checkbox" name="chk" class="ex15" id="chk3">
+    <label for="chk3">웹개발</label>
+</div>
+<hr>
+<div>
+    <label for="ex16_1">이름</label>
+    <input type="text" class="ex16" id="ex16_1" disabled> <!--disabled 태그 입력막아놓음-->
+    <label for="ex16_2">비밀번호</label>
+    <input type="password" class="ex16" id="ex16_2">
+    <label for="ex16_3">주소</label>
+    <input type="text" class="ex16" id="ex16_3">        
+</div>
+<hr>
+<h3>*css 적용되는 우선순위 변경*</h3>
+<p class="ex17">웹표준&amp;웹접근성</p>
+</body>
+</html>

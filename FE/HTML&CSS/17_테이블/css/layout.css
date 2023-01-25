@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/*reset*/
+body,div,h3,table,caption,thead,tr,th,tbody,td,tfoot,a{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+    color:#333333;
+}
+body{
+    font:normal 15px/1.5em "맑은 고딕","Margun Gothic",sans-serif;
+    color:#333333;
+}
+
+/*wrap*/
+#wrap{
+    width:600px;
+    height:480px;
+/*    border:1px solid green; 임시선 설정 마지막엔 뻄*/ 
+    margin-top:20px;
+    margin-left:auto; /*left 와 right 오토를 사용하면 중간으로 이동함*/
+    margin-right:auto;
+}
+#wrap h3{
+    width:200px;
+    height:20px;
+/*    border:solid 1px pink; 임시선 설정 마지막엔 뻄*/
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:30px;
+    text-align:center;
+}
+#bbs{
+    border-collapse:collapse;
+}
+#bbs thead tr th{ /*적용할때 thead와 tr을 줘서 나중에 th에 border 적용시 지금 적용한건 안바뀜.*/
+    border-top:solid 3px #f998a3;
+    border-bottom:3px double #ffcc66;
+    background-color:#ffffcc;
+}
+#bbs caption{ /*게시판*/
+    text-align:left;
+}
+#bbs caption::before{ /*내용 앞에 css 글자추가*/
+    content:"* ";
+}
+#bbs caption::after{ /*내용 뒤에 css 글자추가*/
+    content:" *";
+}
+#bbs #u_no{ /*번호*/
+    width:100px;
+}
+#bbs #u_tit{ /*제목*/
+    width:300px;
+}
+#bbs #u_date{ /*등록일*/
+    width:130px;
+}
+#bbs #u_hit{ /*조회수*/
+    width:70px;
+}
+#bbs th, td{
+    border:1px solid #cccccc;
+    height:30px;
+}
+#bbs tbody tr td:hover{
+    background-color:#eaeaea;
+    cursor:pointer;
+}
+#bbs tbody td{
+    text-align:center;
+}
+#bbs tbody td.tit_txt{
+    text-align:left;
+    text-indent:25px;
+}
+#bbs tfoot td{
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    text-align:center;
+}
+#bbs tfoot td a{
+    font-weight:bold;
+    margin:0 3px; /*마진 왼쪽은 0 오른쪽은 3px*/
+}
+#bbs tfoot td a:hover{
+    text-decoration:underline;
+    color:skyblue;
+}

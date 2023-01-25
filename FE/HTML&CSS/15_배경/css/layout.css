@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body{
+/*    background:url(../images/bg2.png) no-repeat 530px 100px;*/
+/*    background:url(../images/bg2.png) no-repeat 530px 100px scroll;*/
+    background:url(../images/bg2.png) no-repeat 530px 100px fixed;
+}
+/*wrap1*/
+#wrap1 > div{
+    border:1px solid green; 
+    width:500px; 
+    height:300px;
+    margin-bottom:20px;
+}
+#wrap1 > .box1{
+    background-image:url(../images/icon1.gif);
+}
+#wrap1 > .box2{
+    background-image:url(../images/icon1.gif);
+    background-repeat:repeat;
+}
+#wrap1 > .box3{
+    background-image:url(../images/icon1.gif);
+    background-repeat:repeat-x;
+}
+#wrap1 > .box4{
+    background-image:url(../images/icon1.gif);
+    background-repeat:repeat-y;
+}
+#wrap1 > .box5{
+    background-image:url(../images/icon1.gif);
+    background-repeat:no-repeat;
+}
+#wrap1 > .box6{
+    background-image:url(../images/icon1.gif);
+    background-repeat:no-repeat;
+    background-position:center top;
+}
+#wrap1 > .box7{
+    background-image:url(../images/icon1.gif);
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+#wrap1 > .box8{
+    background:url(../images/icon1.gif) no-repeat center center; /*background도 border처럼 사용가능. 해당 순서는 이미지파일 불러오고 반복안하고 x축센터 y축센터로 고정시킨거임*/
+}
+#wrap1 > .box9{
+    background:url(../images/icon1.gif) no-repeat center;
+}
+#wrap1 > .box10{
+    background:#bbccff url(../images/icon1.gif) no-repeat center;
+}
+/*wrap2*/
+/*w 150px x h 150px, 점선*/
+#wrap2 > p{
+    border:dotted 1px #333333;
+    width:150px;
+    height:150px;
+}
+#wrap2 > .ex1{
+    background:#ffcc33 url(../images/bg1.png) repeat-y 101px top;
+}
+#wrap2 > .ex2{
+    background:#ccccff url(../images/bg1.png) repeat-x left 101px;
+}
+#wrap2 > .ex3{
+    background:#ccff9a url(../images/bg1.png) no-repeat right top;
+}
+#wrap2 > .ex4{
+    background:#ffcccb url(../images/bg1.png) no-repeat left bottom;
+}
+#wrap2 > .ex5{
+    background:#cc9998 url(../images/bg1.png) no-repeat center top;
+}
+/*wrap3*/
+
+

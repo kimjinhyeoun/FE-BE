@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/*ex1*/
+#ex1 {
+    width:100px;
+    height:30px;
+    margin:20px;
+    background:#b8edd1 url(../images/icon3.png) no-repeat 10px center;
+    text-indent:50px; /*padding은 폭이 더 넓어지는데 text-indent는 안넓어지고 띄어쓰기 가능 대신 첫 줄만 들여쓰기됨*/
+    line-height:30px; /*줄간격 가운데로 변경하려면 높이랑 똑같은 수치를 입력해야함*/
+    font-size:15px; /*폰트사이즈변경*/
+    font-family:arial,sans-serif; /*개인적으로 글씨가 제일 좋음*/
+}
+/*ex2*/
+#ex2{
+    width:100px;
+    height:48px;  
+    margin:20px;
+    border:solid 1px #eaeaea;
+    background:url(../images/faq.png) no-repeat 30px bottom;
+    font-family:arial,sans-serif;
+    font-weight:bold;
+    color:#727270;
+    padding-left:130px;
+    padding-top:32px;
+}
+/*ex3*/
+#ex3, #ex3 p, #ex3 p span{ /*ex3 전체 여백 초기화*/
+    margin:0;
+    padding:0;
+}
+#ex3{
+    width:300px;
+    height:130px;
+    margin:20px;
+    background:url(../images/bg3.jpg) no-repeat right top;
+    border:solid 1px #eaeaea;
+    font-family:arial,sans-serif;
+    text-align:left;
+}
+#ex3 p:nth-child(1){
+    font-family:"돋움",Dotum,sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    margin-top:17px;
+    margin-left:13px;
+    margin-bottom:40px;
+    color:#6a6a6b;
+}
+#ex3 p:nth-child(2){
+    margin-left:10px;
+}
+#ex3 p:nth-child(2) span{
+    font-size:12px;
+    color:#5e5f61;
+    padding-left:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#ex3 p:nth-child(2) .txt1{
+    background:url(../images/icon1.gif) no-repeat left center;
+}
+#ex3 p:nth-child(2) .txt2{
+    background:url(../images/icon2.gif) no-repeat left center;
+    margin-left:20px;
+}

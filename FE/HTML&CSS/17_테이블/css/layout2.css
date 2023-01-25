@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*reset*/
+ul,li{
+    list-style:none;
+}
+body,div,table,caption,tr,th,td,ul,il,span,br{
+    margin:0;
+    padding:0;
+}
+body,h4{
+    font:normal 15px/1.5em "맑은 고딕","Margun Gothic",sans-serif;
+    color:#333333;
+}
+#wrap{
+    width:800px;
+    height:540px;
+    margin-left:auto; /*margin-left/right auto로 가운데 정렬*/
+    margin-right:auto;
+    margin-top:20px;
+}
+#history{
+    width:800px;
+    background:url(../images/bg2.png) repeat;
+    border-collapse:collapse;
+}
+#history caption{
+    font-size:20px;
+    height:28px;
+    margin-bottom:20px;
+}
+#history th{
+    border-top:3px solid #686868;
+    border-bottom:1px solid #686868;
+    height:40px;
+}
+#history #history1{
+    width:200px;
+}
+#history #history2{
+    width:100px;
+}
+#history #history3{
+    width:500px;
+}
+#history td{
+    text-align:center;
+    border-bottom:1px solid #686868;
+    height:40px;
+}
+#history td.history_t{
+    text-align:left;
+    padding-left:30px;
+    font-size:13px;
+}
+#history h4{
+    font-weight:bold;
+    margin:5px 0;
+}
+#history td.history_t ul li{
+    background:url(../images/dot.jpg) no-repeat left 8px;
+    padding-left:10px;
+    margin-left:10px;
+}
+#history td.history_t span{
+    color:#cc0033;
+}

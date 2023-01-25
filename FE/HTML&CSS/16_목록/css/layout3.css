@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*reset*/
+il,ul,li{
+    list-style:none; /*블릿기호 없앰*/
+}
+div,ol,li,ul{ /*div와 ol포함 전체 여백초기화*/
+    margin:0;
+    padding:0;
+}
+body{
+/* 폰트만 쓸 경우 약식으로 작성가능 밑에 약식 쓸거임
+    font-weight:normal;
+    font-size:16px;
+    line-height:1.5em;
+    font-family:verdana,sans-serif;
+*/
+    font:normal 16px/1.5em verdana,sans-serif; /*font약식 순서 굵기 크기/줄간격 글꼴 순서임*/
+}
+
+/*wrap1*/
+#list1 li{
+    background:url(../images/icon4.gif) no-repeat left 4px;
+    padding-left:15px;
+    color:#cc0033;
+    font-weight:bold;
+}
+#list1 li ul li{/*위에서 설정 다 해놨기 때문에 하고자하는 이미지만 변경해주면 된다.*/
+    color:#000000;
+    background-image:url(../images/icon3.gif);
+}
+#list1 li ul li ul li{
+    font-weight:normal;
+    background-image:url(../images/icon2.gif);
+}
+#list1 li ul{
+    border-left:dotted 1px #333333;
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+#list1 li ul li ul{
+    border-left:none;
+}
+/*list2*/
+#list2 li{
+    color:#0055fe; /*폰트컬러*/
+    font-weight:bold; /*폰트굵기*/
+    font-size:18px; /*폰트사이즈*/
+    padding-left:15px; /*바깥 왼쪽*/
+    line-height:1.5em /*라인 높이*/
+}
+#list2 li ul{
+    border-left:dotted 1px #333333;
+    padding-left:20px;
+    margin:6px 0;
+}
+#list2 li ul li{
+    color:#000000;
+    font-size:16px;
+}
+#list2 li ul li ul{
+    border:none;
+    line-height:1em;
+}
+#list2 li ul li ul li{
+    font-weight:normal;
+    font-size:12px;
+    background:url(../images/icon1.png) no-repeat left 4px;
+    padding-left:20px;
+}

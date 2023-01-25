@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>높이50%</title>
+    <style>
+        body, html{height:100%;
+                margin:0;
+        }
+        .bg{width:100%;
+            height:50%; /*높이를50%로 함 그래서 이미지 불러오면 50%만 보임*/
+            background-image:url(images/ani.gif); /*이미지불러옴*/
+            background-repeat:no-repeat; /*이미지 반복안함*/
+            background-position:center; /*이미지 가운데정렬*/
+            background-size:cover; /*이미지를 늘려 전체 꽉차게 보여짐*/
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">배경이미지</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+body{ /*바디영역에 이미지 2개 넣고 반복없고, 위치정해주고, 고정시킴*/
+    background-image:url(../images/baby1.png), url(../images/baby2.png);
+    background-repeat:no-repeat;
+    background-position:left top, right bottom;
+    background-attachment:fixed, fixed;
+}
+/*ex1*/
+#ex1{
+    border:1px solid #cccccc;
+    width:500px;
+    height:500px;
+    margin:100px;
+    background:url(../images/bg2.png) repeat-y 10px top, url(../images/icon3.png) no-repeat center, url(../images/bg1.png) repeat-y right top;
+}
+/*ex2*/
+#ex2 > p{
+    border:3px solid #cccccc;
+    width:100px;
+    height:100px;
+}
+#ex2 > p.bg1{
+    background:#ffffff url(../images/baby2.png) no-repeat;
+}
+#ex2 > p.bg2{
+    background:#ffffff url(../images/baby2.png) no-repeat;
+    background-size:20% 80%;
+}
+#ex2 > p.bg3{
+    background:#ffffff url(../images/baby2.png) no-repeat;
+    background-size:40px 60px;
+}
+#ex2 > p.bg4{
+    background:#ffffff url(../images/baby2.png) no-repeat;
+    background-size:cover;
+    width:80px;
+    height:80px;
+}
+#ex2 > p.bg5{
+    background:#ffffff url(../images/baby2.png) no-repeat;
+    background-size:contain;
+    width:80px;
+}
+/*ex3*/
+#ex3 > p{
+    border:10px dashed #000000;
+    width:100px;
+    height:100px;
+    padding:15px;
+    background-color:pink;
+}
+#ex3 p:nth-child(1){ /*첫번째 p태그 설정시 nth-child를 사용*/
+    background-clip:border-box; /*default*/
+}
+#ex3 p:nth-child(2){
+    background-clip:padding-box;
+}
+#ex3 p:nth-child(3){
+    background-clip:content-box;
+}
+/*ex4*/
+#ex4 > p{
+    border:10px solid rgba(0,0,0,0.2);
+    padding:15px;
+    width:100px;
+    height:100px;
+    background:url(../images/bg2.png);
+}
+#ex4 p:nth-child(1){ /*첫번째 p태그 설정시 nth-child를 사용*/
+    background-clip:border-box;
+}
+#ex4 p:nth-child(2){
+    background-clip:padding-box;
+}
+#ex4 p:nth-child(3){
+    background-clip:content-box;
+}
+/*ex5*/
+#ex5 > p{
+    border:10px solid rgba(0,0,0,0.2);
+    padding:25px;
+    width:100px;
+    height:100px;
+    background:url(../images/bg1.png) no-repeat;
+}
+#ex5 p:nth-child(1){ /*첫번째 p태그 설정시 nth-child를 사용*/
+    background-origin:padding-box;
+}
+#ex5 p:nth-child(2){
+    background-origin:border-box;
+}
+#ex5 p:nth-child(3){
+    background-origin:content-box;
+}

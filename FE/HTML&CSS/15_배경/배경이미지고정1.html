@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배경이미지 고정</title>
+    <style>
+        body,html{
+            height:100%; /*홈페이지 전체 100% 높이 활용*/
+        }
+        body,div{
+            margin:0; /*바디와 div 영역에 바깥빈공간 없애버림*/
+            padding:0; /*바디와 div태그 안쪽빈공간 없애버림*/
+        }
+        #con1{
+            background-image:url(images/img7_l_de.jpg);
+        }
+        #con2{
+            background-image:url(images/img7_l.jpg);
+        }
+        #con1,#con2{
+            width:100%; /*넓이 100%*/
+            height:100%; /*높이 100%*/
+            background-repeat:no-repeat; /*이미지 반복안함*/
+            background-position:center; /*가운데위치*/
+            background-attachment:fixed; /*이미지 고정*/
+        }
+    </style>
+</head>
+<body>
+    <div id="con1">con1내용</div>
+    <div id="con2">con2내용</div>
+</body>
+</html>

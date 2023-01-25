@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>폼태그</title>
+<link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    <form action="join.asp" method="post" target="_blank"> <!--매소드get은 보안때문에 잘안씀-->
+        <fieldset>
+            <legend>회원가입</legend>
+            <p><label for="u_id">아이디</label><input type="text" id="u_id"></p> <!--입력칸 생성--> <!--접근성 label 과 id 묶어줘야함-->
+            <p><label for="pwd">비밀번호</label><input type="password" id="pwd"></p> <!--비밀번호칸--> <!--접근성 label 과 id 묶어줘야함-->
+            <p>수강과목은?(radio) <br> <!--type="radio" 여러개중 하나만 선택가능 모양은 동그라미-->
+            <input type="radio" name="list1" value="html1" id="html1">
+            <label for="html1">HTML</label>
+            <input type="radio" name="list1" value="css" id="css1">
+            <label for="css1">CSS</label>
+            <input type="radio" name="list1" value="js" id="js1" checked> <!--"checked"는 사이트 들어가자마자 선택되어있게만듦-->
+            <label for="js1">JAVASCRIPT</label>
+            </p>
+            <p>수강과목은?(checkbox)<br> <!--type="checkbox" 여러개중 다중 선택가능 모양은 사각형-->
+            <input type="checkbox" name="list2" value="html" id="html2">
+            <label for="html2">HTML</label>
+            <input type="checkbox" name="list2" value="css" id="css2">
+            <label for="css2">CSS</label>
+            <input type="checkbox" name="list2" value="js" id="js2" checked> <!--"checked"는 사이트 들어가자마자 선택되어있게만듦-->
+            <label for="js2">JAVASCRIPT</label>
+            </p>
+            <p><label for="u_file">사진선택</label><input type="file" id="u_file"></p>
+        </fieldset> <!--파일찾기 버튼 만들기-->
+        <fieldset>
+            <legend>여러버튼</legend>
+            <ol>
+                <li>전송버튼: <input type="submit" value="전송"></li> <!--새탭,join.asp로 전송-->
+                <li>전송버튼: <input type="submit" value="전송" formaction="join2.php" formtarget="_self"></li><!--폼액션태그로 다른url로 전송가능 새탭이아닌 폼타겟태그 셀프로 현재탭으로 연결-->
+                <li>취소버튼: <input type="reset" value="재작성"></li> <!--재작성버튼 누르면 내용이 초기화-->
+                <li>일반버튼: <input type="button" value="확인"></li> <!--button태그는 아무 실행없음-->
+                <li>이미지버튼: <input type="image" src="images/btn.jpg" alt="중복확인" width="65" height="22"></li> <!--타입이미지 활용하는법 , 새탭,join.asp로 전송-->
+            </ol>
+            <ol>
+                <li>전송버튼:<button type="submit">전송</button></li>
+                <li>전송버튼:<button type="submit" formaction="join2.php" formtarget="_blank">전송</button></li> <!--새탭, join2.php로 전송-->
+                <li>전송버튼:<button type="submit"><img src="images/btn.jpg" alt="중복확인" width="65" height="22"></button></li><!--새탭,join.asp로 전송-->
+                <li>취소버튼:<button type="reset">재작성</button></li><!--재작성버튼 누르면 내용이 초기화-->
+                <li>일반버튼<button type="button">확인</button></li><!--실행기능은 없지만 그냥 버튼-->
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>여러줄 글상자/목록상자</legend>
+            <p>
+               <label for="t_txt1">
+                <textarea id="t_txt1" cols="50" rows="10"></textarea>
+                </label>
+            </p>
+            <p>
+               <label for="t_txt2">글쓰기</label><br>
+                <textarea id="t_txt2" cols="50" rows="10"></textarea>
+            </p>
+            <p>
+               <label for="t_txt3">이용약관</label><br>
+                <textarea id="t_txt3" cols="50" rows="10" readonly>이용약관입니다. 이용약관입니다.  이용약관입니다.</textarea><!--텍스트아레아엔 br태그불가능-->
+            </p>
+            <p>
+                <label for="list1">수강목록</label><br> <!--신발사이즈 선택처럼 항목만들기-->
+                <select id="list1">
+                    <option value="HTML5">HTML5</option>
+                    <option value="웹표준">웹표준</option>
+                    <option value="웹접근성" selected>웹접근성</option>
+                    <option value="자바스크립트">자바스크립트</option>
+                </select>
+            </p>
+            <p>
+                <label for="list2">수강목록(다중선택)</label><br>
+                <select id="list2" multiple size="6"> <!--여러항목보이기, size는 기본4개에서 6개로 설정한거임-->
+                    <option value="HTML5">HTML5</option>
+                    <option value="웹표준">웹표준</option>
+                    <option value="웹접근성">웹접근성</option>
+                    <option value="자바스크립트">자바스크립트</option>
+                    <option value="포토샵">포토샵</option>
+                    <option value="일러스트">일러스트</option>
+                </select>
+            </p>
+            <p>
+                <label for="list3">수강과목(그룹)</label><br> <!--항목안에 그룹설정-->
+                <select id="list3">
+                    <option>선택하세요</option>
+                    <optgroup label="웹디자인">
+                        <option value="일러스트">일러스트</option>
+                        <option value="포토샵">포토샵</option>
+                    </optgroup>
+                    <optgroup label="웹프로그래머">
+                        <option value="javascript">javascript</option>
+                        <option value="jquery">jquery</option>
+                        <option value="php">php</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+    </form>
+    <hr>
+    <h3>tml5 추가된 폼태그</h3>
+    <form action="member.asp" method="post">
+    <fieldset>
+     <legend>추가태그</legend>
+     <ol>
+         <li><label for="u_name">이름</label><input type="text" id="u_name" placeholder="10자미만" maxlength="9" autofocus required size="10"></li> <!--placeholder란 내용입력하기 전 10자미만이란 글씨가 보여짐 텍스트 작성시 사라짐, 맥스랭스는 글자수 제한함(한글은 잘 안먹음) 지금 최대 9글자로 설정된거임, autofocus란 홈페이지 접속시 입력커서가 자동으로 들어감, requirde는 필수입력칸 설정하는것, size는 텍스트칸 길이조정(css로도 길이설정 가능)-->
+         <li><label for="email1">이메일</label><input type="email" id="email1" autocomplete="off" size="30" placeholder="example@ex.ex"></li>
+         <li><label for="tel1">전화번호</label><input type="tel" id="tel1" placeholder="-빼고 입력"></li>
+         <li><label for="num1">주문수량</label><input type="number" id="num1" value="0" min="0" max="10" step="2"></li> <!--수량타입태그 number, 벨류는 0부터시작, min 최소값 max 최대값, step 2개씩 증가-->
+         <li><label for="num2">주문수량</label><input type="range" id="num2" value="1" min="1" max="3"></li> <!--타입 range 막대로 조절기능 최소1개 최대3개-->
+         <li><label for="color1">주문색상</label><input type="color" id="color1"></li><!--색상기능-->
+         <li><label for="date1">주문일</label><input type="date" id="date1"></li><!--날짜선택기능, 달력기능과 텍스트기능임 회원가입때도 유용하게 활용가능할듯-->
+         <li><label for="time1">주문시간</label><input type="time" id="time1"></li><!--시간입력칸-->
+         <li><label for="datetime1">날짜시간</label><input type="datetime-local" id="datetime1"></li>
+         <li><label for="month1">주문월</label><input type="month" id="month1"></li> <!--월만 표시-->
+         <li><label for="week1">주</label><input type="week" id="week1"></li><!--week기능-->
+         <li><label for="search1">주문검색</label><input type="search" id="search1"></li> <!--칸 끝에 x표시 들어감-->
+         <li><label for="url1">홈페이지</label><input type="url" id="url1" size="30"></li>
+         <li><label for="web">상품명</label><input type="text" value="웹개발" id="web" readonly></li> <!--readonly 다시한번 말하지만 읽기전용. 수정이 안됨-->
+         <li><label for="u_type1">수강과목</label>
+             <input type="text" id="u_type1" list="type1">
+             <datalist id="type1"> <!--데이터리스트 목록생성-->
+                <option value="웹표준" label="web1"></option>
+                <option value="웹접근성" label="web2"></option>
+                <option value="javascript" label="web3"></option>
+                <option value="jquery" label="web4"></option>
+             </datalist>
+         </li>
+         <li>수강과목
+             <details><!--디테일스 목록생성-->
+                 <summary>웹개발</summary>
+                 <p>
+                     웹표준<br>
+                     웹접근성<br>
+                     javascript<br>
+                     vue.js
+                 </p>
+             </details>
+         </li>
+         <li>Download진행<progress value="65" max="100"></progress></li>
+     </ol>
+     <p>
+         <input type="submit" value="전송하기">
+         <input type="reset" value="재작성">
+     </p>
+     </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*블릿기호 초기화, 태그여백초기화, 폰트:12px/맑은고딕 줄간격 1.5em*/
+div,p,h4,ul,li{ /*여백초기화*/
+    padding:0;
+    margin:0;
+}
+ul,li{
+    list-style:none; /*숫자,블릿기호 초기화*/
+}
+body{ 
+    font-size:12px; /*바디에 폰트사이즈 초기화해도 h태그는 안됨*/
+    font-family:"맑은고딕","Malgun Gothic",sans-serif;
+    line-height:1.5em;
+}
+#wrap{
+    width:330px;
+    height:500px;
+    border:solid 1px #737373;
+}
+#wrap p{
+    width:330px;
+}
+#wrap h4{
+    font-family:Arial,sans-serif;
+    color:#020202;
+    letter-spacing:3px;
+    margin-top:17px;
+    margin-left:38px;
+    background:url(../images/line.jpg) no-repeat left bottom;
+    padding-bottom:16px;
+    margin-bottom:20px;
+}
+#wrap ul{
+    margin-left:38px;
+}
+#wrap li{
+    color:#737373;
+    padding-left:12px;
+    line-height:2em;
+    background:url(../images/dot.jpg) no-repeat left center;
+}
