@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Apple</title>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/apple.js"></script>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+  <div id="notice">
+    알려드립니다.
+    본 사이트는 상업적 목적이 아닌
+    개인 포트폴리오 용도로 만들어졌습니다.
+    홈페이지의 일부내용과 이미지는
+    저작권이 따로 있음을 밝혀드립니다.
+    <a href="#">[ 닫기 ]</a>
+</div><!--notice-->
+
+  <div id="top_wrap">
+    <header id="top">
+      <h1><a href="index.html"><img src="images/menutab/applelogo.svg" alt="top_left_logo" width="14" height="44"></a></h1>
+      <nav id="main_menu">
+        <ul>
+          <li><a href="#" class="main_f_menu">스토어</a>
+              <ul class="over1">
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">Apple Watch</a></li>
+                <li><a href="#">AirPods</a></li>
+                <li><a href="#">AirTag</a></li>
+                <li><a href="#">Apple TV</a></li>
+                <li><a href="#">액세서리</a></li>
+              </ul>
+            </li>
+          <li><a href="#" class="main_f_menu">Mac</a>
+            <ul class="over1">
+              <li><a href="#">MacBook Air</a></li>
+              <li><a href="#">MacBook Pro</a></li>
+              <li><a href="#">iMac 24</a></li>
+              <li><a href="#">Mac mini</a></li>
+              <li><a href="#">Mac Studio</a></li>
+              <li><a href="#">Mac Pro</a></li>
+              <li><a href="#">액세서리</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="main_f_menu">iPad</a>
+            <ul class="over1">
+              <li><a href="#">iPad Pro</a></li>
+              <li><a href="#">iPad Air</a></li>
+              <li><a href="#">iPad</a></li>
+              <li><a href="#">iPad mini</a></li>
+              <li><a href="#">Apple Pencil</a></li>
+              <li><a href="#">키보드</a></li>
+              <li><a href="#">액세서리</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="main_f_menu">iPhone</a>
+            <ul class="over1">
+              <li><a href="#">iPhone 14 Pro</a></li>
+              <li><a href="#">iPhone 14</a></li>
+              <li><a href="#">iPhone 13</a></li>
+              <li><a href="#">iPhone SE</a></li>
+              <li><a href="#">iPhone 12</a></li>
+              <li><a href="#">액세서리</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="main_f_menu">Watch</a>
+            <ul class="over1">
+              <li><a href="#">Ultra</a></li>
+              <li><a href="#">Series 8</a></li>
+              <li><a href="#">SE</a></li>
+              <li><a href="#">Nike</a></li>
+              <li><a href="#">Hermes</a></li>
+              <li><a href="#">Studio</a></li>
+              <li><a href="#">액세서리</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="main_f_menu">AirPods</a>
+              <ul class="over1">
+                <li><a href="#">2세대</a></li>
+                <li><a href="#">3세대</a></li>
+                <li><a href="#">Pro 2세대</a></li>
+                <li><a href="#">AirPods Max</a></li>
+              </ul>     
+          </li>
+          <li><a href="#" class="main_f_menu">TV 및 HOME</a>
+              <ul class="over1">
+                <li><a href="#">Apple TV 4K</a></li>
+                <li><a href="#">Apple TV 앱</a></li>
+                <li><a href="#">Apple TV+</a></li>
+                <li><a href="#">홈 앱</a></li>
+                <li><a href="#">액세서리</a></li>
+              </ul>         
+          </li>
+          <li><a href="#" class="main_f_menu">Apple 독점 제공</a>
+              <ul class="over1">
+                <li><a href="#">Apple Music</a></li>
+                <li><a href="#">Apple Arcade</a></li>
+                <li><a href="#">iCloud</a></li>
+                <li><a href="#">Apple Podcast</a></li>
+                <li><a href="#">Apple Books</a></li>
+                <li><a href="#">Apple 지갑</a></li>
+              </ul>
+          </li>
+          <li><a href="#" class="main_f_menu">액세서리</a>
+            <ul class="over1">
+              <li><a href="#">액세서리</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="main_f_menu">고객지원</a>
+            <ul class="over1">
+              <li><a href="#">고객지원</a></li>
+            </ul>
+          </li>
+          <li class="search">
+            <p class="search_p">
+            <img src="images/menutab/search.svg" alt="search_검색창 로고" width="15" height="88" data-out="search" class="s_img">
+            </p>
+            <div>
+                <p>
+                    <label for="search" id="search_t">통합검색</label>
+                    <input type="text" id="search" autocomplete="off">
+                    <button type="button" id="search_b">검색</button>
+                </p>
+            </div>
+          </li><!--search-->
+          <li class="wish_list">
+            <img src="images/menutab/wish.svg" alt="wishlist장바구니" width="13" height="44" data-src="images/btn_language_on.png" data-out="language" class="s_img">
+            <ul>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">저장된 항목</a></li>
+                <li><a href="#">주문</a></li>
+            </ul>
+        </li><!--wish_list-->
+        </ul>
+      </nav>
+    </header><!--#top-->
+  </div><!--top_wrap top 전체-->
+  <div id="contents_wrap">
+    <div id="enterprise_login">
+      <p>기업로그인<br>
+          본 사이트는 상업적 목적이 아닌<br>
+          개인 포트폴리오 용도로 만들어졌습니다.<br>
+          홈페이지의 일부내용과 이미지는<br>
+          저작권이 따로 있음을 밝혀드립니다.
+      </p>
+      <p><a href="#" class="close_e_login">[ 닫기 ]</a></p>
+    </div><!--enterprise_login 모달 레이어 팝업-->
+    <div id="apple_all">
+      <div id="quick_menu">
+        <ul id="quick_m">
+          <li><a href="login_popup.html" class="login_popup">개인로그인</a></li>
+          <li><a href="#">기업로그인</a></li>
+        </ul><!--quick_m-->
+      </div><!--quick_menu-->
+    <div id="contents_pro">
+      <h1>iPhone 14 Pro</h1>
+      <h1 class="pro_col">
+        <span>프로</span>
+        <span>그</span>
+        <span>이상</span>
+        <span>.</span>
+      </h1>
+      <p>₩1,550,000부터(보상 판매<a href="#bottom_wrap" class="trade_in">*</a> 미적용 가격)</p>
+      <p><a href="#">구입하기</a></p>
+      <p><a href="#">더 알아보기 &gt;</a></p>
+    </div><!--contents_nor / iphone14 pro-->
+    <div id="contents_series">
+      <div id="series_wrap">
+        <h1>SERIES<br>LIFE IS GOOD</h1>
+        <ul>
+          <li><img src="images/iphone_se_cut_medium.jpg" alt="아이폰se" width="119" height="204" class="s_se"><p>iPhone SE</p><img src="images/iphone_se_col.png" alt="아이폰se 색상" width="50" height="14"></li>
+          <li><img src="images/iphone_13_cut_medium.jpg" alt="아이폰13" width="128" height="204" class="s_13"><p>iPhone 13</p><img src="images/iphone_13_col.png" alt="아이폰13 색상" width="104" height="14"></li>
+          <li><img src="images/iphone_14_cut_medium.jpg" alt="아이폰14" width="143" height="204" class="s_14"><p>iPhone 14</p><img src="images/iphone_14_col.png" alt="아이폰14 색상" width="86" height="14"></li>
+          <li><img src="images/iphone_14_pro_cut_medium.jpg" alt="아이폰 14 PRO" width="151" height="204" class="s_14pro"><p>iPhone 14 PRO</p><img src="images/iphone_14_pro_col.png" alt="아이폰14프로 색상" width="68" height="14"></li>
+        </ul>
+      </div>
+    </div>
+    <div id="contents_nor">
+      <h1>iPhone 14</h1>
+      <h1>
+      <span>크</span>
+      <span>게.</span>
+      <span>더</span>
+      <span>크</span>
+      <span>게.</span>
+      </h1>
+      <p>₩1,250,000부터(보상 판매<a href="#bottom_wrap" class="trade_in">*</a> 미적용 가격)</p>
+      <p><a href="#">구입하기</a></p>
+      <p><a href="#">더 알아보기 &gt;</a></p>
+    </div><!--contents_nor / iphone14-->
+    <div id="contents_se">
+      <h1><img src="images/iphoneSE_logo_large_main.png" alt="메인페이지iPhoneSE로고" width="98" height="20"></h1>
+      <h1>
+      <span>거</span>
+      <span>침</span>
+      <span>없</span>
+      <span>는</span>
+      <span>파</span>
+      <span>워.<br></span>
+      <span>실</span>
+      <span>속</span>
+      <span>있</span>
+      <span>는</span>
+      <span>선</span>
+      <span>택.</span>
+      </h1>
+      <p>₩650,000부터(보상 판매<a href="#bottom_wrap" class="trade_in">*</a> 미적용 가격)</p>
+      <p><a href="#">구입하기</a></p>
+      <p><a href="#">더 알아보기 &gt;</a></p>
+    </div><!--contents_se / iphone se-->
+    <div id="contents_6commer">
+      <div id="contents_wcul">
+        <h1><img src="images/watch_ultra_logo_large.png" alt="메인페이지 WATCH ULTRA로고" width="187" height="71"></h1>
+        <h1>
+        <span>모</span>
+        <span>험</span>
+        <span>을</span>
+        <span>위</span>
+        <span>한</span>
+        <span>시</span>
+        <span>간.</span>
+        </h1>
+        <p>₩1,149,000부터(보상 판매<a href="#bottom_wrap" class="trade_in">*</a> 미적용 가격)</p>
+        <p><a href="#">구입하기 &gt;</a></p>
+        <p><a href="#">더 알아보기 &gt;</a></p>
+      </div><!--contents_wcul / apple watch ultra-->
+      <div id="contents_wc8">
+        <h1><img src="images/watch_8_logo_large.png" alt="메인페이지 WATCH SERIES8로고" width="137" height="52"></h1>
+        <h1>
+        <span>건</span>
+        <span>강</span>
+        <span>하</span>
+        <span>게</span>
+        <span>앞</span>
+        <span>서</span>
+        <span>나</span>
+        <span>아</span>
+        <span>가</span>
+        <span>다.</span>
+        </h1>
+        <p>₩599,000부터(보상 판매<a href="#bottom_wrap" class="trade_in">*</a> 미적용 가격)</p>
+        <p><a href="#">구입하기 &gt;</a></p>
+        <p><a href="#">더 알아보기 &gt;</a></p>
+      </div><!--contents_wc8 / apple watch 8-->
+      <div id="contents_ipad_pro">
+        <h1>iPad Pro</h1>
+        <h1>
+        <span>막</span>
+        <span>강</span>
+        <span>한</span>
+        <span>성</span>
+        <span>능</span>
+        <span>의</span>
+        <span><img src="images/ipad_pro_m2_logo_large.png" alt="iPad Pro M2 logo" width="37" height="37"></span>
+        <span>탑</span>
+        <span>재</span>
+        </h1>
+        <p>₩1,249,000부터(보상 판매<a href="#bottom_wrap" class="trade_in">*</a> 미적용 가격)</p>
+        <p><a href="#">구입하기 &gt;</a></p>
+        <p><a href="#">더 알아보기 &gt;</a></p>
+      </div><!--contents_ipad_pro / ipad_pro-->
+      <div id="contents_apple_tv_4k">
+        <h1><img src="images/appletv_4k_logo_large.png" alt="메인페이지apple TV 4k로고" width="108" height="33"></h1>
+        <h1>
+        <span>보</span>
+        <span>다</span>
+        <span>장</span>
+        <span>대</span>
+        <span>하</span>
+        <span>게</span>
+        <span>경</span>
+        <span>험</span>
+        <span>하</span>
+        <span>는<br></span>
+        <span>A</span>
+        <span>p</span>
+        <span>p</span>
+        <span>l</span>
+        <span>e</span>
+        <span>의</span>
+        <span>모</span>
+        <span>든</span>
+        <span>것.</span>
+        </h1>
+        <p>₩219,000부터(보상 판매<a href="#bottom_wrap" class="trade_in">*</a> 미적용 가격)</p>
+        <p><a href="#">구입하기 &gt;</a></p>
+        <p><a href="#">더 알아보기 &gt;</a></p>
+      </div><!--contents_apple_tv_4k / apple_tv_4k-->
+      <div id="contents_airpods_pro">
+        <h1>AirPods Pro</h1>
+        <h1>
+        <span>듣</span>
+        <span>는</span>
+        <span>다</span>
+        <span>는</span>
+        <span>것</span>
+        <span>을</span>
+        <span>다</span>
+        <span>시</span>
+        <span>생</span>
+        <span>각</span>
+        <span>하</span>
+        <span>다.</span>
+        </h1>
+        <p>₩359,000(보상 판매<a href="#bottom_wrap" class="trade_in">*</a> 미적용 가격)</p>
+        <p><a href="#">구입하기 &gt;</a></p>
+        <p><a href="#">더 알아보기 &gt;</a></p>
+      </div><!--contents_airpods_pro / airpods_pro-->
+      <div id="contents_wcse">
+        <h1><img src="images/watch_se_logo_large.png" alt="메인페이지 WATCH SE로고" width="129" height="49"></h1>
+        <h1>
+        <span>부</span>
+        <span>담</span>
+        <span>없</span>
+        <span>이</span>
+        <span>빠</span>
+        <span>져</span>
+        <span>들</span>
+        <span>다.</span>
+        </h1>
+        <p>₩359,000부터(보상 판매<a href="#bottom_wrap" class="trade_in">*</a> 미적용 가격)</p>
+        <p><a href="#">구입하기 &gt;</a></p>
+        <p><a href="#">더 알아보기 &gt;</a></p>
+      </div><!--contents_wcse / apple watch se-->
+    </div><!-- contents_6commer / WATCH ULTRA, WATCH 8, iPad Pro, apple tv 4k, AirPods Pro, WATCH SE-->
+    <div id="appletv_post">
+      <div class="appletv_post_con">
+       <div class="appletv_post_abridg">
+        <h1><img src="images/appletv_post_large.png" alt="appletv+아이콘"></h1>
+        <h1>Apple TV+</h1>
+        <h1>One번들에 포함</h1>
+        <h1>수상에 빛나는<br>Apple Original 콘텐츠<br>스트리밍을 모든 화면에서.</h1>
+        <p><a href="#">무료 체험하기</a></p>
+        <p><a href="#">더 알아보기 &gt;</a></p>
+        <p><a href="#">Apple TV 앱에서 시청하기 &neArr;</a></p>
+      </div><!--appletv_post_abridg-->
+      <div id="atv_p">
+        <div id="atv_wrap">
+          <ul class="atv">
+            <li class="no_1" data-n="1"><a href="#"><img src="images/appletv+post1_small.jpg" alt="럭 포스터" width="688" height="387"></a></li>
+            <li class="no_2" data-n="2"><a href="#"><img src="images/appletv+post2_small.jpg" alt="테드 래소 포스터" width="688" height="387"></a></li>
+            <li class="no_3" data-n="3"><a href="#"><img src="images/appletv+post3_small.jpg" alt="DR.브레인 포스터" width="688" height="387"></a></li>
+            <li class="no_4" data-n="4"><a href="#"><img src="images/appletv+post4_small.jpg" alt="인베이션 포스터" width="688" height="387"></a></li>
+            <li class="no_5" data-n="5"><a href="#"><img src="images/appletv+post5_small.jpg" alt="세브란스:단절 포스터" width="688" height="387"></a></li>
+            <li class="no_6" data-n="6"><a href="#"><img src="images/appletv+post6_small.jpg" alt="SEE 어둠의 나날 포스터" width="688" height="387"></a></li>
+          </ul><!--atv-->
+        </div><!--atv_wrap-->
+      </div><!--atv_p-->
+      <p class="prev"><img src="images/prev.png" alt="이전버튼" width="33" height="62"></p>
+      <p class="next"><img src="images/next.png" alt="다음버튼" width="33" height="62"></p>
+      </div><!--appletv_post_con-->
+    </div><!--#appletv_post/애플 광고 전체-->
+    <div id="contents_excuseme">
+     <div id="contents_ex">
+      <div class="c_delivery">
+        <h1><img src="images/delivery.png" alt="업무일 기준 무료 익일 배송 택배아이콘"></h1>
+        <h2>업무일 기준 무료 익일 배송</h2>
+        <p>오후 3시 이전에 주문된 재고 보유<br>제품에 한합니다.</p>
+        <p><a href="#">더 알아보기 &gt;</a></p>
+      </div><!--c_delivery 업무일 기준 무료 익일 배송-->
+      <div class="c_cash">
+        <h1><img src="images/cash_benefits.png" alt="금융 혜택 아이콘"></h1>
+        <h2>금융 혜택</h2>
+        <p>무이자 할부를통해 Apple 제품을 부담<br> 없이 구매하실 수 있습니다. </p>
+        <p><a href="#">더 알아보기 &gt;</a></p>
+      </div><!--c_cash 금융 혜택-->
+      <div class="c_cani">
+        <h1><img src="images/can_i_help_u.png" alt="도움이 필요하다면 아이콘"></h1>
+        <h2>도움이 필요하다면</h2>
+        <p>질문이 있으신가요? 전문가와 전화로<br> 상담하거나 온라인으로 채팅하세요.<br> 080-330-8877로 전화 주세요.</p>
+        <p><a href="#">문의하기 ></a></p>
+      </div><!--c_cani 도움이 필요하다면-->
+     </div><!--contents_ex-->
+    </div><!--contents_excuseme 업무일.../금융혜택.../도움이...-->
+    <div id="acc_suggestion">
+      <div id="suggestion">
+       <h1 class="suggestion_title">추천 액세서리</h1>
+        <div class="acc_magsafe">
+         <div class="magsafe_wrap">
+          <h1>MagSafe</h1>
+          <p>마그네틱 케이스나 카드지갑, 아니면<br>둘 모두를 한꺼번에 착. 그리고 무선<br>충전도 더욱 빠르게.</p>
+          <p><a href="#">MagSafe 액세서리 쇼핑하기</a></p>
+         </div><!--magsafe_wrap-->
+        </div><!--acc_magsafe 맥세이프 전체-->
+        <div class="acc_airtag">
+         <div class="airtag_wrap">
+          <h1>AirTag</h1>
+          <p>하나는 열쇠에,또 하나는 백팩에. 어디 두었는지<br> 기억이 나지 않을 땐, 간편하게 '나의 찾기' 앱을<br> 활용해보세요.</p>
+          <p><a href="#">구입하기 &gt;</a></p>
+          <p><a href="#">더 알아보기 &gt;</a></p>
+         </div><!--airtag_wrap-->
+        </div><!--acc_airtag 에어태그 전체-->
+        <div class="acc_headphone">
+         <div class="headphone_wrap">
+          <h1>매혹의 유전자.</h1>
+          <p>다양한 AirPods 모델 살펴보고<br> 가장 취향에 맞는것 고르기.</p>
+          <p><a href="#">더 알아보기</a></p>
+         </div><!--headphone_wrap-->
+        </div><!--headphone_wrap 매혹의 유전자 전체-->
+        <p><a href="#">iPhone 액세서리 모두 보기 ></a></p>
+      </div><!--suggestion-->
+    </div><!--acc_suggestion 추천 액세서리 전체-->
+  </div><!--contents_wrap 중단 전체-->
+  <div id=bottom_wrap>
+    <div class="bottom_t_in">
+      <p>* 보상 판매 금액은 보상 판매 대상이 되는 제품의 상태, 연도, 구성에 따라 달라집니다. 일부 기기는 보상 판매 대상이 아닙니다. 크레딧 또는 Apple Store Gift Card로 보상 판매를 받으려면 19세 이상이어야 합니다. 보상 판매 금액은 적용 가능한 새 기기 구입 시 적용하거나 Apple Store Gift Card로 받을 수 있습니다. 최종 확정 금액은 보상 판매 대상 기기를 수령한 후, 예상 금액 산정 시 제시한 기기의 설명과 일치하는지 비교 검수 후 정해집니다. 부가세는 새로 구입한 기기의 총액을 바탕으로 부과됩니다. 일부 매장에서는 보상 판매를 제공하지 않으며, 매장 내 보상 판매와 온라인 보상 판매 프로그램 간 내용에 차이가 있을 수 있습니다. 컴퓨터 제품에 대해서는 매장 내 보상 판매를 제공하지 않습니다. 일부 매장은 추가 요구 사항이 있을 수 있습니다. Apple 또는 보상 판매 파트너사는 어떤 보상 판매도 거래를 거부하거나, 보상 판매 수량을 제한할 권리를 보유합니다. 적용 가능 기기의 보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상 판매 파트너사에서 확인할 수 있습니다. 규제 및 제한이 적용될 수 있습니다. 보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다. Apple 및  Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다.</p>
+      <p>◊ 신규 가입자에게만 적용됩니다. 무료 체험 기간이 끝나면 월 8,900원에 이용할 수 있습니다. 본 프로모션은 한정된 기간 동안 새 iPhone을 구입하고 활성화한 신규 가입자에게만 적용됩니다. 무료 체험 혜택은 적용 대상 iPhone 활성화 이후 3개월 안에 신청할 수 있습니다. 구입한 기기 수에 상관없이, 무료 체험 혜택은 Apple ID당 한 번만 제공됩니다. 본 프로모션은 Apple Music의 다른 무료 체험 또는 프로모션과 중복 적용되지 않습니다. 멤버십은 매월 자동으로 갱신되며, 해지 시 종료됩니다. 특정 제한 사항 및 기타 <span>약관</span>이 적용됩니다.</p>
+    </div><!--bottom_t_in 보상판매-->
+    <div class="bottom_t_in_m">
+      <ol class="bottom_t_in_m_n">
+        <li>디스플레이는 모서리가 둥근 형태로, 기기의 아름다운 곡면 디자인을 반영합니다. 이 모서리는 기기의 전체적인 모양인 직사각형 내부에 위치합니다. 직사각형 기준으로 측정했을 때 iPhone 13 mini, iPhone 12 mini 화면은 대각선 길이 기준 13.76cm, iPhone 11 Pro, iPhone XS, iPhone X은 14.86cm, iPhone 14, iPhone 13 Pro, iPhone 13, iPhone 12 Pro, iPhone 12, iPhone 11, iPhone XR은 15.40cm, iPhone 14 Pro는 15.54cm, iPhone 11 Pro Max, iPhone XS Max는 16.40cm, iPhone 14 Plus, iPhone 13 Pro Max, iPhone 12 Pro Max는 16.95cm, iPhone 14 Pro Max는 17.00cm입니다. 실제로 보이는 영역은 이보다 좁습니다.</li>
+        <li>긴급 구조 요청 기능은 셀룰러 연결을 사용합니다.</li>
+        <li>모든 배터리는 네트워크 구성 및 기타 여러 요인에 따라 소모되는 정도가 다릅니다. 실제 결과는 다를 수 있습니다. 배터리는 충전 사이클이 제한되어 있으므로 추후 교체해야 할 수도 있습니다. 배터리 사용 시간과 충전 사이클은 사용 방법 및 설정에 따라 다릅니다. 자세한 내용은 <a href="#">apple.com/kr/batteries</a>및<a href="#">apple.com/kr/iphone/battery.html</a>을 참고하십시오.</li>
+        <li>데이터 요금제에 가입해야 합니다. 5G 및 LTE는 일부 국가에서 일부 이동통신사를 통해 사용 가능합니다. 속도는 장소 및 이동통신사에 따라 다를 수 있습니다. 5G 및 LTE 지원에 대한 자세한 내용은 이동통신사에 문의하거나<a href="#">>apple.com/kr/iphone/cellular</a>를 참고하십시오.</li>
+        <li>보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다. 보상 판매 금액은 보상 판매되는 스마트폰의 상태및 모델에 따라 달라집니다. 19세 이상이어야 합니다. 일부 매장에서는 본 프로그램을 이용할 수 없으며, 일부 기기는 보상 판매 대상이 아닙니다. Apple은 어떤 기기든 수령을 거부하거나, 그 수량을 제한할 권리 권리를보유합니다. 새 Apple 기기 구매 시, 현재 소유한 기기의 가치만큼 할인을 받을 수도 있습니다. 추가 <a href="#">약관</a>은 <a href="#">apple.com/kr/trade-in</a>을 참고하십시오.</li>
+        <li>Apple One 무료 체험에는 현재 무료 체험을 하고 있거나 멤버십을 통해 이용하고 있는 서비스는 제외됩니다. 멤버십은 매월 자동으로 갱신되며, 해지 시 종료됩니다. 특정 제한 사항 및 기타 <a href="#">약관</a>이 적용됩니다.</li>
+        <li>무료 체험 기간이 끝나면 월 6,500원에 이용할 수 있습니다. 본인 또는 가족 구성원이 구입한 기기 수에 상관없이, 무료 체험 혜택은 Apple ID당 한 번 또는 본인이 &apos;가족 공유&apos; 그룹의 구성원일 경우 그룹당 한 번만제공됩니다. 본인 또는 가족 구성원이 이미 Apple TV+ 1년 무료 체험 혜택을 이용한 경우에는 이 혜택을 이용할 수 없습니다. 무료 체험 혜택은 적용 대상 기기 활성화 이후 3개월 안에 신청할 수 있습니다. 멤버십은 매월 자동으로 갱신되며, 해지 시 종료됩니다. 특정 제한 사항 및 기타 <a href="#">약관</a>이 적용됩니다.</li>
+        <li>신규 가입자에게만 적용됩니다. 무료 체험 기간이 끝나면 월 8,900원에 이용할 수 있습니다. 멤버십은 매월 자동으로 갱신되며, 해지 시 종료됩니다.</li>
+        <li>무료 체험 기간이 끝나면 월 6,500원에 이용할 수 있습니다. 본인 또는 가족 구성원이 구입한 기기 수에 상관없이, 무료 체험 혜택은 Apple ID당 한 번 또는 본인이 &apos;가족 공유&apos; 그룹의 구성원일 경우 그룹당 한 번만 제공됩니다. 무료 체험 혜택은 적용 대상 기기 활성화 이후 3개월 안에 신청할 수 있습니다. 멤버십은 매월 자동으로 갱신되며, 해지 시 종료됩니다. 특정 제한 사항 및 기타 <a href="#">약관</a>이 적용됩니다.</li>
+      </ol><!--bottom_t_in_m_n 1. 디스플레이....-->
+      <div id="view_more">
+        <p><button type="button" class="view_more_c">ViewMore</button></p>
+      </div>
+    </div><!--bottom_t_in_m 하단 1~9번-->
+    <div id="apple_service">
+      <h1><a href="index.html">Apple</a></h1>
+      <div class="a_s_sho">
+       <ul>
+          <li>쇼핑 및 알아보기</li>          
+          <li><a href="#">스토어</a></li>
+          <li><a href="#">Mac</a></li>
+          <li><a href="#">iPad</a></li>
+          <li><a href="#">iPhone</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">AirPods</a></li>
+          <li><a href="#">TV 및 홈</a></li>
+          <li><a href="#">AirTag</a></li>
+          <li><a href="#">액세서리</a></li>
+        </ul>
+      </div><!--a_s_sho 쇼핑 및 알아보기-->
+      <div class="a_s_ser">
+       <ul>
+          <li>서비스</li>
+          <li><a href="#">Apple Music</a></li>
+          <li><a href="#">Apple TV+</a></li>
+          <li><a href="#">Apple Arcade</a></li>
+          <li><a href="#">iCloud</a></li>
+          <li><a href="#">Apple Books</a></li>
+          <li><a href="#">Apple Podcast</a></li>
+          <li><a href="#">Apple Store</a></li>
+          <li class="a_s_id">계정</li>
+          <li><a href="#">Apple ID 관리</a></li>
+          <li><a href="#">Apple Store계정</a></li>
+          <li><a href="#">iCloud.com</a></li>
+        </ul>
+      </div><!--a_s_ser 서비스-->
+      <div class="a_s_stor">
+        <ul>
+           <li>Apple Store</li>
+           <li><a href="#">매장찾기</a></li>
+           <li><a href="#">Genius Bar</a></li>
+           <li><a href="#">Today at Apple</a></li>
+           <li><a href="#">Apple 캠프</a></li>
+           <li><a href="#">Apple Store 앱</a></li>
+           <li><a href="#">리퍼 및 특가 제품</a></li>
+           <li><a href="#">금융 혜택</a></li>
+           <li><a href="#">Apple Trade In</a></li>
+           <li><a href="#">주문 상태</a></li>
+           <li><a href="#">쇼핑 도움말</a></li>
+        </ul>
+      </div><!--Apple Store-->
+      <div class="a_s_stor a_s_bui">
+       <ul>
+          <li>비지니스</li>
+          <li><a href="#">Apple과 비즈니스</a><li>
+          <li><a href="#">비즈니스를 위한 제품 쇼핑하기</a><li>
+          <li class="a_s_stu">교육</li>
+          <li><a href="#">Apple과 교육</a></li>
+          <li><a href="#">초중고용 제품 쇼핑하기</a></li>
+          <li><a href="#">대학 생활을 위한 제품 쇼핑하기</a></li>
+       </ul>
+      </div><!--a_s_bui 비지니스-->
+      <div class="a_s_val">
+       <ul>
+          <li>Apple 가치관</li>
+          <li><a href="#">손쉬운 사용</a></li>
+          <li><a href="#">환경</a></li>
+          <li><a href="#">개인정보 보호</a></li>
+          <li><a href="#">협력업체에 대한 책임</a></li>
+          <li class="a_s_info">Apple 정보</li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Apple 리더쉽</a></li>
+          <li><a href="#">채용 안내</a></li>
+          <li><a href="#">윤리 및 규정 준수</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">일자리 창출</a></li>
+          <li><a href="#">Apple 연락처</a></li>
+       </ul>
+      </div><!--Apple 가치관-->
+      <div class="a_s_call">
+        <p>다양한 쇼핑 방법: <a href="#">Apple Store를 방문</a>하거나, <a href="#">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.</p>
+      </div><!--a_s_call 다양한 쇼핑방법-->
+    </div><!--apple_service 쇼핑및../서비스/계정 등등..-->
+    <div id="apple_address">
+     <footer>
+        <p>Copyright &copy; 2022 Apple Inc. 모든 권리 보유.</p>
+        <a href="#">개인정보 처리방침</a>
+        <a href="#">웹 사이트 이용 약관</a>
+        <a href="#">판매 및 환불</a>
+        <a href="#">법적 고지</a>
+        <a href="#">사이트 맵</a>
+        <address>사업자등록번호 : 120-81-84429 | 통신판매업신고번호 : 제 2011-서울강남-00810호 | 대표이사 : PETER DENWOOD | 주소 : 서울 특별시 강남구 영동대로 517 | 대표전화 : 02-6712-6700 | 팩스 : 02-6928-0000</address>
+      </footer>
+    </div>
+  </div><!--bottom_wrap 하단 전체-->
+</div> <!--apple_all 전체-->
+</body>
+</html>
