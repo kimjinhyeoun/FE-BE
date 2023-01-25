@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+
+/*reset*/
+div, p, h4, span, input, ul, li{
+    margin:0;
+    padding:0;
+}
+ul,li{
+    list-style:none;
+}
+/*전체*/
+#wrap{
+    width:813px;
+    height:650px;
+    margin:20px auto;
+    
+}
+/*맨 위 고객님의 가입여부 확인 및...*/
+#wrap > p{
+    text-align:center;
+    background:url(../images/icon_caution.png) no-repeat 65px center;
+    margin-bottom:40px;
+    color:#999;
+}
+#tel_box{
+    
+}
+/* tel_box 휴대폰 인증*/
+#tel_box div:first-child{
+    border:1px #ccc solid;
+    width:405px;
+    height:400px;
+    text-align:center;
+    background:url(../images/icon_phone.gif) no-repeat center;
+    float:left;
+    box-sizing:border-box;
+}
+/* tel_box 아이핀 인증*/
+#tel_box div:last-child{
+    float:left;
+    border:1px #ccc solid;
+    width:405px;
+    height:400px;
+    text-align:center;
+    background:url(../images/icon_ipin.gif) no-repeat center;
+    box-sizing:border-box;
+    border-left:none;
+}
+/* tel_box 휴대폰 인증, 아이핀 인증 공통설정*/
+#tel_box div:first-child h4, #tel_box div:last-child h4{
+    color:#666;
+    font-size:20px;
+    margin-top:40px;
+}
+#tel_box div:first-child p, #tel_box div:last-child p{
+    margin-top:20px;
+    color:#999;
+    font-size:14px;
+}
+#tel_box span{
+    display:block;
+}
+/*tel_box 인증하기 버튼*/
+#tel_box input{
+    background-color:#3399ff;
+    border:none;
+    color:white;
+    width:150px;
+    height:50px;
+    margin-top:160px;
+    cursor:pointer;
+}
+#tel_box input:hover{
+    background-color:#0066cc;
+}
+/*#infor*/
+#infor{
+    clear:both;
+    padding-top:20px;
+    color:#999;
+    font-size:14px;
+}
+#infor li{
+    list-style:square;
+    margin-left:20px
+}
+/*정보통신망 이용촉진*/
+#infor strong{
+    display:block;
+    color:#000;
+    line-height:3em
+}
+#infor strong:hover{
+    cursor:pointer;
+    color:#999;
+}

@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+
+/*reset*/
+body,div,h3,img,p,input,label,h4,ul,li{
+  margin:0;
+  padding:0;
+}
+body{
+  font:normal 12px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+  color:#333;
+}
+ul,li{ /*sns 로고 전체*/
+  list-style:none;
+}
+/*SNS 로그인*/
+h4{
+  font-size:18px;
+  text-align:center;
+  margin-bottom:15px;
+}
+/*wrap*/
+#wrap{
+  width:350px;
+  height:560px;
+  margin:20px auto;
+}
+/*NE_Books*/
+#wrap h3{ 
+  text-align:center;
+  padding-top:20px;
+  margin-bottom:30px;
+}
+/*NE_Books 마우스 포인터*/
+#wrap h3:hover{
+  cursor:pointer;
+}
+/*아이디 비밀번호*/
+.u_id input, .u_pwd input{
+  background-color:#eaeaea;
+  margin-bottom:5px;
+  text-indent:10px;
+}
+/*아이디 비밀번호 로그인 버튼*/
+.u_id input, .u_pwd input,.login_sub input{
+  width:350px;
+  height:40px;
+  border:1px solid #999;
+}
+/*로그인 전체*/
+.login_sub{
+  width:350px;
+  height:60px;
+  border:2px solid #984eb1;
+}
+/*로그인버튼, 회원가입 버튼*/
+.login_sub input, .btn button{
+  background-color:#984eb1;
+  width:352px;
+  height:62px;
+  margin-right:3px;
+  border-radius:5px;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+}
+/*로그인버튼 아웃라인 보더 제거*/
+#wrap .login_sub input, #wrap .login_sub{
+  outline:none;
+  border:none;
+}
+/*로그인 버튼 포인터*/
+.login_sub input:hover{
+  cursor:pointer;
+  background-color:#995eb9;
+  color:#fff;
+}
+/*아이디저장 비밀번호찾기 전체*/
+.login_chk{
+  text-align:center;
+  border-bottom:1px solid #eaeaea;
+  margin-top:20px;
+  margin-bottom:30px;
+  padding-bottom:30px;
+}
+
+/*체크박스*/
+#chk1, #chk2{
+  vertical-align:-1px;
+}
+/*배너로고 전체*/
+.sns > li{
+  width:56px;
+  height:56px;
+  margin-right:20px;
+}
+.sns li:nth-child(1){
+  float:left;
+  margin-left:40px;
+}
+.sns li:nth-child(2){
+  float:left;
+}
+.sns li:nth-child(3){
+  float:left;
+}
+.sns li:nth-child(4){
+  float:left;
+}
+/*개인정보 보호*/
+.infor{
+  clear:both;
+  text-align:center;
+  margin-bottom:20px;
+  padding-top:10px;
+}
+/*회원가입전체*/
+.btn{
+  width:350px;
+  height:60px;
+  border:1px solid #4e4e4e;
+}
+/*회원가입버튼*/
+.btn button{
+  background-color:#4e4e4e;
+  margin-right:3px;
+}
+/*회원가입버튼 아웃라인 보더 제거*/
+#wrap .btn, #wrap .btn button{
+  outline:none;
+  border:none;
+}
+/*회원가입버튼 마우스포인터*/
+.btn button:hover{
+  cursor:pointer;
+  background-color:#666;
+  color:#fff;
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:halla;
+    src:url("../font/Hallasan.eot");
+    src:url("../font/Hallasan.eot?#iefix")format("embedded-opentype"),
+        url("../font/Hallasan.ttf")format("truetype"),
+        url("../font/Hallasan.woff")format("woff");
+}
+
+@font-face{
+    font-family:nanum;
+    src:url("../font/NanumGothic.eot");
+    src:url("../font/NanumGothic.eot?#iefix")format("embedded-opentype"),
+        url("../font/NanumGothic.ttf")format("truetype"),
+        url("../font/NanumGothic.woff")format("woff");
+}
+
+.ex1, .ex2, .ex3{
+    font-size:40px;
+}
+.ex1{
+    font-family:"돋움",Dotum,sans-serif;
+}
+.ex2{
+    font-family:"한라",halla,sans-serif;
+}
+.ex3{
+    font-family:"나눔",nanum,sans-serif;
+}
