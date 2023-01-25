@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+
+/* reset */
+div,p,img,button{
+    margin: 0;
+    padding: 0;
+}
+
+/* box3 */
+#box3{
+    margin:10px;
+    height:300px;
+}
+#box3_i{
+    border:1px solid #ccc;
+    width:450px;
+    height:225px;
+    white-space:nowrap;
+    overflow-x:scroll;
+    margin-bottom:10px;
+}
+/* box4 */
+#box4{
+    margin:10px;
+    height:300px;
+}
+#box4_i{
+    border:1px solid #ccc;
+    width:230px;
+    height:220px;
+    overflow-y:scroll;
+    margin-bottom:10px;
+}

@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* ex1 */
+#ex1 p{
+    border:3px solid #cc6699;
+    width:300px;
+    height:200px;
+    padding:5px;
+}
+
+/* ex2 */
+#ex2 p{
+    border:3px solid red;
+    width:500px;
+    height: 300px;
+    padding:5px;
+}
+
+/* ex3 */
+#ex3 p{
+    border:3px solid greenyellow;
+    width:100px;
+    height: 120px;
+    padding:5px;
+    margin:8px;
+}
+
+/* ex4 */
+#ex4 p{
+    border:3px solid blue;
+    width:100px;
+    height: 120px;
+    padding:5px;
+    margin:8px;
+}
+
+/* ex5 */
+#ex5{
+    border:3px solid #ccc;
+    width: 500px;
+    height: 500px;
+    position:relative;
+}
+#ex5 img{
+    position: absolute;
+    left:100px;
+    top:20px;
+}
+
+
+/* ex6 */
+body,#ex6,#ex6 p,#ex6 button{
+    margin:0;
+    padding:0;
+}
+#ex6{
+    position:relative;
+    margin-bottom:300px;
+    width:300px;
+    height:200px;
+}
+#ex6 p{
+    width:300px;
+    height:200px;
+    background-color:#ffcc33;
+    position:absolute;
+    left:0;
+    top:0;
+}
+#ex6 p button{
+    position:absolute;
+    left:0;
+    top:0;
+}
