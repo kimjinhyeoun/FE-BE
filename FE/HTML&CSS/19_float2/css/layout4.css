@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*reset*/
+div,p{
+    margin:0;
+    padding:0;
+}
+body{
+    font:normal 15px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+    color:#333333;
+}
+
+/*box_wrap*/
+#box_wrap{
+    width:656px;
+/*    height:500px;*/
+    overflow:hidden;
+    margin:10px auto;
+}
+#box1{
+    float:left;
+    width:182px;
+}
+#box2{
+    float:left;
+    width:202px;
+    margin-left:10px;
+}
+#box3{
+    float:right;
+    width:252px;
+}
+#box_wrap > div p{
+    border:1px solid #666553;
+    text-align:center;
+}
+#box1 > p:first-child{
+    width:180px;
+    height:200px;
+    margin-bottom:10px;
+} /*1번*/
+
+#box1 > p:last-child{
+    width:180px;
+    height:180px;
+}/*2번*/
+
+#box2 > p:first-child{
+    width:200px;
+    height:180px;
+    margin-bottom:10px;
+} /*3번*/
+
+#box2 > p:last-child{
+    width:200px;
+    height:200px;
+}/*4번*/
+
+#box3 > .b3_1{
+    width:250px;
+    height:90px;
+    margin-bottom:10px
+}/*5번*/
+
+#box3 > .b3_2{
+    width:250px;
+    height:148px;
+    margin-bottom:10px
+}/*6번*/
+#box3 > .b3_3{
+    overflow:hidden;
+} /*7,8 div*/
+#box3 > .b3_3 > p:first-child{
+    float:left;
+    width:120px;
+    height:130px;
+}/*7번*/
+#box3 > .b3_3 > p:last-child{
+    float:right;
+    width:120px;
+    height:130px;
+}/*8번*/

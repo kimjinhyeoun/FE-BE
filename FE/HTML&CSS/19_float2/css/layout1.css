@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/*reset*/
+body, div, h1, p, img, h2{
+    margin:0;
+    padding:0;
+}
+body{
+    font:normal 15px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+}
+#wrap{
+    width:796px;
+    height:240px;
+    margin:20px auto;
+}
+#reviews{
+    padding-top:10px;
+    padding-bottom:14px;
+}
+#reviews > h1{
+    font-weight:normal;
+    font-size:26px;
+    width:100px;
+    height:30px;
+    float:left;
+    margin-right:30px;
+    margin-left:17px;
+}
+#reviews > p > img{
+    float:left;
+    width:24px;
+    height:23px;
+    margin-top:3px;
+    margin-right:5px;
+}
+#star{
+    margin-top:20px;
+    width:760px;
+    height:200px;
+    margin-left:20px;
+    border-top:6px solid #eaeaea;
+}
+#box1{
+    clear:both;
+    float:left;
+}
+#box1 h2{
+    font-weight:normal;
+    margin-top:7px;
+    font-size:18px;
+}
+#box1 h2:nth-child(1){
+    margin-top:13px;
+}
+#box2{
+    width:100px;
+    float:left;
+    margin-left:50px
+}
+#box2 div{
+    font-size:0px;
+    margin-top:7px;
+}
+#box2 div:nth-child(1){
+    margin-top:13px;
+    width:340px;
+    background-color:green;
+    border-right:#eee solid 200px
+}
+#box2 div:nth-child(2){
+    background-color:blue;
+    width:200px;
+    border-right:#eee solid 340px
+}
+#box2 div:nth-child(3){
+    background-color:skyblue; 
+    width:100px;
+    border-right:#eee solid 440px
+}
+#box2 div:nth-child(4){
+    background-color:orange;
+    width:50px;
+    border-right:#eee solid 490px
+}
+#box2 div:nth-child(5){
+    background-color:red;
+    width:140px;
+    border-right:#eee solid 400px
+}
+#box3 {
+    float:left;
+    margin-left:520px;
+    font-size:17px;
+}
+#box3 p{
+    margin-top:9px;
+    margin-right:10px;
+    text-align:right;
+}
+#box3 p:nth-child(1){
+    margin-top:10px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>box-sizing</title>
+    <style>
+        /*
+          box-sizing:content-box; width와 height에 padding,border제외(default)
+          box-sizing:border-box; width아 height에 padding,border포함
+        */
+        #wrap > p{
+            background-color:pink;
+            width:100px;
+            height:100px;
+            float:left;
+            margin:10px;
+        }
+        #wrap > .ex1{
+        }
+        #wrap > .ex2{
+            border:5px solid red;
+        }
+        #wrap > .ex3{
+            padding:30px;
+        }
+        #wrap > .ex4{
+            border:5px solid red;
+            box-sizing:content-box;
+        }
+        #wrap > .ex5{
+            padding:30px;
+            box-sizing:content-box;
+        }
+        #wrap > .ex6{
+            border:5px solid red;
+            box-sizing:border-box; /*보더박스는 크기가 선만큼 넓어지는게아니라 안으로 잡힌다 1번 박스랑 크기 동일*/
+        }
+        #wrap > .ex7{
+            padding:30px;
+            box-sizing:border-box; /*보더박스는 크기가 패딩만큼 넓어지는게아니라 안으로 잡힌다 1번 박스랑 크기 동일*/
+        }
+        #wrap > .ex8{
+            border:5px solid red;
+            padding:30px;
+            box-sizing:border-box; /*보더박스는 크기가 패딩과 보더만큼 넓어지는게아니라 안으로 잡힌다 1번 박스랑 크기 동일*/
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <p class="ex1">테스트1</p>
+        <p class="ex2">테스트2</p>
+        <p class="ex3">테스트3</p>
+        <p class="ex4">테스트4</p>
+        <p class="ex5">테스트5</p>
+        <p class="ex6">테스트6</p>
+        <p class="ex7">테스트7</p>
+        <p class="ex8">테스트8</p>
+    </div> <!--wrap-->
+</body>
+</html>

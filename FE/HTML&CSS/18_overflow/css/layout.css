@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/*reset*/
+body{
+    font:normal 12px/150% "맑은 고딕","Malgun Gothic",sans-serif;
+}
+/*wrap*/
+#wrap > div{
+    border:1px solid #333333;
+    width:200px;
+    height:150px;
+    margin-bottom:150px;
+}
+#wrap > .ex1{
+    overflow:visible; /* overflow값 default */
+}
+#wrap > .ex2{
+    overflow:hidden; /* hidden은 150만큼만 내용이 보이고 나머지는 숨겨짐  */
+}
+#wrap > .ex3{
+    overflow:scroll; /* scroll은 넘친 부분은 가로스크롤 세로스크롤 생긴다  */
+}
+#wrap > .ex4{
+    overflow:auto; /* 내용에따라 자동으로 스크롤설정  */
+}
+.ex5{
+    white-space:normal; /*디폴트*/
+}
+.ex6{
+    white-space:pre; /*입력그대로출력*/
+    text-indent:17px;
+}
+.ex7{
+    white-space:nowrap; /*한 줄 출력*/
+}
+.ex8{
+    background-color:pink;
+    width:150px;
+    white-space:pre;
+    overflow-x:scroll;
+}
+.ex9{
+    background-color:yellow;
+    width:150px;
+    white-space:nowrap;
+    overflow-x:scroll;
+}
+.ex10{
+    background-color:lightgreen;
+    width:150px;
+    height:100px;
+/*    white-space:nowrap;*/
+    overflow-y:scroll;
+}
+.ex11{ 
+    background-color:lightblue;
+    width:150px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:clip;
+}
+.ex12{    /*이건 많이 쓴다 타이틀도 같이활용*/
+    background-color:lightblue;
+    width:150px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.ex13{
+    background-color:lightblue;
+    width:100px;
+    white-space:pre;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.ex14, .ex15, .ex16, .ex17{
+    width:200px;
+    height:200px;
+    border:1px solid blue;
+    overflow:auto;
+}
+.ex14{
+    resize:both;
+}
+.ex15{
+    resize:horizontal;
+}
+.ex16{
+    resize:vertical;
+}
+.ex17{
+    resize:none;
+}

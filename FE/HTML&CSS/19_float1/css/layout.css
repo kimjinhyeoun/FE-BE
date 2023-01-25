@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/*reset*/
+div,p,img,a,select,option,input{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+}
+body,select,input{
+    font:normal 12px/150% "맑은 고딕","Malgun Gothic",sans-serif;
+    color:#333333;
+}
+/*ex1*/
+#ex1{
+    border:1px solid #333333;
+    width:500px;
+    height:200px; /*부모요소에 높이를 줘야함*/
+}
+/*ex1_1*/
+.ex1_1{
+    background-color:pink;
+    width:130px;
+    height:130px;
+    float:left;
+}
+/*ex1_2*/
+.ex1_2{ /*사이즈를 안줘서 이미지 옆으로 안감*/
+    background-color:orange;
+    width:350px;
+    float:right;
+    text-align:justify; /*텍스트 정렬*/
+    margin-top:14px;
+}
+/*ex2*/
+#ex2{
+    clear:both; /*위에서 플롯을 사용했을때 아래는 클리어 한번 해줘라*/
+    border:1px solid #333333;
+    width:500px;
+    height:200px;
+}
+/*ex2_1*/
+.ex2_1{
+    background-color:pink;
+    width:130px;
+    height:130px;
+    float:right;
+}
+/*ex2_2*/
+.ex2_2{ 
+    background-color:orange;
+    width:350px;
+    float:left;
+    text-align:justify; /*텍스트 정렬*/
+    margin-top:14px;
+}
+/*ex3*/
+#ex3{
+    clear:both;
+    border:1px solid #333333;
+    width:500px;
+    height:200px;
+}
+#ex3 > p{
+    border:2px solid red; /*공통*/
+    width:130px;
+    height:130px;
+}
+#ex3 >p:nth-child(1){
+    float:left;
+}
+#ex3 >p:nth-child(2){
+    float:left;
+    margin-left:50px;
+}
+#ex3 >p:nth-child(3){
+    float:right;
+}
+/*ex4*/
+#ex4{
+    clear:both;
+    margin:20px;
+    height:50px;
+}
+#ex4 > a{
+    color:#000000;
+    float:left; /*a태그가 원래 쫌 떨어져있는데 left로 붙여줌*/
+    padding:8px 16px;
+}
+
+#ex4 > a.active{
+    background-color:#996655;
+    color:#ffffff;
+}
+#ex4 > a:hover:not(.active){
+    background-color:#cccccc;
+}
+
+/*ex5*/
+#ex5{
+    clear:both;
+    width:210px;
+    height:50px;
+    background-color:pink;
+    margin:20px;
+}
+.ex5_1{ /*셀렉트와 인풋 크기 차이가 나기때문에 p태그에 선추가해줘야함*/
+    float:left;
+    width:100px;
+    height:40px;
+    border:1px solid #666666;
+}
+.ex5_1 select{ /*셀렉트와 인풋 크기 차이가 나기때문에 p태그에 선추가해줘야함*/
+    width:100px;
+    height:40px;
+    border:none;
+    outline:none;
+}
+.ex5_2{ /*셀렉트와 인풋 크기 차이가 나기때문에 p태그에 선추가해줘야함*/
+    float:right;
+    width:100px;
+    height:40px;
+    border:1px solid #666666;
+}
+.ex5_2 input{ /*셀렉트와 인풋 크기 차이가 나기때문에 p태그에 선추가해줘야함*/
+    width:100px;
+    height:40px;
+    border:none;
+    outline:none; /*해당 input창 클릭시 텍스트창 bold가 사라짐*/
+    text-indent:1.5em;
+}

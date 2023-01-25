@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/*reset*/
+ul,li{
+    list-style:none;
+}
+body, div, h3, p, ul, li, img{
+    margin:0;
+    padding:0;
+}
+body{
+    font:normal 15px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+    color:#333333;
+    background-color:#ffebd2;
+}
+/*wrap*/
+#wrap{
+    width:1140px; /*왼쪽 w313 가운데 w474 오른쪽 w313, 공백20씩*/
+    margin:90px auto 20px auto;
+}
+#wrap > h3{
+    font-size:30px;
+    height:35px;
+    line-height:35px;
+    text-align:center;
+    margin-bottom:20px;
+}
+#wrap > p{
+    text-align:center;
+    height:20px;
+    margin-bottom:40px;
+}
+#sns{ /*이미지w74*4/공백w15*3 이미지높이h73 */
+    width:341px;
+    height:73px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:30px;
+}
+#sns li{
+    float:left;
+    width:74px;
+    height:73px;
+    margin-right:15px;
+}
+#sns li:last-child{ /*blog*/
+    margin-right:0px;
+}
+#banner_wrap{ /*w313+여백20+w474+여백20+w313 */
+    width:1140px;
+    height:662px;
+}
+.banner1{
+    width:313px;
+    height:662px;
+    float:left;
+}
+.banner1 div:first-child{ /*각 이미지마다 사이즈 넣어줌*/
+    width:313px;
+    height:215px;
+    margin-bottom:20px;
+}
+.banner1 div:last-child{ /*각 이미지마다 사이즈 넣어줌*/
+    width:313px;
+    height:427px;
+}
+.banner2{
+    width:474px;
+    height:662px;
+    float:left;
+    margin-left:20px;
+}
+.banner2 div:first-child{ /*각 이미지마다 사이즈 넣어줌*/
+    width:474px;
+    height:430px;
+    margin-bottom:20px;
+}
+.banner2 div:last-child{ /*각 이미지마다 사이즈 넣어줌*/
+    width:474px;
+    height:212px;
+}
+.banner3{
+    width:313px;
+    height:662px;
+    float:right;
+}
+.banner3 div:nth-child(1){ /*각 이미지마다 사이즈 넣어줌*/
+    width:313px;
+    height:215px;
+    margin-bottom:20px;
+}
+.banner3 div:nth-child(2){ /*각 이미지마다 사이즈 넣어줌*/
+    width:313px;
+    height:195px;
+    margin-bottom:20px;
+}
+.banner3 div:nth-child(3){ /*각 이미지마다 사이즈 넣어줌*/
+    width:313px;
+    height:212px;
+}
+
