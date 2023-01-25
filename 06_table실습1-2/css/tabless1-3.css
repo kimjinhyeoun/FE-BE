@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+#student{
+    border-collapse:collapse;
+    text-align:center;
+}
+#list{
+    font-size:20px;
+    font-weight:bold;
+    border-bottom:double 3px #000000;
+    margin-bottom:45px;
+    width:280px;
+    height:30px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:justify;
+}
+#area{
+    width:38px;
+    height:22px;
+}
+#scene{
+    width:94px;
+    height:22px;
+}
+#goals{
+    width:291px;
+    height:22px;
+}
+#point{
+    width:47px;
+    height:22px;
+}
+#total{
+    width:54px;
+    height:22px;
+}
+#dot{
+    width:60px;
+    height:22px;
+}
+#conversion{
+    width:64px;
+    height:22px;
+}
+
+#student tr th, #student tr td{
+    border:1px solid #000000;
+    font-size:13px;
+    
+}
+#student tr td{
+    padding:3px;
+}
+#student tr .middled{
+    border-top:dotted 1px #000000;
+    border-bottom:dotted 1px #000000;
+}
+#student tr .middleb{
+    border-bottom:dotted 1px #000000;
+}
+#student tr .middlet{
+    border-top:dotted 1px #000000;
+}
+#student tr .middlet, 
+#student tr .middleb, 
+#student tr .middled
+{
+    text-align:left;
+    padding-left:10px;
+}
