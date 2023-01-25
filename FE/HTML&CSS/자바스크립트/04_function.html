@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <script>
+        //화살표 함수 (arrow function) =>
+        function add1(a,b){
+            return a + b;
+        }
+        console.log(add1(7,8)); // 15로 출력되었음.
+
+
+        const add2 = function(x,y){
+            return x + y;
+        }
+        console.log(add2(5,10)); // 15로 출력되었음.
+
+
+        const add3 = (x,y) => x + y;
+        console.log(add3(5,10));  // 15로 출력되었음.
+
+
+        const add4 = (x,y) => console.log(x);
+        add4(5,10);
+
+
+        const add5 = (x,y) => {
+            const a = 13;
+            return a + x + y;
+        }
+        console.log(add5(5,10));  // 다 합쳐서 28로 출력되었음
+
+
+        const add6 = (g) => g + 9;
+        console.log(add6(6)); // 15로 출력되었음.
+
+
+        const add7 = g => g + 9;  //위에꺼에서 괄호를 뺐음 
+        console.log(add7(6)); // 15로 출력되었음. 하나인 경우엔 괄호 생략 가능.
+
+
+        const add8 = () => {console.log("add8 함수구문 실행");}
+        add8(); //add8 함수구문 실행 출력
+
+
+        fnc1();  //fnc1의 호출에 의한 함수구문 실행 출력
+        function fnc1(){
+            console.log("fnc1의 호출에 의한 함수구문 실행");
+        }
+
+
+        // fnc2(); // 오류 발생 초기화 먼저 하고 해야한다는 오류라고 들음
+        const fnc2 = function(){
+            console.log("fnc2의 호출에 의한 함수구문 실행");
+        }
+        fnc2(); // fnc2의 호출에 의한 함수구문 실행  출력
+
+
+        const fnc3 = (x, y, z) => {
+            return x + y + z;
+        }
+        console.log(`최종합계는 : ${fnc3(1,2,3)}`);  // 최종합계는 : 6  출력되었음.
+
+
+        const fnc4 = (x, y, z) => x + y + z // 중괄호빼고 return빼었음.
+        console.log(`최종합계는 : ${fnc4(1,2,3)}`);  // 최종합계는 : 6  출력되었음.
+
+
+    </script>
+</head>
+<body>
+    <h3 id="ch_txt1">이젠</h3>
+    <h3 id="ch_txt2">이젠</h3>
+    <script>
+        const fun_1 = i => {
+            document.querySelector("#ch_txt1").innerText = i;
+        }
+        fun_1("이젠아카데미");
+
+        const fun_2 = j => {
+            document.querySelector("#ch_txt2").innerText = j
+            return `${j} 만세`;
+        }
+        console.log(fun_2("이젠"));
+    </script>
+</body>
+</html>

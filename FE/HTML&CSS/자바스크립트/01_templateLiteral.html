@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>templateLiteral</title>
+    <script>
+        //ES5
+        var str1 = "Hello!";
+        var str2 = "안녕하세요!";
+        console.log(str1 + " . "+ str2); //결과 : hellow! . 안녕하세요!
+        //ES6 `문자열 ${변수명}` <-- 키보드 ~ 아래에있는 ` 이거임
+        var str3 = "Hello!";
+        var str4 = "안녕하세요!";
+        console.log(`${str3} . ${str4}`); //결과 : hellow! . 안녕하세요!
+
+        
+        //ES5
+        console.log("결과 : 3 * 3 = "+ 3 * 3); //결과 : 3 * 3 = 9
+        //ES6 
+        console.log(`결과 : 3 * 3 = ${3 * 3}`) //결과 : 3 * 3 = 9
+
+
+        //ES5
+        var product1 = {
+            name : "자바스크립트",
+            price : "10,000원"
+        }
+        var massage1 = "상품 " + product1.name + "의 가격은 " + product1.price + "입니다."; //상품 자바스크립트의 가격은 10,000원입니다.
+        console.log(massage1)
+        //ES6
+        var product2 = {
+            name : "자바스크립트",
+            price : "10,000원"
+        }
+        var  massage2 = `상품 ${product2.name}의 가격은 ${product2.price}입니다.`; //상품 자바스크립트의 가격은 10,000원입니다.
+        console.log(massage2)
+
+        
+        //ES5
+        var value1 = 1;
+        var value2 = 2;
+        // var result1 = "구입한 총 수량은 " + (value1+value2)+ "개 입니다."; //구입한 총 수량은 3개 입니다.
+        var result1 = "구입한 총 수량은 " + value1+value2+ "개 입니다."; //구입한 총 수량은 12개 입니다.(단순히 1이랑 2를 붙여놓은거)
+        console.log(result1);
+        //ES6
+        var value3 = 1;
+        var value4 = 2;
+        var result2 = `구입한 총 수량은 ${value1+value2} 개 입니다.`; //구입한 총 수량은 3개 입니다.
+        console.log(result2);
+
+
+        //ES5
+        //삼항조건연산자 (조건문 ? 실행문1:실행문2) => 조건식이 참(true)이면 실행문1을 실행시켜라/ 거짓(false)이면 실행문2를 실행시켜라
+        var bool1 = false;
+        var result_bool1 = "논리형 값은 " + (bool1 ? "참" : "거짓") + "입니다.";//논리형 값은 거짓입니다.
+        console.log(result_bool1); 
+        //ES6
+        var bool2 = false;
+        var result_bool2 = `논리형 값은 ${bool2 ? `참` : `거짓`}입니다.`//논리형 값은 거짓입니다.
+        console.log(result_bool2);
+
+
+        //ES5
+        var cart1 ={
+            present : "장미 한 묶음",
+            price : 15000
+        };
+        var totalPrice1 = function(){
+            return cart1.price + "원";
+        };
+        var myCart1 = "장바구니에 "+ cart1.present + "이(가) 담겨있습니다. 구입가격은" + totalPrice1()+" 입니다."
+        console.log(myCart1)  //장바구니에 장미 한 묶음이(가) 담겨있습니다. 구입가격은15000원 입니다.
+        //ES6 
+        var cart2 ={
+            present2 : "장미 한 묶음",
+            price2 : 15000
+        };
+        var totalPrice2 = function(){
+            return cart2.price2 + "원";
+        };
+        var myCart2 = `장바구니에 ${cart2.present2} 이(가) 담겨있습니다. 구입가격은 ${totalPrice2()} 입니다.`
+        console.log(myCart2)  //장바구니에 장미 한 묶음이(가) 담겨있습니다. 구입가격은15000원 입니다.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

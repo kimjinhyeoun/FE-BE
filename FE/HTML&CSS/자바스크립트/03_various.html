@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>various</title>
+    <script>
+        //#5 const Object.assign : 객체내부에 새로운 값으로 할당할수 있음.
+        //Object.assign(객체변수, {기존 key1 : 신구 value1}) 기존 key1의 value1값을 신규 value1 값으로 교체 할 수있음.
+       const hero = {
+        name : "토마토 재배자",
+        device : "호미",
+        cloth : "일반 가죽옷"
+       } 
+       //호미 => 곡괭이로 변경, cloth => 린넨옷, level : 2 추가
+       Object.assign(hero, { device : "곡괭이"},{cloth : "린넨옷"},{level : 2});
+       console.log(hero); // {name: '토마토 재배자', device: '곡괭이', cloth: '린넨옷', level: 2}
+
+       //
+       const arr3 = [0];
+       const arr4 = arr3.concat(3);
+       console.log(arr4);  // (2) [0, 3]
+
+       //전개연산자
+       const arr5 = [...arr4, 2, 3];
+       console.log(arr5);  // 앞에다가 ...arr4 넣으니 (4) [0, 3, 2, 3] 출력
+
+
+       //
+       const arr6 = [-1,...arr4, 2, 3];
+       console.log(arr6);  // 중간에다가 ...arr4 넣으니 (5) [-1, 0, 3, 2, 3] 
+
+       const [a1,b1,c1,d1] = arr5; // (4) [0, 3, 2, 3]
+       console.log(a1);  //  0
+       console.log(b1);  //  3
+       console.log(c1);  //  2
+       console.log(d1);  //  3
+
+       //
+       const [first, ...arr7] = arr5;  // (4) [0, 3, 2, 3]
+       console.log(first);  // 0 이 출력
+       console.log(arr7);  // (4) [3, 2, 3] 0이 빠진 나머지 출력
+
+
+       //전개연산자를 활용하여 마지막 인덱스에 위치한 [3]으로 값을 출력하시오.(from arr5)
+       const [a2,b2,c2, ...arr8] = arr5;
+       console.log(arr8);
+
+       
+       //객체에서의 전개연산자 활용
+       const obj3 = {name : "홍길동", age : 20, region : "서울"};
+       const obj4 = {...obj3, context : "아버지를 아버지라..."};
+       console.log(obj4); // {name: '홍길동', age: 20, region: '서울', context: '아버지를 아버지라...'}
+
+
+       //
+       const obj4_1 = {...obj4, age : 21};
+       console.log(obj4_1); // {name: '홍길동', age: 21, region: '서울', context: '아버지를 아버지라...'} 21로 교체되었음
+
+
+       //
+       const obj4_2 = {age :22, ...obj4_1};
+       console.log(obj4_2); // {age: 21, name: '홍길동', region: '서울', context: '아버지를 아버지라...'} 교체가 안되고 위치가 바뀌었음
+
+
+       //
+       const {age, ...sObj} = obj4; // obj4 = {name: '홍길동', age: 20, region: '서울', context: '아버지를 아버지라...'}
+       console.log(age); // 20으로 출력되었음.
+       console.log(sObj);
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

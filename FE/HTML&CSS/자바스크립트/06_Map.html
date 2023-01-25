@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Map객체</title>
+<script>
+//new Map()
+const project1 = new Map([
+    ["AAAA", 500],
+    ["BBBB", 300],
+    ["CCCC", 200],
+]);
+console.log(project1.get("AAAA")); // get: 키값을 가져옴 출력결과는 500임.
+
+const project2 = new Map()
+project2.set("AAAA", 500);  //.set() 맵에 요소를 추가.
+project2.set("BBBB", 300);  //.set() 맵에 요소를 추가.
+project2.set("CCCC", 200);  //.set() 맵에 요소를 추가.
+console.log(project2.get("BBBB")); // get: 키값을 가져옴 출력결과는 300임.
+
+
+const project3 = new Map([
+    ["AAAA", 500],
+    ["BBBB", 300],
+    ["CCCC", 200],
+]);
+project3.set("AAAA",200);  //기존 Map값을 변경 500 > 200으로변경되었다
+console.log(project3.get("AAAA")); //출력결과 200.
+
+
+const project4 = new Map([
+    ["AAAA", 500],
+    ["BBBB", 300],
+    ["CCCC", 200],
+]);
+console.log(project4.size); // .size() Map 요소의 수를 반환 3
+
+
+const project5 = new Map([
+    ["AAAA", 500],
+    ["BBBB", 300],
+    ["CCCC", 200],
+]);
+project5.delete("AAAA"); // .delete() Map 요소를 제거
+console.log(project5.size);  // 출력값 2
+
+
+const project6 = new Map([
+    ["AAAA", 500],
+    ["BBBB", 300],
+    ["CCCC", 200],
+]);
+project6.clear(); //.clear(); Map에서 모든 요소를 제거
+console.log(project6.size); // 출력값 0
+
+const project7 = new Map([
+    ["AAAA", 500],
+    ["BBBB", 300],
+    ["CCCC", 200],
+]);
+console.log(project7.has("AAAA")); // Map에 존재하는 has() 경우 매서드는 true를 반환 //출력값 true
+console.log(project7.has("BB"));  //출력값 false
+
+
+const project8 = new Map([
+    ["AAAA", 500],
+    ["BBBB", 300],
+    ["CCCC", 200],
+]);
+console.log(typeof project8); //typeof 타입이 뭔지 알려주는 //출력값 object
+</script>
+</head>
+<body>
+
+</body>
+</html>

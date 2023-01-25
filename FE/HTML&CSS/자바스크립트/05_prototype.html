@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>prototype</title>
+<script>
+    const pony = {
+        name : "아반떼",
+        color : "white",
+        start : function(){
+            console.log(`${this.name}가(이) 시동을 겁니다.`);
+            this.drive();
+        },
+        drive : function(){
+            console.log(`${this.name}가(이) 주행을 합니다.`);
+            this.stop();
+        },
+        stop : function(){
+            console.log(`${this.name}가(이) 주행을 멈춥니다.`);
+            this.parking();
+        },
+        parking : function(){
+            console.log(`${this.name}가(이) 주차를 합니다.`);
+        }
+    }
+    pony.start();
+    //아반떼가(이) 시동을 겁니다.
+    //아반떼가(이) 주행을 합니다.
+    //아반떼가(이) 주행을 멈춥니다.
+    //아반떼가(이) 주차를 합니다.
+
+
+
+    //프로토타입 : 재사용 또는 재활용이 가능한 구성
+    const Car = (function(){
+        console.log("프로토타입의 시작");
+
+        function Car(name1, color1, type1){
+            this.name = name1;
+            this.color = color1;
+            this.type = type1;
+        }
+
+        //start
+        Car.prototype.start = function(){
+            console.log(this);
+            console.log(`${this.color} ${this.name} 이(가) 시동을 겁니다.`);
+            this.drive();
+        }
+        //drive
+        Car.prototype.drive = function(){
+            console.log(`${this.color} ${this.name} 이(가) 주행을 합니다.`);
+            this.stop();
+        }
+        //stop
+        Car.prototype.stop = function(){
+            console.log(`${this.color} ${this.name} 이(가) 주행을 멈춥니다.`);
+            this.parking();
+        }
+        //parking
+        Car.prototype.parking = function(){
+            console.log(`${this.color} ${this.name} 이(가) 주차를 합니다.`);
+        }
+        return Car;
+    })();  // () 즉시 실행함수
+    
+    const avante = new Car("아반떼", "레드", "준중형");
+    avante.start();
+    //레드 아반떼 이(가) 시동을 겁니다.
+    //레드 아반떼 이(가) 주행을 합니다.
+    //레드 아반떼 이(가) 주행을 멈춥니다.
+    //레드 아반떼 이(가) 주차를 합니다.
+
+    const tusan = new Car("뉴투싼", "메탈블루", "SUV");
+    tusan.start();
+    //메탈블루 뉴투싼 이(가) 시동을 겁니다.
+    //메탈블루 뉴투싼 이(가) 주행을 합니다.
+    //메탈블루 뉴투싼 이(가) 주행을 멈춥니다.
+    //메탈블루 뉴투싼 이(가) 주차를 합니다.
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
