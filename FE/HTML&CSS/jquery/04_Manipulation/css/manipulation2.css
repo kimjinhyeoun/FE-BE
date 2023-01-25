@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+/* ex1 */
+.txt1, .txt2{
+    border:1px solid #ff9999;
+    width:100px;
+    height:100px;
+}
+#ex1 img{
+    width:100px;
+    height:100px;
+}
+
+/* ex2 */
+#ex2 img{
+    width:100px;
+    height:100px;
+}
+
+/* ex3 */
+#ex3{
+    border:2px solid #ff9999;
+    margin:5px;
+}
+#ex3 div{
+    border:2px solid #cccc66;
+    margin:5px;
+}
+#ex3 img{
+    margin:5px;
+}
+
+/* ex4 */
+.ex4{
+    border:1px solid #ccc;
+    width: 188px;
+    height:300px;
+}

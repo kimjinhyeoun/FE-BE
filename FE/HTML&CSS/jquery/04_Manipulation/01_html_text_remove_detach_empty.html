@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_text_remove_detach_empty</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/manipulation1.js"></script>
+    <style>
+        .text_wrap{
+            border:1px solid #ccc;
+            width: 300px;
+            height: 100px;
+            background-color: #ffcc99;
+        }
+    </style>
+</head>
+<body>
+    <div id="ex1">
+        <p>
+            <input type="button" value="html1" class="btn1">
+            <input type="button" value="html2" class="btn2">
+            <input type="button" value="html3" class="btn3">
+        </p>
+        <div class="box1">
+            <img src="images/bg1.jpg" alt="#">
+            <img src="images/bg2.jpg" alt="#">
+            <img src="images/bg3.jpg" alt="#">
+        </div><!--box1-->
+        <div class="box2">
+            <img src="images/bg4.jpg" alt="#">
+            <img src="images/bg5.jpg" alt="#">
+            <img src="images/bg6.jpg" alt="#">
+        </div><!--box2-->
+    </div> <!--ex1-->
+    <hr>
+    <div id="ex2">
+        <p>
+            <button type="button" class="btn4">remove</button>
+            <button type="button" class="btn5">detach</button>
+            <button type="button" class="btn6">empty</button>
+        </p>
+        <div class="text_wrap">
+            div
+            <p>p1</p>
+            <p>p2</p>
+        </div><!--text_wrap-->
+    </div> <!--ex2-->
+    <hr>
+    <div id="ex3"><p class="ex3_t">내용이에요</p></div>
+</body>
+</html>

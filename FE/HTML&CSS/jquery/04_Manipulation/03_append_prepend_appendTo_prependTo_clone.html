@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append_prepend_appendTo_prependTo_clone</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/manipulation3.js"></script>
+    <style>
+        .result1, .result2{
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="ex1">
+        <p>
+            <button type="button" class="btn1">append</button>
+            <button type="button" class="btn2">prepend</button>
+            <button type="button" class="btn3">appendTo</button>
+            <button type="button" class="btn4">prependTo</button>
+        </p>
+        <p class="result1">확인</p>
+        <p class="result2">
+            <img src="images/bg1.jpg" alt="#">
+            <img src="images/bg2.jpg" alt="#" class="photo">
+            <img src="images/bg3.jpg" alt="#">
+            <img src="images/bg4.jpg" alt="#">
+        </p><!--.result2-->
+    </div><!--#ex1-->
+    <hr>
+    <div id="ex2">
+        <p>
+            <button type="button" class="btn5">append</button>
+            <button type="button" class="btn6">prepend</button>
+        </p>
+        <ol>
+            <li>List item1</li>
+            <li>List item2</li>
+            <li>List item3</li>
+        </ol>
+    </div><!--ex2-->
+    <hr>
+    <div id="ex3">
+        <p>
+            <button type="button" class="btn7">실행1</button>
+            <button type="button" class="btn8">실행2</button>
+        </p>
+        <p class="box3">
+            <img src="images/t_img3.jpg" alt="#" width="200" height="200"><img src="images/t_img4.jpg" alt="#" width="200" height="200">
+        </p><!--.box3-->
+    </div><!--ex3-->
+</body>
+</html>

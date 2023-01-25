@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+
+/* reset */
+div, p, img{
+    margin:0;
+    padding:0;
+}
+
+/* ex1 */
+#ex1{
+    margin:20px 0;
+    border:1px solid red;
+    width:700px;
+    height:198px;
+    position: relative;
+}
+.photo1{
+    border:1px solid blue;
+    width:584px;
+    height:198px;
+    position: absolute;
+    left:55px;
+    top:0px;
+    overflow: hidden;
+}
+.photo1 img{
+    float:left; 
+    margin-left:10px;
+}
+.photo1 img:first-child{
+    margin-left:0px;
+}
+.btn1_1{
+    position: absolute;
+    left:0;
+    top:65px;
+    cursor: pointer;
+}
+.btn1_2{
+    position: absolute;
+    right:0;
+    top:65px;
+    cursor: pointer;
+}
+
+/* 이렇게 설정해놓고 js로 갔음 */
+/* 포토1에 오버플로우 히든넣어줌 또 커서 포인터*/
+
+/* ex2 */
+#ex2{
+    margin:20px 0;
+    border:1px solid red;
+    width:584px;
+    height:198px;
+    position: relative;
+}
+.photo2{
+    border:1px solid blue;
+    width:584px;
+    height:198px;
+    position: absolute;
+    left:0;
+    top:0px;
+    overflow: hidden;
+}
+.photo2 img{
+    float:left; 
+    margin-left:10px;
+}
+.photo2 img:first-child{
+    margin-left:0px;
+}
+.btn2_1{
+    position: absolute;
+    left:30px;
+    top:65px;
+    cursor: pointer;
+    z-index:2;
+}
+.btn2_2{
+    position: absolute;
+    right:30px;
+    top:65px;
+    cursor: pointer;
+    z-index:2;
+}
