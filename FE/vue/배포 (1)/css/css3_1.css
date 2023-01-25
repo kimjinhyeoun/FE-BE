@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+body{
+    font:normal 100%/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+}
+#media_t{
+    font-size:12px;
+    margin:50px auto;
+    color:#333;
+
+}
+#media_t caption{
+    text-decoration:underline;
+    margin-bottom: 50px;
+}
+#media_t th,#media_t td{
+    border:1px solid #000;
+    background-color:#fff;
+    padding:5px 20px;
+}
+#media_t th{
+    text-align: left;
+    font-family:normal;
+}

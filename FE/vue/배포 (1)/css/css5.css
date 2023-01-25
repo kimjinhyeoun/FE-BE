@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+
+/*
+height : auto ( default )
+min-height : 최소높이, 내용이 최소높이보다 작으면 최소높이가 적용됨, 내용이 최소높이보다 크면 적용되지 않음.
+max-height : 최대높이, 내용이 최대높이보다 크면 overflow, 내용이 최대높이보다 작으면 적용되지 않음.
+*/
+
+*{
+    box-sizing: border-box;
+}
+#wrap > p{
+    border:1px solid #999;
+    width:50%;
+    margin:10px auto;
+}
+.ex1{
+    background-color:yellow;
+    height:100px;
+}
+.ex2{
+    background-color:gray;
+    height:100%;
+}
+.ex3{
+    background-color:blue;
+    min-height:100px;
+}
+.ex4{
+    background-color:palegreen;
+    min-height:100px;
+}
+.ex5{
+    background-color:palevioletred;
+    max-height:100px;
+    overflow-y:scroll;
+}
+.ex6{
+    background-color:purple;
+    max-height:100px;
+}
+.ex7{
+    background-color:brown;
+    height:130px;
+    min-height:100px;
+}
+.ex8{
+    background-color:seagreen;
+    height:130px;
+    min-height:100px;
+}
+.ex9{
+    background-color:steelblue;
+    height:130px;
+    max-height:100px;
+}
+.ex10{
+    background-color:darkorange;
+    height:130px;
+    max-height:100px;
+}

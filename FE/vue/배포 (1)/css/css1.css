@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+
+body{
+    font:normal 100%/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+}
+
+/* 16px = 100% = 1em */
+
+.ex1{
+    font-size:15px;
+}
+.ex1{   /* px - em      15px/16px  */
+    font-size: 0.9375em;
+}
+
+.ex2{
+    font-size:15px;
+}
+.ex2{  /*px - %    15px/16px*100 */
+    font-size:93.75%;
+}
+
+.ex3{
+    font-size:0.9375em;
+}
+.ex3{     /*   em - px    0.9375em*16px     */
+    font-size:15px;
+}
+
+
+/*
+vw : 뷰포트(브라우저 창 크기)의 너비
+1vw : 브라우저 너비의 1%
+5vw : 5%
+*/
+.ex4{
+    border:1px solid red;
+    width:100%;
+    height:200px;
+    line-height:200px;
+    font-size:5vw;
+}
+
+
+/*
+vh : 뷰포트(브라우저 창 크기)의 높이
+1vh : 브라우저 높이의 1%
+5vh : 5%
+*/
+.ex5{
+    border:1px solid red;
+    width:100%;
+    height:200px;
+    line-height:200px;
+    font-size:5vh;
+}

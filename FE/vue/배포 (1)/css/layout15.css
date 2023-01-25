@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+
+/* 공통 */
+*{
+    box-sizing: border-box;
+}
+body{
+    font:normal 12px/1.5em "Arial",sans-serif;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.row::before, .row::after{
+    content: "";
+    display:table;
+}
+.row::after{
+    clear:both;
+}
+
+
+/* 1200 이상일때 */
+@media screen and (min-width : 1200px){
+    body{
+        max-width:1920px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #top{
+        padding:20px 35px 20px 35px;
+    }
+    /* 로고 */
+    .logo{
+        width:396px;
+        height:83px;
+        float:left;
+    }
+    /* 전체메뉴 햄벅 아이콘*/
+    .all_menu{
+        display:none;
+    }
+    #navi{
+        float:right;
+    }
+    #navi li{
+        float:left;
+    }
+    #navi li a{
+        color:#2f322a;
+        border-left:1px solid #ccc;
+        margin-left:15px;
+        padding-left:15px;
+        margin-top:34px;
+        display:block;
+        font-size:16px;
+    }
+    #navi li:first-child a{
+        margin-left:none;
+        padding-left:none;
+        border-left:none;
+    }
+    .main_img{
+        background: url(../images/visual_d.jpg) no-repeat;
+        padding-top:230px;
+        padding-bottom:100px;
+        background-size:cover;
+        text-align: center;
+        color:#fff;
+    }
+    .main_img h2{
+        font-size:4vw;
+        margin-bottom:85px;
+    }
+    .main_img h3{
+        font-size:2vw;
+        margin-bottom:280px;
+    }
+}
+/* 768-1199 */
+@media screen and (min-width : 768px) and (max-width : 1199x){
+    body{
+        max-width:1199px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #top{
+        padding:20px 30px 20px 30px;
+    }
+    /* 로고 */
+    .logo{
+        width:345px;
+        height:72px;
+        float:left;
+    }
+    .logo img{
+        width:345px;
+        height:72px;
+    }
+    /* 전체메뉴 햄벅 아이콘*/
+    .all_menu{
+        width:40px;
+        height:55px;
+        float:right;
+        margin-top:16px;
+        cursor: pointer;
+    }
+    .all_menu img{
+        width:40px;
+        height:55px;
+    }
+    #navi{
+        display:none;
+    }
+    .main_img{
+        background: url(../images/visual_d.jpg) no-repeat;
+        padding-top:200px;
+        padding-bottom:90px;
+        background-size:cover;
+        text-align: center;
+        color:#fff;
+    }
+    .main_img h2{
+        font-size:4vw;
+        margin-bottom:50px;
+    }
+    .main_img h3{
+        font-size:2vw;
+        margin-bottom:280px;
+    }
+}
+
+
+
+
+
+/* 767 이하일때 */
+@media screen and (max-width : 767px){
+    body{
+        max-width:767px;
+        min-width:320px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #top{
+        padding:20px 20px 20px 20px;
+    }
+    /* 로고 */
+    .logo{
+        width:250px;
+        height:53px;
+        float:left;
+    }
+    .logo img{
+        width:250px;
+        height:53px;
+    }
+    /* 전체메뉴 햄벅 아이콘*/
+    .all_menu{
+        display:none;
+    }
+    .all_menu img{
+        width:30px;
+        height:25px;
+    }
+    #navi{
+        display:none;
+    }
+    .main_img{
+        background: url(../images/visual_d.jpg) no-repeat;
+        padding-top:150px;
+        padding-bottom:50px;
+        background-size:cover;
+        text-align: center;
+        color:#fff;
+    }
+    .main_img h2{
+        font-size:4vw;
+        margin-bottom:50px;
+    }
+    .main_img h3{
+        font-size:2vw;
+        margin-bottom:280px;
+    }
+}

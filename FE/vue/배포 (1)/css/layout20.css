@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/*reset*/
+
+body,div,ul,li,a,img,br,p{margin:0; padding:0; font:normal 12px/1.5em "맑은 고딕","Malgun Gothic", sans-serif; color:#333333;}
+
+ul,li{list-style:none;}
+
+a{text-decoration:none;}
+
+/* food_all */
+#food_all{
+    width:1250px;
+    height:270px;
+    border:1px solid red;
+    margin:10px auto;
+    position: relative;
+}
+.prev, .next{
+    position: absolute;
+    cursor: pointer;
+    z-index:5;
+}
+.prev{
+    left:50px;
+    top:100px;
+}
+.next{
+    right:50px;
+    top:100px;
+}
+#food_s{
+    width:1250px;
+    height:270px;
+    overflow: hidden;
+}
+.food{
+    width:1250px;
+    height:270px;
+}
+.food li{
+    width:250px;
+    height:270px;
+    float:left;
+    text-align: center;
+}
+
+@media all and (min-width : 768px) and ( max-width: 959px) {
+    #food_all{width:500px;}
+    #food_s{width:500px;}
+    .prev{left:-80px;}
+    .next{right:-80px;}
+}
+
+@media all and ( max-width: 767px) {
+    #food_all{width:250px;}
+    #food_s{width:250px;}
+    .prev{left:-50px;}
+    .next{right:-50px;}
+}

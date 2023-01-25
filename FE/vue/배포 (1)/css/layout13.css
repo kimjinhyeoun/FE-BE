@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+}
+
+/* 공통 */
+#wrap{
+    width:90%;
+    border:solid 4px #000;
+    margin:10px auto;
+    overflow:hidden;
+}
+#wrap div{
+    height:100px;
+    float:left;
+}
+#wrap div:nth-child(1){
+    background-color: aquamarine;
+}
+#wrap div:nth-child(2){
+    background-color: rgb(56, 218, 164);
+}
+#wrap div:nth-child(3){
+    background-color: rgb(31, 163, 119);
+}
+#wrap div:nth-child(4){
+    background-color: rgb(5, 107, 73);
+}
+#wrap div:nth-child(5){
+    background-color: rgb(2, 37, 25);
+}
+
+/* 1024px 이상 */
+@media all and ( min-width : 1024px){
+    #wrap div{
+        width:20%;
+    }
+}
+
+/* 768 ~ 1023 */
+@media all and ( min-width : 768px) and ( max-width : 1023px){
+    #wrap div{
+        width:50%;
+    }
+    #wrap div:nth-child(5){
+        width:100%;
+    }
+}
+
+/* 767 이하 */
+@media all and ( max-width : 767px){
+    #wrap div{
+        width:100%;
+    }
+}

@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+
+/* 공통 */
+*{
+    box-sizing: border-box;
+}
+body{
+    font:normal 12px/1.5em "Arial",sans-serif;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.row::before, .row::after{
+    content: "";
+    display:table;
+}
+.row::after{
+    clear:both;
+}
+
+/* 1200이상 */
+@media screen and ( min-width: 1200px){
+    .row{
+        max-width:1200px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .onair_top{
+        width:100%;
+        height:58px;
+        margin-top:50px;
+    }
+    .onair_top h2{
+        font-size:55px;
+        text-align: center;
+        color:darkblue;
+    }
+    .on_wrap{
+        width:1140px;
+        height:1220px;
+        margin:30px auto 40px auto;
+    }
+    .on_drama{
+        width:1140px;
+        height:1220px;
+    }
+    .on_drama > li{
+        width:380px;
+        height:590px;
+        float:left;
+        text-align: center;
+        cursor:pointer;
+        margin-bottom:35px;
+    }
+    .on_drama > li:nth-child(4){
+        clear:both;
+    }
+    .on_drama > li > img{
+        width:340px;
+        height:482px;
+        border-radius:10px;
+    }
+    .on_drama > li:hover img{
+        opacity:0.8;
+    }
+    .on_drama > li > h3{
+        font-size:22px;
+        margin-top:20px;
+        display:inline-block;
+        position:relative;
+    }
+    .on_drama > li > h3::before{
+        content: "";
+        position:absolute;
+        right:50%;
+        bottom:-7px;
+        width:0;
+        height:2px;
+        background-color:#3234b0;
+    }
+    .on_drama > li:hover > h3::before{
+        width:50%;
+        transition:all 0.5s;
+        border-radius: 5px;;
+    }
+    .on_drama > li > h3::after{
+        content: "";
+        position:absolute;
+        left:50%;
+        bottom:-7px;
+        width:0;
+        height:2px;
+        background-color:#3234b0;
+        margin-left:-1px;
+    }
+
+    .on_drama > li:hover > h3::after{
+        width:50%;
+        transition:all 0.5s;
+        border-radius: 5px;;
+    }
+    .on_drama > li > p{
+        font-size:20px;
+        margin-top:18px;
+        color:#666;
+    }
+    .on_btn{
+        width:200px;
+        margin:20px auto;
+    }
+    .on_btn button{
+        width:200px;
+        height:60px;
+        border:none;
+        background-color:#3234b0;
+        color:#fff;
+        cursor:pointer;
+        font-weight:bold;
+        font-size:16px;
+        border-radius:10px;
+        transition:opacity 0.5s;
+    }
+    .on_btn button:hover{
+        opacity:0.7;
+    }
+}
+
+
+
+
+
+/* 768-1199 */
+@media screen and ( min-width : 768px) and ( max-width: 1199px){
+    .row{
+        max-width:1199px;
+        height:auto;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .onair_top{
+        width:100%;
+        height:58px;
+        margin-top:50px;
+    }
+    .onair_top h2{
+        font-size:50px;
+        text-align: center;
+        color:darkblue;
+    }
+    .on_wrap{
+        width:720px;
+        height:1690px;
+        margin:30px auto 40px auto;
+    }
+    .on_drama{
+        width:720px;
+        height:1690px;
+    }
+    .on_drama > li{
+        width:360px;
+        height:550px;
+        float:left;
+        text-align: center;
+        cursor:pointer;
+        margin-bottom:20px;
+    }
+    .on_drama > li:nth-child(3), .on_drama > li:nth-child(5){
+        clear:both;
+    }
+    .on_drama > li > img{
+        width:320px;
+        height:453px;
+        border-radius:10px;
+    }
+    .on_drama > li > h3{
+        font-size:23px;
+        margin-top:20px;
+        display:inline-block;
+    }
+    .on_drama > li > p{
+        font-size:17px;
+        margin-top:18px;
+        color:#666;
+    }
+    .on_btn{
+        width:200px;
+        margin:20px auto;
+    }
+    .on_btn button{
+        width:200px;
+        height:60px;
+        border:none;
+        background-color:#3234b0;
+        color:#fff;
+        cursor:pointer;
+        font-weight:bold;
+        font-size:16px;
+        border-radius:10px;
+    }
+
+}
+
+
+/* 767이하 */
+@media screen and ( max-width: 767px){
+    .row{
+        max-width:767px;
+        min-width:320px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .onair_top{
+        width:100%;
+        height:58px;
+        margin-top:50px;
+    }
+    .onair_top h2{
+        font-size:35px;
+        text-align: center;
+        color:darkblue;
+    }
+    .on_wrap{
+        width:320px;
+        overflow: hidden;
+        margin:30px auto 40px auto;
+    }
+    .on_drama{
+        width:320px;
+    }
+    .on_drama > li{
+        width:320px;
+        text-align: center;
+        margin-bottom:20px;
+    }
+    .on_drama > li > img{
+        width:320px;
+        height:453px;
+        border-radius:10px;
+    }
+    .on_drama > li > h3{
+        font-size:20px;
+        margin-top:20px;
+        display:inline-block;
+    }
+    .on_drama > li > p{
+        font-size:15px;
+        margin-top:18px;
+        color:#666;
+    }
+    .on_btn{
+        width:150px;
+        margin:20px auto;
+    }
+    .on_btn button{
+        width:150px;
+        height:50px;
+        border:none;
+        background-color:#3234b0;
+        color:#fff;
+        cursor:pointer;
+        font-weight:bold;
+        font-size:14px;
+        border-radius:10px;
+    }
+}

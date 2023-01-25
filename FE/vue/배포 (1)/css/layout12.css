@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+
+/* ex1 */
+#ex1{
+    max-width:960px;
+    margin:30px auto;
+    padding:30px;
+}
+#tb1{
+    width:100%;
+}
+#tb1 caption{
+    display:none;
+}
+#tb1 th, #tb1 td{
+    border:1px solid #ccc;
+    padding:10px;
+}
+#tb1 th{
+    background-color: #eaeaea;
+    width:30%;
+    text-align: left;
+}
+
+@media only screen and (max-width : 768px){ /* 너비 768px 이하일때*/
+    #tb1{
+        margin:0 -10px;
+    }
+    #tb1 th, #tb1 td{
+        width:100%;
+        display:block;
+        border-top: none;
+    }
+    #tb1 tr:first-child th{
+        border-top:1px solid #ccc;
+    }
+    
+}
+
+/* ex2 */
+#ex2{
+    max-width:960px;
+    margin:30px auto;
+    padding:30px;
+}
+#tb2{
+    width:100%;
+}
+#tb2 caption{
+    display:none;
+}
+#tb2 th, #tb2 td{
+    border:1px solid #ccc;
+    padding:10px;
+    width:20%;
+}
+#tb2 th{
+    background-color: #eaeaea;
+    text-align: left;
+}
+
+@media only screen and (max-width : 768px){ /* 너비 768px 이하일때*/
+    #tb2{
+        margin:0 -10px;
+    }
+    #tb2 tr{
+        display: block;
+        margin-bottom:10px;
+    }
+    #tb2 th{
+        display: block;
+        width:100%;
+    }
+    #tb2 td{
+        width:90%;
+        border:none;
+        display:list-item;
+        list-style-type:square;
+        margin-left:10%;
+    }
+    
+}

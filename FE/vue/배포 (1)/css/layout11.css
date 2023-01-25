@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* 공통 */
+.txt, .txt2, .txt3{
+    padding:20px;
+    color:#fff;
+}
+
+/* 1 */
+/* 600이하, 601~767, 768~991, 992~1199, 1200이상 */
+@media only screen and ( max-width : 600px ) {
+    .txt{
+        background-color:red;
+    }
+}
+@media only screen and ( min-width : 601px ) {
+    .txt{
+        background-color:hotpink;
+    }
+}
+@media only screen and ( min-width : 768px ) {
+    .txt{
+        background-color:darkviolet;
+    }
+}
+@media only screen and ( min-width : 992px ) {
+    .txt{
+        background-color:darkcyan;
+    }
+}
+@media only screen and ( min-width : 1200px ) {
+    .txt{
+        background-color:royalblue;
+    }
+}
+
+/* 2 */
+/* 600이하, 601~767, 768~991, 992~1199, 1200이상 */
+@media only screen and ( min-width : 1200px ) {
+    .txt2{
+        background-color:royalblue;
+    }
+}
+@media only screen and ( max-width : 1199px ) {
+    .txt2{
+        background-color:darkcyan;
+    }
+}
+@media only screen and ( max-width : 991px ) {
+    .txt2{
+        background-color:darkviolet;
+    }
+}
+@media only screen and ( max-width : 767px ) {
+    .txt2{
+        background-color:hotpink;
+    }
+}
+@media only screen and ( max-width : 600px ) {
+    .txt2{
+        background-color:red;
+    }
+}
+/* 3 */
+/* 600이하, 601~767, 768~991, 992~1199, 1200이상 */
+@media only screen and ( min-width : 1200px ) {
+    .txt3{
+        background-color:royalblue;
+    }
+}
+@media only screen and (min-width:992px) and ( max-width : 1199px ) {
+    .txt3{
+        background-color:darkcyan;
+    }
+}
+@media only screen and (min-width:768px) and ( max-width : 991px ) {
+    .txt3{
+        background-color:darkviolet;
+    }
+}
+@media only screen and (min-width:601px) and ( max-width : 767px ) {
+    .txt3{
+        background-color:hotpink;
+    }
+}
+@media only screen and ( max-width : 600px ) {
+    .txt3{
+        background-color:red;
+    }
+}

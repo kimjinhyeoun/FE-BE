@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+
+/* 공통 */
+.ex{
+    font-size:20px;
+    width:150px;
+    text-align: center;
+    margin:30px auto;
+    font-family:"돋움",Dotum,sans-serif;
+    line-height:1.5em;
+}

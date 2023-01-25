@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+
+#wrap p{
+    margin:20px 0;
+    border:1px solid green;
+}
+#wrap .ex1 img{ /*너비100%, 높이 가변*/
+    width:100%;
+    height:auto;
+}
+#wrap .ex2 img{ /*960까진 아무렇지않다가 줄이면 100%로 바뀜*/
+    width:960px;
+    max-width:100%;
+    height:auto;
+}
+#wrap .ex3 img{ /*100% -> 960px*/
+    width:960px;
+    min-width: 100%;
+    height:auto;
+}
+
+#wrap .ex4{
+    width:100%;
+    height:0px;
+    position: relative;
+    padding-bottom:50.3%;
+}
+#wrap .ex4 img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#wrap .ex5{
+    background:url(../images/main_img_bg.jpg) no-repeat;
+    width:100%;
+    padding-bottom:30%;
+    background-size:contain;
+}
+#wrap .ex6{
+    background:url(../images/topImage2.jpg) no-repeat;
+    width:100%;
+    padding-bottom:30%;
+    background-size: 100% 100%;
+}
+#wrap .ex7{
+    background:url(../images/main_img_bg.jpg) no-repeat;
+    width:100%;
+    padding-bottom:30%;
+    background-size:cover;
+}
+#wrap2{
+    margin:30px;
+    width:960px;
+    max-width:100%;
+    height:auto;
+    border:1px solid green;
+    position:relative;
+}
+#wrap2 img{
+    width:960px;
+    max-width:100%;
+    height:auto;
+    vertical-align:top;
+}
+#wrap2 > span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:blue;
+    font-size:5vw;
+}

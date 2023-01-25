@@ -1,0 +1,6 @@
+@charset "utf-8";
+.ex{
+    background:url(../images/icn_contact.jpg) no-repeat left center;
+    color:red;
+    font-size:30px;
+}

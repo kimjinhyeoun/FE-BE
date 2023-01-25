@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.ex{
+    background:url(../images/icn_news.jpg) no-repeat left center;
+    color:blue;
+    font-size:22px;
+}

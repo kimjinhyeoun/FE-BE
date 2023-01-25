@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* https://screensiz.es 디바이스별 해상도 */
+
+/* 공통 */
+.ex{
+    font-size:20px;
+    width:150px;
+    text-align: center;
+    margin:30px auto;
+    font-family:"돋움",Dotum,sans-serif;
+    line-height:1.5em;
+}
+
+/* 1024이상일때 */
+@media all and ( min-width : 1024px ){
+    .ex{
+        background:url(../images/icn_contact.jpg) no-repeat left center;
+        color:red;
+    }
+}
+
+
+/* 761~1023일때 */
+@media all and ( min-width : 761px ) and ( max-width : 1023px ){
+    .ex{
+        background:url(../images/icn_news.jpg) no-repeat left center;
+        color:blue;
+    }
+}
+
+
+/* 760이하일때 */
+@media all and ( max-width : 760px ){
+    .ex{
+        background:url(../images/icn_sitemap.jpg) no-repeat left center;
+        color:green;
+    }
+}

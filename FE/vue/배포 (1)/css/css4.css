@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/*
+    width : auto ( default )
+    max-width : 최대너비, 내용이 최대 너비보다 크면 요소의 높이가 자동으로 변경됨, 내용이 최대너비보다 작으면 적용되지않음
+    min-width : 최소너비, 내용이 최소 너비보다 작을 경우 최소 너비가 적용, 내용이 최소너비보다 크면 적용되지않음
+*/
+
+*{
+    box-sizing:border-box;
+}
+#wrap{
+    width:80%;
+    background-color:teal;
+    margin:30px auto;
+}
+#wrap > p{
+    background-color:#fff;
+    margin-bottom:5px;
+    border:2px solid #ff66cc;
+    text-align:right;
+}
+.ex1{
+    width:auto;
+}
+#wrap > .ex2{
+    background-color:yellow;
+    width:800px;
+}
+.ex3{
+    width:90%;
+}
+.ex4{
+    max-width:800px;
+}
+.ex5{
+    min-width:800px;
+}
+.ex6{
+    width:80%;
+    min-width:800px;
+}
+.ex7{
+    width:80%;
+    max-width:800px;
+}

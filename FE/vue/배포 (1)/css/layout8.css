@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+
+/*
+@media : 서로 다른 스타일의 규칙을 정의
+
+@media (not or only) mediatype and (\표현식){
+    CSS-Code;
+    }
+
+- mediatype : all, screen, print,
+- orientation : portrait 세로방향
+- orientation : landscape 가로방향
+
+*/
+
+
+/* 공통 */
+a{
+    color:#333;
+    font:bold 13px/1em "맑은 고딕","Malgun Gothic",sans-serif;
+}
+
+/* 수직방향 */
+@media screen and ( orientation:portrait){
+    .quick li{
+        line-height:20px;
+    }
+    .quick li a{
+        background:url(../images/bul_check_ap.png) no-repeat left center;
+        padding-left:20px;
+    }
+}
+
+/* 수평방향 */
+@media screen and ( orientation:landscape){
+    .quick li{
+        display:inline-block;
+        margin:0 10px;
+    }
+    .quick li a{
+        background:url(../images/icn_sitemap.jpg) no-repeat left center;
+        padding-left:20px;
+}
+
+}
