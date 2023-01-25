@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+#main1{
+    margin-top:14px
+}
+
+.threeh{
+    background-color:black;
+    color:white;
+    padding:10px 20px;
+    margin-left:20px;
+    margin-right:40px;
+}
+
+.liolive{
+    color:olive;
+    line-height:200%;
+}

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/*전체선택자*/
+*{
+    font-size:15px; 
+    font-family:"돋움",Dotum,sans-serif;
+    /*line-height:2em;*/
+    /*line-height:200%;*/
+    /*line-height:2;*/
+    /*line-height:30px;*/
+    line-height:200%;
+}
+
+/*태그(요소)선택자*/
+dt{
+    background-color:#33aa99;
+    color:#fff;
+    font-size:17px;
+    font-family:Arial,sans-serif;
+    font-weight:bold;
+    width:200px;
+    height:33px;
+    text-align:center;
+}
+
+/*아이디 선택자*/
+#tit2{ /*사이즈 w500+15+15, h390+15+15 */
+    background-color:#55bb88;
+    width:500px;
+    height:390px;
+    text-align:justify;
+    margin-left:0px; /*body영역 여백이 있을수도 있음*/
+    margin-top:8px; /*바깥쪽 여백*/
+    padding:15px; /*안쪽 여백*/
+}
+
+/*클래스 선택자*/
+.tit{
+    color:red;
+    margin-left:auto; /*margin:0(상하) auto;(좌우) 와 같은 표현*/
+    margin-right:auto; /*margin:0(상하) auto;(좌우) 와 같은 표현*/
+}
+
+
+
+

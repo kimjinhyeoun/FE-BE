@@ -1,0 +1,8 @@
+완성2
+외부css
+id/class명은 관련단어
+병합셀
+접근성(th : scope, id / td : headers)
+행/열그룹화 제외
+적절한 주석
+body{font-size:13px; line-height:}

@@ -1,0 +1,7 @@
+@carset "utf-8";
+
+p{
+    font-weight:bold; 
+    text-decoration:line-through; 
+    color:white;
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+h2{
+    text-decoration:underline; word-spacing:50px;
+}
+h3{
+    text-decoration:underline overline line-through; color:red; /*같은 속성에 값을 몇개 이상 넣을수도있음*/
+}
+p{
+    font-weight:900; background-color:blue; color:white; letter-spacing:5px 
+}
+h4{
+    letter-spacing:-5px; /*글자 사이 간격을 -를 사용하여 줄인다*/
+}

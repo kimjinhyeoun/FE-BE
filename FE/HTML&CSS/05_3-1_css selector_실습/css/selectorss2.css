@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.hthree{
+    background-color:#fe0034;
+    color:white;
+    margin-left:-5px;
+    border:solid 1px #000000;
+    padding: 7px 5px 8px;
+}
+
+#firstol li{
+        line-height:200%;
+}
+
+#firstol strong{
+    color:#ff0000;
+    border-bottom: dotted 2px #ff0000;
+}

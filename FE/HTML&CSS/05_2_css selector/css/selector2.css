@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/*초기화*/
+ul, li{
+    list-style:none;
+}
+
+/*ex1*/
+#ex1{
+    background-color:lightpink;
+    padding-left:0;
+    margin-left:40px;
+}
+
+/*ex2*/
+/*div#ex2 p{}  ok*/
+#ex2 p{
+    background-color:#faaddd; 
+    width:100px; 
+    height:30px; 
+    line-height:30px;
+    text-align:center;
+}
+#ex2 .ex2_1{
+        border-right:solid #afdccd 5px;
+}
+#ex2 .ex2_2{
+        border-bottom:dotted #addfff 10px;
+}
+#ex2 .ex2_3{
+        border-top:dashed #ff0000 10px;
+}
+#ex2 .ex2_4{
+        border-left:double #bbbaaf 10px;
+}
+#ex2 .ex2_5{
+        border:groove #cccfaa 10px;
+}
+#ex2 .ex2_6{
+        border:ridge #bbdddd 10px;
+}
+#ex2 .ex2_7{
+        border:inset #dddbbb 10px;
+}
+#ex2 .ex2_8{
+        border:outset #bfcdab 10px;
+}
+#ex2 .ex2_9{
+        border:solid #afdccd 10px;
+        border-right:none;
+        border-left:none;
+}
+#ex2 .ex2_10{
+        border-left:dashed #affcaa 10px;
+        border-right:dashed #affcaa 10px;
+}
+
+/*ex3*/
+#ex3 .ex3_1{
+        text-transform:capitalize; /*첫글자를 대문자*/
+}
+#ex3 .ex3_2{
+        text-transform:uppercase; /*소문자를 대문자로*/
+}
+#ex3 .ex3_3{
+        text-transform:lowercase; /*대문자를 소문자로*/
+}
+
+/*ex4*/
+#ex4 .ex4_1{
+        font-variant:normal;
+}
+#ex4 .ex4_2{
+        font-variant:small-caps;
+}
+
+/*ex5*/
+#ex5 *{ /*#ex5 안에있는 "*" 모든 영역 설정*/
+    margin:0; 
+    padding:0;
+}
+#ex5 p{
+    border:1px solid #ccddff;
+    width:400px;
+    height:150px;
+    font-size:100px;
+}
+#ex5 p span{
+    font-size:12px;
+    border-top:1px solid red;
+    border-bottom:1px solid red;
+}
+#ex5 .ex5_1{
+        vertical-align:super;/*원래 있던 위치에서 좀 더 위*/
+}
+#ex5 .ex5_2{
+        vertical-align:sub;/*원래 있던 위치에서 좀 더 아래*/
+}
+#ex5 .ex5_3{
+        vertical-align:baseline;/*디폴트*/
+}
+#ex5 .ex5_4{
+        vertical-align:top;/*맨위로*/
+}
+#ex5 .ex5_5{
+        vertical-align:middle;/*미들이지만 정가운데는 아니다*/
+}
+#ex5 .ex5_6{
+        vertical-align:bottom;/*맨밑 아니다 애매한 아래*/
+}
+
+/*ex6*/
+#ex6 *{ /*#ex5 안에있는 "*" 모든 영역 설정*/
+    margin:0; 
+    padding:0;
+}
+#ex6 p{
+    border:1px solid #ccddff;
+    width:400px;
+    height:150px;
+    font-size:100px;
+}
+#ex6 .ex6_1{
+    vertical-align:super;
+}
+#ex6 .ex6_2{
+    vertical-align:sub;
+}
+#ex6 .ex6_3{
+    vertical-align:baseline;
+}
+#ex6 .ex6_4{
+    vertical-align:top;
+}
+#ex6 .ex6_5{
+    vertical-align:middle;
+}
+#ex6 .ex6_6{
+    vertical-align:bottom;
+}
+
+/*ex7*/
+#ex7 *{ /*여백초기화*/
+    margin:0;
+    padding:0;
+}
+#ex7 p{
+    border:1px solid yellow;
+    width:400px;
+    height:150px;
+}
+#ex7 span{
+    color:red;
+}
+#ex7 .ex7_1 span{
+    vertical-align:0px;
+}
+#ex7 .ex7_2 span{
+    vertical-align:25px;
+}
+#ex7 .ex7_3 span{
+    vertical-align:-25px;
+}
+#ex7 .ex7_4 span{
+    vertical-align:-50px;
+}

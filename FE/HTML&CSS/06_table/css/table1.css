@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/*초기화 reset*/
+/*
+body{ h태그들은 body에서 폰트사이즈 정해도 안들어감 따로해줌
+    font-size:15px
+}
+h2{
+    font-size:15px
+}*/
+body, h2{
+    font-size:15px;
+        font-family:"맑은 고딕" /*띄어쓰기가 있기때문에 ""써야함*/,"Malgun Gothic", sans-serif;
+    line-height:1.5em; /*줄 간격*/
+}
+
+/*ex1*/
+#ex1{
+    /*border:1px solid #333333; */
+/*    border-spacing:30px; 셀간격을 30px만큼 넓혀줌*/
+    border-collapse:collapse; /*테이블태그에 적용가능 ,
+    셀간격을 붙임*/
+    caption-side:bottom; /*표 아래에 캡션이 존재*/
+}
+/*#ex1 tr{  적용안됨 
+border:1px solid #333333; 
+}*/ 
+/*
+#ex1 tr th,#ex1 tr td{ 이렇게 해도 됨
+    border:1px solid #333333;
+}*/
+#ex1  th, #ex1  td{ /*tr을 생략해도 됨*/
+    border:1px solid #333333;
+    width:100px;
+    height:40px;
+}
+
+#ex1 td.ex1_1{
+    text-align:left; /*표안에 왼쪽으로이동 하지만 td자체가 왼쪽*/
+}
+#ex1 td.ex1_2{
+    text-align:center; /*표안 가운데로 이동*/
+}
+#ex1 td.ex1_3{
+    text-align:right; /*표 안 오른쪽으로 이동*/
+}
+#ex1 td.ex1_4{
+    vertical-align:top; /*표 안 위로 정렬*/
+}
+#ex1 td.ex1_5{
+    vertical-align:middle; /*표 안 가운데정렬*/
+}
+#ex1 td.ex1_6{
+    vertical-align:bottom; /*표 안 아래로 정렬*/
+}
+/*ex2*/
+#ex2{
+    border-collapse:collapse;
+}
+#ex2 th,#ex2 td{
+    border:solid 1px red;
+    width:100px;
+    height:20px;
+}
+#ex2 td{
+    text-align:center;
+}
+/*ex3*/
+#ex3{
+/*    border-collapse:collapse;*/
+    empty-cells:hide;
+}
+#ex3 th, #ex3 td{
+    border:solid 1px green;
+    width:100px;
+    height:20px;
+}
+#ex3 td{
+    text-align:center;
+}
+/*ex4*/
+#ex4{
+    border-collapse:collapse;
+}
+#ex4 th, #ex4 td{
+    border:1px solid blue;
+    width:100px;
+    height:20px;
+}
+#ex4 td{
+    text-align:center;
+}
+/*ex5*/
+#ex5{
+    border-collapse:collapse;
+}
+#ex5 th, #ex5 td{
+    border:solid 1px #999999;
+    
+}
+#ex5 th{
+    font-weight:normal;
+    background-color:#cccccc;
+    width:150px;
+    height:40px;
+}
+#ex5 td{
+    width:220px;
+    text-align:center;
+}
+/*ex6*/
+#ex6{
+    border-collapse:collapse;
+}
+#ex6 th, #ex6 td{
+    border:solid 1px #373737;
+    font-size:16px;
+}
+#ex6 th{
+    background-color:#eaeaea;
+    height:43px;
+}
+#ex6 #mo1{
+    width:81px;
+}
+#ex6 #mo2{
+    width:218px;
+}
+#ex6 #mo3{
+    width:314px;
+}
+#ex6 #mo4{
+    width:235px;
+}
+#ex6 #mo5{
+    width:199px;
+}
+#ex6 td{
+    text-align:center;
+    height:42px;
+}
+/*ex7*/
+#ex7{
+    border-collapse:collapse;
+}
+#ex7 th, #ex7 td{
+    border:1px solid #333333;
+    width:100px;
+    height:20px;
+}
+#ex7 td{
+    text-align:center;
+}
+/*ex8*/
+#ex8{
+    border-collapse:collapse;
+    font-family:sans-serif;
+}
+#ex8 th, #ex8 td{
+    border:1px solid #323232;
+    font-size:16px;
+    line-height:20px;
+}
+#ex8 th{
+    background-color:#cccccc;
+    height:31px;
+    padding:6px;
+}
+#ex8 td{
+    padding:6px;
+}
+#ex8 th#sh5{
+    background-color:#cccccc;
+    font-weight:bold;
+    text-align:center;
+}
+#ex8 th#sh6{
+    background-color:#cccccc;
+    font-weight:bold;
+    text-align:center;
+}
+/*ex9*/
+#ex9{
+    border-collapse:collapse;
+}
+#ex9 th, #ex9 td{
+    border:1px solid #333333;
+    width:100px;
+    height:20px;
+}
+#ex9 td{
+    text-align:center;
+}
+/*ex10*/
+#ex10{
+    border-collapse:collapse;
+    color:#333333;
+    border:1px solid #333333;
+    border-right:none;
+}
+#mn{
+    border-right:1px solid red;
+}
+#jm{
+    border-right:1px solid blue;
+}
+#kt{
+    border-right:1px solid yellow;
+}
+#ex10 th, #ex10 td{
+    width:100px; height:20px;
+}
+#ex10 th{
+    border-bottom:3px double #333333;
+    background-color:#eaeaea;
+}
+#ex10 td{
+    text-align:center;
+}

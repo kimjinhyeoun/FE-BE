@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+#dogani *{
+    color:#666666;
+}
+#dogani{
+    border: solid 3px #000000;
+    width:550px;
+    height:550px;
+    background-color:#ff99cd;
+    padding:20px 30px 7px 7px;
+}
+#dlist{
+    border: solid 1px #000000;
+    background-color:#ffffcd;
+    width:250px;
+    height:130px;
+    padding:3px;
+    margin-left:40px;
+    list-style:none;
+}
+#cook{
+    width:500px;
+    text-align:justify;
+}
