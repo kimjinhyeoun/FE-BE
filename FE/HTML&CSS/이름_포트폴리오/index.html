@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>김진현</title>
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+ <div id="wrap">
+  <h1><img src="images/logo.png" alt="KOREAN AIR" width="205" height="33"></h1>
+  <table id="wrap_kor">
+    <caption id="airlist">&lt;보너스 성수기 기간&gt;</caption>
+     <thead>
+      <tr>
+        <th scope="row" id="road">노선</th>
+        <th scope="row" id="start">출발지</th>
+        <th scope="row" id="arrival">목적지</th>
+        <th scope="row" id="thir">2013년</th>
+        <th scope="row" id="four">2014년</th>
+      </tr>
+    </thead><!--맨 위 제목부분-->
+    <tbody>
+      <tr>
+        <th scope="col" headers="road" id="kor_road">국내선</th>
+        <td  colspan="2" headers="kor_road start arrival">한국 내 국내선</td>
+        <td  headers="kor_road thir">1.1<br>2.8 ~ 2.12<br>3.1 ~ 3.3<br>5.17 ~ 5.19<br>6.6, 6.8 ~ 6.9<br>7.19 ~ 8.25<br>9.17 ~ 9.23<br>10.3, 10.5 ~ 10.6<br>12.28 ~ 12.31</td>
+        <td  headers="kor_road four">1.1<br>1.29 ~ 2.3<br>5.3 ~ 5.6<br>6.6 ~ 6.8<br>7.19 ~ 8.24<br>9.5 ~ 9.10<br>10.3 ~ 10.5<br>10.9, 10.11 ~ 12<br>12.25, 12.31</td>
+        </tr>
+        <tr>
+          <th scope="col" headers="road" id="except">미주이외<br>노선</th>
+          <td headers="except start">한국, 일본,<br>동북아, 동남아,<br>서남아,<br>유럽/중동,<br>대양주, 아프리카</td>
+          <td headers="except arrival">한국, 일본,<br>동북아, 동남아,<br>서남아,<br>유럽/중동,<br>대양주, 아프리카</td>
+          <td rowspan="2" headers="except thir">1.1 ~ 1.6<br>2.7 ~ 2.12<br>7.20 ~ 8.22<br>9.14 ~ 9.23<br>12.21 ~ 12.31</td>
+          <td rowspan="2" headers="except four">1.1 ~ 1.5<br>1.29 ~ 2.3<br>7.18 ~ 8.24<br>9.5 ~ 9.10<br>12.20 ~ 12.31</td>
+        </tr>
+        <tr>
+          <th rowspan="2" scope="col" headers="road" id="ameri">미주노선</th>
+          <td headers="ameri start">한국, 일본<br>동북아, 동남아,<br>서남아, <strong>대양주</strong><br>&lpar;  주1 &rpar;</td>
+          <td headers="ameri arrival"><strong>북미, 남미</strong> &lpar;  주1 &rpar;</td>
+        </tr>
+        <tr>
+          <td headers="ameri start"><strong>북미, 남미</strong> &lpar;  주2 &rpar;</td>
+          <td headers="ameri arrival">한국, 일본<br>동북아, 동남아,<br>서남아, 대양주,<br><strong>북미, 남미</strong><br>&lpar;  주2 &rpar;</td>
+          <td headers="ameri thir">5.17 ~ 6.30<br>12.7 ~ 12.23</td>
+          <td headers="ameri four">5.16 ~ 7.1<br>12.10 ~ 12.25</td>
+        </tr>
+      </tbody><!--중간부분-->
+      <tfoot>
+        <tr>
+          <td headers="road start arrival thir four" colspan="5" class="refer">&#8251;&lpar;  주1 &rpar; 대양주발 남미행, 남미발 대양주행은 보너스 공제 마일리지표 미운영 구간으로 제외 <br>&lpar;  주2 &rpar; 북미발 남미행, 남미발 북미행&lpar;로스앤젤로스&hyphen;상파울루 구간&rpar;은 미주 출발 성수기 적용</td>
+        </tr><!--참고사항-->
+        <tr>
+        <th id="matters" colspan="5">
+          <ul class="matters">
+            <li>좌석승급 보너스 이용은 차상급에 한해 가능합니다</li>
+            <li>예약 상황에 따라 일부 항공편의 좌석승급 예약이 제한될 수 있습니다.</li>
+            <li>가는편과 오는편의 클래스 및 시즌이 다른경우, 편도로 발권하고 각 구간 출발 일자의 해당 시즌 공제마일을 적용합니다.</li>
+          </ul><!--.matters-->
+        </th><!--#matters 좌석승급...,예약 상황...,가는편과...-->
+      </tr>
+    </tfoot><!--밑단 전체-->
+  </table><!--wrap_kor 테이블 전체-->
+</div>
+</body>
+</html>

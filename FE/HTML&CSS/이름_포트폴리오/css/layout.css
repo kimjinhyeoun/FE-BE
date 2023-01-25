@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+
+/*reset*/
+body,div,h1,img,table,thead,caption,tr,th,td,tbody,tfoot,ul,li,br,strong{
+  margin:0;
+  padding:0;
+}
+#wrap_kor{
+  border-collapse:collapse;
+  text-align:center;
+  margin:20px auto;
+  line-height:1.5em;
+}
+ul,li{
+  list-style:none;
+}
+strong{
+  font-weight:normal;
+  text-decoration:underline;
+}
+#wrap_kor tr th, #wrap_kor tr td{
+  border:solid 1px #999;
+}
+#wrap_kor tr td{
+  font-size:13px;
+}
+#road,#start,#arrival,#thir,#four,#kor_road,#except,#ameri{
+  background-color:#c8edff;
+}
+/*korean air*/
+#wrap h1{
+  text-align:center;
+  margin-top:20px;
+}
+/*보너스 성수기 기간*/
+#airlist{
+  font-weight:bold;
+  text-align:left;
+  padding-bottom:15px;
+  border-bottom:#ff8000 3px solid;
+}
+/*노선*/
+#road{
+  width:120px;
+  height:30px;
+  border-top:none;
+}
+/*출발지*/
+#start{
+  width:145px;
+  height:30px;
+}
+/*목적지*/
+#arrival{
+  width:145px;
+  height:30px;
+}
+/*2013년*/
+#thir{
+  width:145px;
+  height:30px;
+}
+/*2014년*/
+#four{
+  width:145px;
+  height:30px;
+}
+/*국내선*/
+#kor_road{
+  height:300px;
+}
+/*미주이외노선*/
+#except{
+  height:140px;
+}
+/*미주노선*/
+#ameri{
+  height:300px;
+}
+/*참고사항*/
+.refer{
+  font-size:13px;
+}
+
+/*좌석승급..., 예약상황..., 가는편...*/
+#wrap_kor tr:last-child th{
+  border:none;
+  font-size:13px;
+}
+.matters li{
+  width:700px;
+  text-align:left;
+  font-weight:normal;
+  list-style:disc;
+  margin-left:30px;
+  margin-bottom:5px;
+}
+/*맨 위 보더 선*/
+#wrap_kor tr:nth-of-type(1) th{
+  border-left:1px solid #999;
+  border-right:1px solid #999;
+}
