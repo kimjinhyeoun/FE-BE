@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/*reset*/
+div,span,br,a,h3,p,img{
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration:none;
+}
+/*wrap*/
+#wrap{
+  width:980px;
+  height:633px;
+  background-color:#e7e0d0;
+  margin:20px auto;
+  border:1px solid red;
+}
+/*box1*/
+#box1{
+  float:left;
+  width:190px;
+  height:633px;
+  border:1px solid red;
+}
+/*참가,신청하기,클릭*/
+#box1 div:nth-child(1){
+  background-color:#00a558;
+  width:125px;
+  height:95px;
+  border-radius: 50% 0 50% 50%;
+  text-align:center;
+  padding-top:30px;
+  color:#fff;
+  cursor:pointer;
+/*  margin-left:40px;*/
+  margin-top:80px;
+}
+#box1 div:nth-child(1) a{
+  color:#fff;
+  background-color:#14653c;
+  font-size:13px;
+  border-radius:50px;
+  display:inline-block;
+  width:50px;
+  height:20px;
+  border:none;
+  outline:none;
+}
+#box1 div:nth-child(1):hover{
+  background-color:#14653c;
+  color:#333;
+}
+#box1 div:nth-child(1):hover a{
+  background-color:#00a558;
+}
+#box1 div span:nth-of-type(1){
+  font-size:20px;
+  font-weight:bold;
+}
+#box1 div span:nth-of-type(2){
+  font-size:12px;
+}
+/*2016년 현장스케치*/
+#box1 h3:nth-child(2){
+  text-align:center;
+  width:125px;
+  height:65px;
+  color:#3b3b39;
+  font-weight:bold;
+  background:url(../image/bg.png) no-repeat 12px center;
+  padding-bottom:80px;
+/*  margin-left:40px;*/
+  margin-top:60px;
+  font-size:25px;
+}
+#box1 h3 span:nth-of-type(2){
+  font-size:25px;
+  color:#00ab56;
+}
+/*4박 5일 우리들이*/
+#box1 p:nth-child(3){
+  text-align:center;
+  font-size:12px;
+  width:190px;
+  height:32px;
+  color:#666;
+  font-weight:bold;
+}
+#box1 p:nth-child(4) a{
+  width:90px;
+  height:25px;
+  background-color:#fff;
+  display:inline-block;
+  font-size:12px;
+  text-align:center;
+  line-height:25px;
+  color:#666;
+  font-weight:bold;
+  margin-top:15px;
+/*  margin-left:50px;*/
+}
+#box1 p:nth-child(4):hover a{
+  background-color:#666;
+  color:#fff;
+  clear:both;
+}
+#box2{
+  float:right;
+  width:680px;
+  height:633px;
+}
+#box2 p:nth-of-type(1) {
+  clear:both;
+  
+}
+#box2 p:nth-of-type(1) img{
+  float:left;
+}
+#box2 p:nth-of-type(2){
+  clear:both;
+}
+#box2 p:nth-of-type(2) img{
+  float:left;
+}
+#box2 p:nth-of-type(3){
+  clear:both;
+}
+#box2 p:nth-of-type(3) img{
+  float:left;
+}

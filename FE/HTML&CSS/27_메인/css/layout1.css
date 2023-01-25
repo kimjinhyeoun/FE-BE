@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+
+/*reset*/
+body,div,header,h1,a,img,ul,li,h2,nav,p,span,aside,h3,br,figure,figcaption,footer,address{
+  margin:0;
+  padding:0;
+}
+header,nav,aside,figure,figcaption,footer{
+  display:block;
+}
+ul,li{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+img{
+  border:none;
+}
+body{
+  font:normal 12px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+  color:#333;
+  background:url(../images/bg.jpg) repeat-X left top;
+}
+
+/*wrap*/
+#wrap{
+  width:1024px;
+/*  border:1px solid blue;*/
+  margin:10px auto;
+}
+/*로고*/
+#top h1{
+/*  border:1px solid green;*/
+  width:200px;
+  height:58px;
+  float:left;
+  margin-bottom:20px;
+}
+/*로그인,회원가입....*/
+.quick{
+/*  border:1px solid green;*/
+  float:right;
+  width:250px;
+  height:20px;
+  text-align:right;
+  margin-top:20px;
+}
+.quick li{
+  display:inline;
+  margin-left:10px;
+}
+/*로그인*/
+.quick li:first-child{
+  margin-left:0;
+}
+.quick li a{
+  color:#333;
+}
+.quick li a:hover{
+  text-decoration:underline;
+}
+/*블로그*/
+.blog{
+  clear:both;
+  font-size:13px;
+  background:#ff6633 url(../images/arrow.png) no-repeat center 30px;
+  width:60px;
+  height:50px;
+  line-height:30px;
+  text-align:center;
+  float:left;
+}
+/*블로그 a태그만 선택 가능해서 전체영역에 포인터 들어가게 설정*/
+.blog a{
+  color:#fff;
+  display:block;
+  width:60px;
+  height:50px;
+}
+#main_menu{
+/*  border:1px solid green;*/
+  float:right;
+  width:800px;
+  height:50px;
+  line-height:50px;
+}
+#main_menu ul{
+  width:800px;
+  height:50px;
+  text-align:right;
+}
+#main_menu ul li{
+  display:inline-block;
+  margin-left:50px;
+}
+#main_menu ul li:first-child{
+  margin-left:0;
+}
+#main_menu ul li a{
+  color:#333;
+  font-size:16px;
+  font-weight:bold;
+}
+#main_menu ul li a:hover{
+  color:#ff6633;
+}
+/*메인 상단 이미지*/
+#main_img{
+  clear:both;
+/*  border:1px solid pink;*/
+  width:1024px;
+  height:367px;
+  margin-bottom:30px;
+  position:relative;
+}
+#main_img p:nth-child(1){
+  width:1024px;
+  height:367px;
+}
+#main_img p:nth-child(2),#main_img p:nth-child(3),#main_img p:nth-child(4){
+  position:absolute;
+  left:100px;
+  z-index:5;
+}
+/*오픈기념*/
+#main_img p:nth-child(2){
+  top:40px;
+  color:#fff;
+  font-size:40px;
+  letter-spacing:-1px;
+  line-height:1em;
+}
+/*오픈기념*/
+#main_img p:nth-child(2) span{
+  display:block;
+  color:#ff6633;
+}
+/*주문을 해주시는...*/
+#main_img p:nth-child(3){
+  top:160px;
+  color:#fff;
+}
+/*more viw*/
+#main_img p:nth-child(4){
+  bottom:60px;
+}
+#main_img p:nth-child(4) a{
+  color:#fff;
+  border:3px solid #fff;
+  width:150px;
+  height:40px;
+  display:block;
+  font-size:20px;
+  font-weight:bold;
+  line-height:40px;
+  text-align:center;
+  font-family:Arial,sans-serif;
+}
+/*테두리도 따로 색상 줘야한다.*/
+#main_img p:nth-child(4) a:hover{
+  color:#ff6633;
+  border-color:#ff6633;
+}
+/*#banner 쿡배너*/
+#banner{
+  width:1024px;
+  height:200px;
+/*  border:1px solid blue;*/
+  margin-bottom:10px;
+  position:relative;
+}
+#banner h3{
+  height:20px;
+  margin-bottom:15px;
+  font-size:15px;
+}
+/*레시피 쿡톡 이달이벤 상품문의*/
+#banner ul{
+/*  background-color:pink;*/
+  width:1024px;
+  height:160px;
+}
+#banner ul li{
+  float:left;
+  width:256px;
+  text-align:center;
+  cursor:pointer;
+}
+#banner ul li img{
+  margin-bottom:5px;
+  transform:scale(1);
+  transition:all 0.3s;
+}
+#banner ul li:hover img{
+  transform:scale(1.1);
+}
+#banner ul li:hover p{
+  text-decoration:underline;
+  color:#666;
+}
+/*더보기*/
+.view{
+  position:absolute;
+  top:0px;
+  right:0px;
+  color:#333;
+}
+.view:hover{
+  color:#ff6633;
+}
+/*추천푸드*/
+#food{
+  clear:both;
+  width:1024px;
+  height:320px;
+/*  border:1px solid blue;*/
+  position:relative;
+}
+#food h3{
+  height:20px;
+  margin-bottom:15px;
+  font-size:15px;
+}
+.food_wrap{
+/*  background-color:yellow;*/
+  width:1024px;
+  height:280px;
+}
+.food_wrap figure{
+  float:left;
+  width:256px;
+  text-align:center;
+  cursor:pointer;
+}
+.food_wrap figure img{
+  border:4px solid transparent;
+  transition:all 0.3s;
+}
+.food_wrap figure:hover img{
+  border-color:#165a35;
+}
+.food_wrap figure:hover figcaption{
+  text-decoration:underline;
+  color:#666;
+}
+/*하단영역*/
+#bottom{
+  clear:both;
+  width:100%;
+  height:60px;
+  border-top:1px solid #ccc;
+  text-align:center;
+  padding:10px 0;
+  min-width:1024px;
+}
+/*address*/
+#bottom address{
+  font-style:normal; /*기울임 해제*/
+  line-height:1.8em;
+}
