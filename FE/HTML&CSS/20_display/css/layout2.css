@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+
+/*reset*/
+ul,li{
+    list-style:none;
+}
+ul,li,a,hr,p,span,div,input,button{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+    color:#000000;
+}
+/*ex1*/
+/*.ex1 li{display:inline;} OK */
+/*.ex1 li a{display:inline;} no! 줄거면 li한테 줘야함*/
+/*.ex1 li{float:left;} float을 썻더니 밑에 줄까지 영향감*/
+/*.ex1 li a{float:left;} float은 a한테줘도 적용이 된다.*/
+/*ex2*/
+.ex2{
+    border:1px solid blue;
+    height:80px;
+    display:none; 
+}
+/*.ex2{display:inline;}*/
+.ex2{display:block;} /*디스플레이 none 처리를 한건 대부분 block으로 보이게한다.*/
+
+/*ex3*/
+.ex3{
+    background:url(../images/dimchage1.jpg) no-repeat;
+    width:488px;
+    height:396px;
+}
+.ex3 span{
+    display:none;
+}
+/*ex4*/
+.ex4{
+    border:1px solid green;
+    height:80px;
+    visibility:hidden;
+}
+/*.ex4{display:block;} 비지빌리티로 숨김처리해놨으면 비지빌리티로 풀어야함*/
+.ex4{
+    visibility:visible;
+}
+.ex6 li{
+    color:pink;
+    /*list-style-type:circle;
+    margin-left:20px;*/
+}
+.ex6 li::before{
+    content:"\2022";
+    color:blue;
+/*    background-color:yellow;*/
+    width:20px;
+    display:inline-block; /*비포태그시 사이즈가 안먹음 인라인블록으로 하면 할수있음 그냥 블록시 줄바꿈으로 표시되기때문에 인라인-블록으로 하셈*/
+}
+/*ex7*/
+.ex7{
+    background-color:pink;
+    width:500px;
+    height:56px;
+    overflow:auto;
+    white-space:nowrap;
+    margin:30px 0;
+}
+.ex7 a{
+    width:100px;
+    height:50px;
+    display:inline-block;
+    text-align:center;
+    line-height:50px;
+}
+.ex7 a:hover{
+    background-color:blue;
+}
+.ex7::-webkit-scrollbar{
+    height:6px; /*스크롤바 높이*/
+}
+.ex7::-webkit-scrollbar-track{
+    background-color:green; /*스크롤바 속성*/
+}
+.ex7::-webkit-scrollbar-thumb{
+    background-color:yellow; /*드래그 가능한 스크롤바 색상*/
+}
+.ex7::-webkit-scrollbar-thumb:active{
+    background-color:#ddaaff; /*드래그가능한 스크롤바 색상위에 마우스를 누르고 있을때 색상*/
+}
+/*ex8*/
+.ex8{
+    background-color:pink;
+    width:500px;
+    height:56px;
+    overflow:auto;
+    white-space:nowrap;
+    margin:30px 0;
+    direction:rtl; /*스크롤바 오른쪽으로 왼쪽으로 변경*/
+}
+.ex8 a{
+    width:100px;
+    height:50px;
+    display:inline-block;
+    text-align:center;
+    line-height:50px;
+}
+.ex8 a:hover{
+    background-color:blue;
+}
+.ex8::-webkit-scrollbar{
+    height:6px; /*스크롤바 높이*/
+}
+.ex8::-webkit-scrollbar-track{
+    background-color:green; /*스크롤바 속성*/
+}
+.ex8::-webkit-scrollbar-thumb{
+    background-color:yellow; /*드래그 가능한 스크롤바 색상*/
+}
+.ex8::-webkit-scrollbar-thumb:active{
+    background-color:#ddaaff; /*드래그가능한 스크롤바 색상위에 마우스를 누르고 있을때 색상*/
+}
+/*ex9*/
+.ex9{
+    background-color:#eaeaea;
+    width:300px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    margin:30px 0;
+}
+.ex9 li{
+    display:inline;
+    font-size:17px;
+    padding:7px;
+}
+.ex9 li+li::before{
+    content:"/ " /*첫번째 li 제외*/
+}
+.ex9 li:first-child a{
+    color:#01447e; /*홈만 글자색넣어줌*/
+}
+.ex9 li a:hover{
+    color:#0275d9;
+    text-decoration:underline;
+}
+/*ex10*/
+.ex10{
+    width:800px;
+    height:40px;
+    background-color:#e9e9e9;
+    margin:30px 0;
+}
+.ex10 ul{
+    float:left;
+    width:300px;
+    height:40px;
+}
+.ex10 ul li{
+    float:left;
+    width:100px;
+    height:40px;
+}
+.ex10 ul li a{
+    width:100px;
+    height:40px;
+    display:block;
+    line-height:40px;
+    text-align:center;
+}
+.ex10 ul li a:hover{
+    background-color:#cccccc;
+}
+.ex10 ul li a.active{
+    background-color:#6699cc;
+    color:white;
+}
+.ex10 div{
+    float:right;
+    width:185px;
+    height:35px;
+    margin-top:2px;
+}
+.ex10 div input[type="search"]{
+    float:left;
+    width:150px;
+    height:35px;
+    border:none;
+    outline:none;
+    text-indent:1em;
+}
+.ex10 div button[type="button"]{
+    float:left;
+    width:35px;
+    height:35px;
+    background-color:#999999;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+/*ex11*/
+.ex11{ /*이미지 마우스 위에올려놓으면 첫번쨰는 사라지고 두번째는 나옴*/
+    clear:both;
+    border:1px solid red;
+    height:35px;
+    margin:30px 0;
+}
+.ex11 li{
+    float:left;
+    width:34px;
+    height:34px;
+    margin:0 1px;
+}
+.ex11 li img:nth-child(2){
+    display:none;
+}
+.ex11 li:hover img:nth-child(2){
+    display:block;
+}
+.ex11 li:hover img:nth-child(1){
+    display:none;
+}
+/*ex12*/
+.ex12{
+    border:1px solid red;
+    height:150px;
+    margin:30px 0;
+}
+.ex12 input[type="checkbox"]+div{ /*check박스 바로 뒤에있는 div 태그 선택자 후 디스플레이로 가림*/
+    background-color:#eaeaea;
+    width:300px;
+    height:100px;
+    display:none;
+}
+.ex12 input[type="checkbox"]:checked+div{ /*체크박스 체크시 div태그가 나옴*/
+    display:block;
+}

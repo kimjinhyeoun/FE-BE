@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+
+/*reset*/
+div,ul,li,span{
+    margin:0;
+    padding:0;
+}
+ul,li{
+    list-style:none;
+}
+/*wrap 전체*/
+#wrap{
+    width:700px;
+    height:470px;
+    margin:20px auto;
+}
+/*month 년,월*/
+#wrap .month{
+    width:700px;
+    height:200px;
+    background-color:orange;
+}
+#wrap .month li{
+    color:#fff;
+    font-size:25px;
+}
+#wrap .month li:first-child:hover,#wrap .month li:last-child:hover {
+    cursor:pointer;
+}
+#wrap .month li:nth-child(1){
+    float:left;
+    margin-left:20px;
+    margin-top:80px;
+}
+#wrap .month li:nth-child(2){
+    float:left;
+    text-align:center;
+    margin-top:60px;
+    margin-left:280px;
+}
+#wrap .month li:nth-child(3){
+    float:right;
+    margin-right:20px;
+    margin-top:80px;
+}
+/*weekdays 일주일,요일*/
+.weekdays{
+    clear:both;
+    width:700px;
+    height:50px;
+    background-color:#e1e1e1;
+    line-height:3em;
+    color:#666;
+}
+.weekdays li{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:50px;
+    text-align:center;
+}
+/*days 매일, 일수*/
+.days{
+    width:700px;
+    height:220px;
+    background-color:#eaeaea;
+    color:#666;
+}
+.days li{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-left:50px;
+    line-height:2.5em;
+    text-align:center;
+}
+.days li:hover{
+    background-color:#333;
+    color:#fff;
+    cursor:pointer;
+}

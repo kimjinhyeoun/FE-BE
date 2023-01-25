@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/*reset*/
+div, p, a, img, h3{
+    margin:0;
+    padding:0;
+}
+img{
+border:none;
+}
+p, a, h3{
+    color:#fff;
+    text-align:center;
+}
+a{
+    text-decoration:none;
+}
+/*wrap 전체*/
+#wrap{
+    width:1190px;
+    height:600px;
+    margin:20px auto;
+    overflow:hidden;
+}
+/* arrow 버튼 이미지 */
+#wrap div img{
+    float:right;
+    margin-top:10px;
+    margin-right:20px;
+}
+#wrap div img:hover{
+    background-color:#999;
+    border-radius:40px;
+}
+/*h3 제목*/
+#wrap div h3{
+    margin-top:80px;
+    font-size:30px;
+    font-weight:normal;
+}
+#wrap div p:nth-child(3){
+    margin-top:20px
+}
+/*보험료 계산*/
+#wrap div p:nth-child(4){
+    width:125px;
+    height:35px;
+    border:1px solid #fff;
+    line-height:2em;
+    margin:40px auto;
+}
+#wrap div p:nth-child(4):hover{
+    background-color:#999;
+}
+/*운전자보험*/
+#wrap > div:first-child{
+    width:396px;
+    height:600px;
+    float:left;
+    background:url(../images/bg_product01.png) no-repeat;
+    clear:both;
+}
+/*해외여행보험*/
+#wrap > div:last-child > div:nth-child(1){
+    float:left;
+    width:396px;
+    height:300px;
+    background:url(../images/bg_product02.png) no-repeat;
+}
+/*연금보험*/
+#wrap > div:last-child > div:nth-child(2){
+    float:left;
+    width:398px;
+    height:300px;
+    overflow:hidden;
+    background-color:#339966;
+}
+/*주택화재보험*/
+#wrap > div:last-child > div:nth-child(3){
+    width:396px;
+    height:300px;
+    overflow:hidden;
+    float:left;
+    background-color:#666;
+}
+/*골프보험*/
+#wrap > div:last-child > div:nth-child(4){
+    float:right;
+    width:398px;
+    height:300px;
+    overflow:hidden;
+    background:url(../images/bg_product05.png) no-repeat;
+}
