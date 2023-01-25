@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* ex1 */
+.num_btn{
+    border:1px solid #666;
+    background-color:#999;
+    width:150px;
+    height:30px;
+    color:#fff;
+    cursor:pointer;
+}
+/* ex2 */
+.box{
+    border:3px solid #ff9933;
+    width:150px;
+    height:150px;
+    float:left;
+    margin:10px;
+    padding:25px;
+}
+.evt{
+    border:3px solid #cc99ff;
+    width:150px;
+    height:150px;
+    display:block;
+}
+
+.clear{
+    clear:both;
+}
+
+/* ex3 */
+#ex3, #ex4{
+    background-color:pink;
+    width:200px;
+    height:200px;
+    float:left;
+    padding:10px;
+    margin:30px;
+}
