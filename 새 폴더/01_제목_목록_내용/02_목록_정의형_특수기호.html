@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>목록/정의형/특수기호</title>
+</head>
+<body>
+<h3>비순서형 목록 ul</h3>   
+<p>수강과목은?</p>    
+<ul>
+    <li>일러스트레이터</li>
+    <li>포토샵</li>
+    <li>웹표준</li>
+    <li>html5</li>
+</ul>
+<hr>
+<!-- 마크업 오류 h3태그
+<ul>
+   <h3>웹표준</h3>
+    <li>css</li>
+    <li>html5</li>
+</ul>
+-->
+<!-- 마크업 오류 p태그
+<ul>
+    <p>일러스트레이터</p>
+    <li>포토샵</li>
+    <li>웹표준</li>
+    <li>html5</li>
+</ul>
+-->
+<ul>
+    <li>
+        <h5>제목</h5>
+        <p>내용입니다.</p>
+    </li>
+        <li>
+        <h5>제목</h5>
+        <p>내용입니다.</p>
+    </li>
+</ul>
+<hr>
+<h3>순서형 목록 ol</h3>
+<p>수업진행순서</p>
+<ol>
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<hr>
+<ol type="a">
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<hr>
+<ol type="A">
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<hr>
+<ol type="I">
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<hr>
+<ol type="i">
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ol>
+<hr>
+<!--마크업 오류 type="" li영역에 설정하면 안됨.
+<ol>
+    <li type="1">html5</li>
+    <li type="a">html5</li>
+    <li type="A">html5</li>
+    <li type="i">html5</li>
+    <li type="I">html5</li>
+</ol>
+-->
+<ol start="5"> <!--start 타입 시작(원하는 숫자부터 순서대로 가능)-->
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+    <li>헬로월드</li>
+</ol>
+<hr>
+<ol type="a" start="5"> <!--타입과 스타트를 조합해서 하였을때 영어 a의 5번째부터 실행-->
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+    <li>헬로월드</li>
+</ol>
+<hr>
+<ol reversed > <!--역순으로 목록 보여지기 시작-->
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+    <li>헬로월드</li>
+</ol>
+<hr>
+<ol type="A" start="10" reversed > <!--A의 순서인 10번째인 j부터 시작인데 역순시 j부터 다시 f까지-->
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+    <li>헬로월드</li>
+</ol>
+<hr>
+<!-- 마크업오류 ul로 역순시 불가넝 ul은 순서가 아닌 ●으로 표현 됨
+<ul reversed> 
+    <li>html5</li>
+    <li>css</li>
+    <li>웹표준</li>
+    <li>웹접근성</li>
+</ul>
+-->
+<hr>
+<h3>정의형 목록dl</h3><!--dl태그 시작을 알리는 제목-->
+<dl>                <!--dl+ 탭으로 dt태그와 dd태그 같이 생성가능-->
+    <dt>css?</dt>
+    <dd>└마크업 디자인 스타일시트</dd>
+</dl>
+<hr>
+<dl>    <!--여러 dt외 dd태그 사용가능-->
+    <dt>helloWorld?</dt>
+    <dd>└yeah helloWorld!</dd>
+    <dt>hello?</dt>
+    <dd>└helloWorld!</dd>
+</dl>
+<hr>
+<dl>    <!--여러 dt(질문)태그 사용가능-->
+    <dt>helloWorld?</dt>
+    <dt>hellow?</dt>
+    <dt>hello?</dt>
+    <dd>└helloWorld!</dd>
+</dl>
+<hr>
+<dl>    <!--여러 dd(답변)태그 사용가능-->
+    <dt>html5?</dt>
+    <dd>└웹표준을 제작하기 위한 언어입니다.</dd>
+    <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+    <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+</dl>
+<hr>
+<!-- 마크업오류 h4/p dl과 혼용 불가능
+<dl>
+    <h4>제목</h4>
+    <p>내용</p>
+    <dt>html5</dt>
+    <dd>웹표준을 제작하기 위한 언어입니다.</dd>
+</dl>
+-->
+
+<dl>
+    <dt><p>웹표준</p></dt> <!-- 마크업오류 dt(질문)의 h2는 오류-->
+    <dd>
+    <h3>html5</h3>  <!--dd(답변)의 h태그는 사용가능-->
+    <p>내용입니당</p>
+    </dd>
+</dl>
+<hr>
+<dl>
+    <dt>그래픽s/w</dt>
+    <dd>
+        <ul>
+            <li>일러스트</li>
+            <li>포토샵</li>
+        </ul>
+    </dd>
+</dl>
+<hr>
+<h3>엔티티(특수문자)</h3> <!--특수문자태그 시작-->
+<p>
+    &lt;<br> <!--줄바꿈(br)-->
+    &#60;<br>
+    &gt;<br>
+    &quot;<br>
+    &copy;<br>
+    &amp;
+</p>
+<p>웹   표   준</p> <!--스페이스바로 허용되는건 한 칸만 허용이 됨-->
+<p>웹&nbsp;표&nbsp;준</p> <!--띄어쓰기기능 몇칸이든 활용할수있는 &nbsp;인데 코드가 너무 지저분해짐 css(자간,여백등...)으로 변경하는걸로 하자-->
+</body>
+</html>
