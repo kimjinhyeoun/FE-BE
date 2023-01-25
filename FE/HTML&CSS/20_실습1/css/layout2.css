@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/*reset*/
+div,h1,p,select,option,input,img,h2,h3,span{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+    color:green;
+}
+/*wrap*/
+#wrap{
+    width:1294px;
+    height:808px;
+    margin-left:auto;
+    margin-right:auto;
+}/*전체*/
+#top, #box1, #box2{
+    margin:20px auto;
+}
+#top{
+    width:1000px;
+    border-bottom:3px solid #bfb383; 
+    padding-bottom:80px;
+        
+}
+#top > h1{
+    text-align:center;
+}
+#top div p select,#top div p input{
+    float:left;  
+}
+#top div p select{
+    height:34px;
+    width:100px;
+    vertical-align:middle;
+    text-indent:10px;
+    margin-left:700px
+}
+#top div p input{
+    height:30px;
+    width:150px;
+    margin-left:15px;
+}
+#box1, #box2{
+    width:900px;
+    height:300px;
+    clear:both;
+}
+#box1{
+    margin-top:30px;
+    border-bottom:1px solid #cccccc;
+}
+#box1 img{
+    width:130px;
+    height:200px;
+    float:left;
+    box-shadow: 4px 4px 1px #999;
+}
+#box1 div{
+    float:left;
+    width:700px;
+    height:200px;
+    margin-left:60px;
+    margin-top:20px;
+}
+#box1 div h2{
+    margin-bottom:5px;
+    color:#666;
+}
+#box1 div h3{
+    margin-bottom:15px;
+    color:green;
+    font-style:oblique;
+}
+#box1 div p{
+    color:#999;
+    width:690px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+#box1 div span{
+    white-space:pre;
+}
+#box1 p a, #box2 p a{
+  border:3px green solid;
+  width:100px;
+  height:30px;
+  border-radius:7px;
+  background-color:#ffffff;
+  cursor:pointer;
+  line-height:2.5em;
+  font-weight:bold;
+  text-align:center;
+  padding:6px;
+}
+#box1 div p:last-child, #box2 div p:last-child{
+    margin-top:15px;
+}
+#box1 a:hover, #box2 a:hover{
+    background-color:green;
+    color:#ffffff;
+}
+#box2{
+    margin-top:30px;
+    clear:both;
+    border-bottom:1px solid #cccccc;
+}
+#box2 img{
+    width:130px;
+    height:200px;
+    float:left;
+    box-shadow: 4px 4px 1px #999;
+}
+#box2 div{
+    float:left;
+    width:700px;
+    height:200px;
+    margin-left:60px;
+    margin-top:20px;
+}
+#box2 div h2{
+    margin-bottom:5px;
+    color:#666;
+}
+#box2 div h3{
+    margin-bottom:15px;
+    color:green;
+    font-style:oblique;
+}
+#box2 div p{
+    color:#999;
+    width:690px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+#box2 div span{
+    white-space:pre;
+}

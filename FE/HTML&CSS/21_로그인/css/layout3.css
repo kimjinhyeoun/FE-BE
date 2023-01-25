@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/*reset*/
+ul,li{
+    list-style:none;
+}
+body,div,form,h3,p,h4,input,label,ul,li,strong,h5,br{
+    margin:0;
+    padding:0;
+}
+body,h3,h4,input{
+    font:normal 12px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+    color:#333333;
+}
+
+/*login_wrap*/
+#login_wrap{/*전체*/
+    width:1000px;
+    height:700px;
+    margin:20px auto 0 auto; /*상 우 하 좌*/
+    background:url(../images/bg.png) repeat;
+}
+#login_title{
+    text-align:center;
+    height:80px;
+    margin-bottom:40px;
+}
+#login_title h3{ /*로그인*/
+    font-size:30px;
+    height:40px;
+    margin-bottom:10px;
+}
+#login_title p{ /*한솔교육에 오신 것을 환영*/
+    height:22px;
+}
+#login_container{
+    width:1000px;
+    overflow:hidden;
+    background-color:#ffffff;
+    border-top:1px solid #999999;
+    margin-bottom:20px;
+}
+#login_all{ /*회원 로그인 sns 간편로그인 전체*/
+    width:900px;
+    height:225px;
+    margin:40px auto;
+}
+.login_l{ /*회원 로그인 전체*/
+    float:left;
+    border-right:1px solid rgba(153,153,153,0.5);
+    width:450px;
+}
+.login_l h4{
+    font-size:20px;
+    height:25px;
+    margin-bottom:20px;
+}
+.u_id input, .u_pwd input{ /*아이디 비밀번호*/
+    border:1px solid rgba(153,153,153,0.5);
+    width:400px;
+    height:45px;
+    border-radius:2px;
+    text-indent:2em;
+    outline:none;
+    margin-bottom:3px;
+}
+.u_pwd input{
+    margin-bottom:10px;
+}
+.login{ 
+    height:45px;
+    margin-bottom:10px;
+}
+.login input{ /*로그인 버튼*/
+    width:400px;
+    height:45px;
+    border:none;
+    outline:none;
+    background-color:#ff671b;
+    color:#ffffff;
+    font-size:15px;
+    border-radius:25px;
+    cursor:pointer;
+}
+.login input:hover{
+    background-color:#d84800;
+}
+login_chk{
+    height:14px;
+}
+.login_chk input{
+    vertical-align:-2px;
+    margin-right:5px;
+}
+.login_r{ /* SNS 간편로그인 전체*/
+    float:right;
+    width:405px;
+}
+.login_r h4{
+    font-size:20px;
+    height:25px;
+    margin-bottom:20px;
+}
+.btn_wrap li{
+    width:400px;
+    height:50px;
+    margin-bottom:5px;
+    border-radius:5px;
+}
+.btn_wrap li:nth-child(1){
+    background:#fad400 url(../images/sns1.jpg) no-repeat left center;
+}
+.btn_wrap li:nth-child(2){
+    background:#00bd38 url(../images/sns2.jpg) no-repeat left center;
+}
+.btn_wrap li:nth-child(3){
+    background:#27488e url(../images/sns3.jpg) no-repeat left center;
+}
+.btn_wrap li input{
+    width:400px;
+    height:50px;
+    border:none;
+    outline:none;
+    background:none;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+#login_infor{
+    clear:both;
+    border-top:1px solid rgba(153,153,153,0.5);
+    width:900px;
+    height:150px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.login_infor1{ /*한솔교육 회원이 아니신가요? 칸*/
+    float:left;
+    border-right:1px solid rgba(153,153,153,0.5);
+    width:450px;
+    margin-top:30px;
+}
+.login_infor1 p{
+    line-height:2.5em;
+}
+.join input{ /*회원가입버튼*/
+    width:100px;
+    height:30px;
+    font-size:14px;
+    border:1px solid rgba(153,153,153,0.5);
+    border-radius:3px;
+    background-color:#ffffff;
+    cursor:pointer;
+    outline:none;
+}
+.join input:hover{
+    background-color:#999999;
+    color:#ffffff;
+}
+.login_infor2{ /*아이디 비번 찾기 칸*/
+    float:right;
+    width:405px;
+    margin-top:30px;
+}
+.login_infor2 p{
+    line-height:2.5em;
+}
+.search1, search2{
+    float:left;
+    margin-right:5px;
+}
+.search1 input, .search2 input{ /*아이디찾기 비번찾기 버튼*/
+    width:100px;
+    height:30px;
+    font-size:14px;
+    border:1px solid rgba(153,153,153,0.5);
+    border-radius:3px;
+    background-color:#ffffff;
+    cursor:pointer;
+    outline:none;
+}
+.search1 input:hover, .search2 input:hover{
+    background-color:#999999;
+    color:#ffffff;
+}
+#information{ /*이용안내*/
+    clear:both;
+    border:1px solid rgba(153,153,153,0.5);
+    width:1000px;
+    height:80px;
+    padding-top:20px;
+    text-indent:2em;
+}
+#information h5{
+    font-size:14px;
+    margin-bottom:15px;
+}

@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+
+/*reset*/
+div,h3,h4,ol,li,p,img,span,br,ul,strong{
+    margin:0;
+    padding:0;
+}
+li, ul{
+    list-style:none;
+}
+strong{
+    color:#12909c;
+}
+/*wrap*/
+#wrap{
+    width:1100px;
+    height:700px;
+    margin:20px auto;
+}/*전체*/
+#wrap > h3{
+    height:20px;
+    text-align:center;
+    border-bottom:3px solid #bfb383;
+    margin-bottom:24px;
+    padding-bottom:24px;
+}/*상담절차*/
+#wrap > h4{
+    margin-bottom:40px;
+}
+#step_wrap{
+    width:1200px;
+    height:220px;
+}
+
+#step_wrap li img{
+    display:block;
+    margin-bottom:35px;
+    margin-right:auto;
+    margin-left:auto;
+}
+#step_wrap li p{
+    width:270px;
+    height:216px;
+    float:left;
+    text-align:center;
+    margin-left:5px;
+}
+#step_wrap li span{
+    float:left;
+    clear:both;
+    width:260px;
+    height:86px;
+    line-height:5em;
+    font-size:13px;
+    color:white;
+    letter-spacing:-1px;
+}
+#step_wrap li:nth-child(1) span{
+    background:url(../images/step_b1.png) no-repeat;
+}
+#step_wrap li:nth-child(2) span{
+    background:url(../images/step_b2.png) no-repeat;
+}
+#step_wrap li:nth-child(3) span{
+    background:url(../images/step_b3.png) no-repeat;
+}
+#step_wrap li:nth-child(4) span{
+    background:url(../images/step_b4.png) no-repeat;
+}
+.note1{
+    clear:both;
+    text-align:center;
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+    padding-top:40px;
+    padding-bottom:50px;
+    margin-bottom:50px;
+    margin-top:40px;
+}
+.note2{
+    line-height:2em;
+    margin-left:20px;
+}
+.note2 li::before{
+    content:"\25B6";;
+    color:#009845;
+    display: inline-block;
+}

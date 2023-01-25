@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>login2</title>
+<link rel="stylesheet" href="css/layout2.css">
+</head>
+<body>
+<div id="login_title">
+    <h3>로그인<span>해피포인트에 오신 것을 환영합니다.!</span></h3>
+</div><!--login_title-->
+<div id="login_container">
+    <h4>LOGIN</h4>
+    <p>로그인이 필요한 서비스입니다.<br>고객님의 아이디와 비밀번호를 입력해 주세요.</p>
+    <form action="login.asp" method="post">
+        <p><input type="text" id="u_id" placeholder="아이디입력" autocomplete="off" title="아이디"></p>
+        <p><input type="password" id="u_pwd" placeholder="비밀번호입력" autocomplete="off" title="비밀번호"></p>
+        <p class="login_chk"><input type="checkbox" name="save" value="아이디저장" id="chk"><label for="chk">아이디 저장</label></p>
+        <p class="login_sub"><input type="button" value="로그인"></p>
+        <ul class="login_list">
+            <li><a href="#">아이디 찾기</a></li>
+            <li><a href="#">비밀번호 재발급</a></li>
+            <li><a href="#">회원가입</a></li>
+        </ul><!--login_list-->
+    </form>
+</div><!--login_container-->
+</body>
+</html>

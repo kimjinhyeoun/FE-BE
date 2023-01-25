@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/*reset*/
+ul,li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#333333;
+}
+body,div,h3,h4,p,form,input,label,ul,li,a{
+    margin:0;
+    padding:0;
+}
+body, input{ /*인풋영역 안먹으니까 쉼표인풋 넣어주자*/
+    font:normal 14px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+    color:#333333;
+}
+
+/*login_title*/
+#login_title{
+    width:100%;
+    height:120px;
+    background-color:#8ccdeb;
+    margin-bottom:50px;
+}
+#login_title h3{
+    font-size:20px;
+    width:600px;
+    height:90px;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight:normal;
+    color:white;
+    text-align:center;
+    line-height:30px;
+    background:url(../images/bg1.png) no-repeat right center;
+    padding-top:30px;
+    padding-right:120px;
+}
+#login_title h3 span{
+    font-size:15px;
+    display:block;
+}
+
+#login_container{
+    width:900px;
+    border-top:1px solid #333333;
+    margin-left:auto;
+    margin-right:auto;
+    background:url(../images/bg_login.jpg) no-repeat 50px center;
+    padding-left:450px;
+    box-sizing:border-box;
+    padding-top:40px;
+}
+
+#login_container > h4{
+    height:20px;
+    font-size:20px;
+    margin-bottom:10px;
+} /*LOGIN*/
+#login_container > p{
+    height:40px;
+    margin-bottom:15px;
+}
+#u_id, #u_pwd{
+    width:300px;
+    height:35px;
+    text-indent:1em;
+    margin-bottom:5px;
+    outline:none;
+} /*아디 비번 입력*/
+.login_chk{
+    margin-bottom:10px;
+    height:20px;
+}
+.login_chk input{
+    float:left;
+    margin-top:3px;
+    margin-right:5px;
+}
+.login_chk label{
+    float:left;
+}
+.login_sub{
+    clear:both;
+    height:35px;
+    margin-bottom:10px;
+}
+.login_sub input{
+    background-color:#f05b95;
+    color:white;
+    border:none;
+    width:300px;
+    height:35px;
+    letter-spacing:2px;
+}
+.login_sub input:hover{
+    background-color:white;
+    color:#f05b95;
+    border:1px solid #f05b95;
+    cursor:pointer;
+}
+.login_list{
+    height:25px;
+}
+.login_list li{
+    float:left;
+    background:url(../images/bar1.jpg) no-repeat left center;
+    padding-left:10px;
+    margin:0 5px;
+}
+.login_list li:first-child{
+    background:none;
+    padding-left:0px;
+    margin-left:0;
+}
+.login_list li a{
+    color:#333333;
+}
+.login_list li a:hover{
+    text-decoration:underline;
+}

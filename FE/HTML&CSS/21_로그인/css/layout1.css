@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/*reset*/
+div,form,h3,p,label,b,input,button{
+    margin:0;
+    padding:0;
+}
+body{
+    font:normal 15px/1.5em Arial,sans-serif;
+    color:#333333;
+}
+
+/*wrap*/
+#wrap{
+    background:url(../images/bg1.jpg) no-repeat center;
+    width:900px;
+    height:450px;
+}
+
+#login{
+    width:300px;
+    background-color:white;
+    float:right;
+    margin:80px 50px 0px 0px;
+    padding:10px;
+    box-shadow:5px 5px 3px #333333;
+}
+#login h3{
+    height:25px;
+    margin-bottom:15px;
+    margin-top:15px;
+    font-size:25px;
+}
+#login label{
+    display:block;
+}
+#u_email, #u_pwd{
+    width:100%;
+    height:40px;
+    border:none;
+    background-color:#f1f1f1;
+    outline:none;
+    margin-bottom:30px;
+    text-indent:20px;
+}
+#login input::placeholder{ /*인풋 스타일 변경*/
+    color:green;
+    font-style:italic;
+}
+#login input:-ms-input-placeholder{ /*인풋 스타일 변경*/
+    color:green;
+    font-style:italic;
+}
+#login input::-webkit-input-placeholder{ /*인풋 스타일 변경*/
+    color:green;
+    font-style:italic;
+}
+.btn button{
+    background-color:#33ccff;
+    width:100%;
+    height:45px;
+    border:none;
+    color:white;
+    cursor:pointer;
+    outline:none;
+    opacity:0.9;
+}
+.btn button:hover{
+    opacity:1;
+}
