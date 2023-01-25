@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+
+
+/*reset*/
+body,div,figure,img,figcaption,p,br,span,input{
+  margin:0;
+  padding:0;
+}
+body{
+  font:normal 12px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+  color:#333;
+}
+
+/*infor_wrap*/
+#infor_wrap{
+  width:960px;
+  height:380px;
+  margin:10px auto;
+} /*전체 w190+580+190  h380 */
+/*infor1*/
+#infor1{
+  float:left;
+  width:190px;
+  height:380px;
+}
+#infor1 figure{
+  width:190px;
+  height:190px;
+  text-align:center;
+  padding-top:30px;
+  box-sizing:border-box;
+}
+#infor1 figure:first-child{
+  background-color:#e84e56;
+  color:#fff;
+}
+#infor1 figure:last-child{
+  background-color:#e0d3cb;
+}
+/*infor2*/
+#infor2{
+  float:left;
+  width:580px;
+  height:380px;
+  position:relative;
+}
+.infor2_2,.infor2_3,.infor2_4,.infor2_5{
+  position:absolute;
+  z-index:2;
+  left:30px;
+}
+.infor2_1{
+  width:580px;
+  height:380px;
+}
+.infor2_2{
+  top:20px;
+  letter-spacing:-1px;
+} /*많은 사람들이 궁금*/
+.infor2_3{
+  top:50px;
+  font-size:25px;
+  font-weight:bold;
+  letter-spacing:-1px;
+}/*궁금증 해결사*/
+.infor2_3 span{
+  color:#2d87a9;
+}/*FAQ*/
+.infor2_4{
+  top:100px;
+  letter-spacing:-1px;
+}/*카드 상품 혜택*/
+.infor2_5{
+  top:180px;
+  
+}/*답변보기*/
+.infor2_5 input{
+  width:150px;
+  height:30px;
+  border:none;
+  background-color:#555356;
+  color:#fff;
+  font-weight:bold;
+}
+.infor2_5 input:hover{
+  cursor:pointer;
+  background-color:#999;
+}
+/*infor3*/
+#infor3{
+  float:left;
+  width:190px;
+  height:380px;
+}
+#infor3 figure{
+  width:190px;
+  height:190px;
+  text-align:center;
+  padding-top:30px;
+  box-sizing:border-box;
+}
+#infor3 figure:first-child{
+  background-color:#d0eaeb;
+}
+#infor3 figure:last-child{
+  background-color:#1f8cb3;
+  color:#fff;
+}

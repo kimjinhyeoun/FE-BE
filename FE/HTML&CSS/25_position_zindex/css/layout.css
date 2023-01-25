@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*reset*/
+body,p,img,div{
+  margin:0;
+  padding:0;
+}
+img{
+  border:1px solid red;
+  background-color:#fff;
+}
+
+#ex1{
+  position:absolute;
+  left:400px;
+  top:30px;;
+}
+#ex2{
+  position:relative;
+  left:200px;
+  top:50px;
+}
+#ex3{
+  position:fixed;
+  right:500px;
+  top:80px;
+}
+#ex4{
+  border:1px solid blue;
+  width:500px;
+  height:500px;
+  margin:50px;
+  position:relative;
+}
+#ex4 img{
+  position:absolute;
+  right:100px;
+  bottom:200px;
+}
+#ex5{
+  background-color:yellow;
+  border:1px solid green;
+  padding:5px;
+  position:-webkit-sticky;
+  position:sticky;
+  top:0;
+  left:0;
+}
+#ex6{
+  padding-bottom:1000px;
+}

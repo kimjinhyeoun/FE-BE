@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/*reset*/
+p{
+  padding:0;
+  margin:0;
+}
+
+#wrap1{
+  background-color:pink;
+  width:500px;
+  height:300px;
+  position:relative;
+}
+#wrap1 p{
+  background-color:#fff;
+  width:128px;
+  height:128px;
+  position:absolute;
+}
+#wrap1 .box1{
+  border:2px solid #ff6666;
+  left:30px;
+  top:50px;
+  z-index:2; 
+}/* position이 설정된거에 적용가능 z-index 숫자 크기에따라 순서가 바뀜 수치만 나타낼뿐 크기가 변경되거나 하진않다.*/
+#wrap1 .box2{
+  border:2px solid #555bb5;
+  left:80px;
+  top:80px;
+  z-index:1; 
+}/* z-index 숫자 크기에따라 순서가 바뀜 수치만 나타낼뿐 크기가 변경되거나 하진않다.*/
+#wrap1 .box3{
+  border:2px solid #3c222c;
+  left:110px;
+  top:110px;
+  z-index:0; 
+}/* z-index 숫자 크기에따라 순서가 바뀜 수치만 나타낼뿐 크기가 변경되거나 하진않다.*/
+#wrap2{
+  border:1px solid green;
+  width:128px;
+  height:128px;
+  position:relative;
+}
+#wrap2 p:first-child{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+
+
+
