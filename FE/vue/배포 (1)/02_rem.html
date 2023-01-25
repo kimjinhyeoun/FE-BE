@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem단위</title>
+    <style>
+        html{
+            font-size:25px;
+        }
+        /* em: 부모크기를 기준으로 크기가 자동으로 조절 */
+        /* rem 최상위계층인 html태그를 기준으로 크기가 자동으로 조절 / 상속문제가 발생하지 않아 유용하게 사용 */
+        body{
+            font-size:25px;
+        }
+        #ex1{
+            color:red;
+            font-size:2em; /*25 x 2em = 50px*/
+        }
+        #ex2{
+            color:green;
+            font-size:2em;  /*50 x 2em = 100px*/
+        }
+        #ex3{
+            color:blueviolet;
+            font-size: 2em;
+        }
+        #ex4{
+            color:midnightblue;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="ex1">
+        내용1
+        <div id="ex2">
+            내용2
+            <div id="ex3">
+                내용3
+                <div id="ex4">
+                    내용4
+                </div>
+            </div><!--ex3-->
+        </div><!--ex2-->
+    </div><!--ex3-->
+</body>
+</html>

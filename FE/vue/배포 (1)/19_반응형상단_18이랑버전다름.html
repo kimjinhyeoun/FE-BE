@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형상단</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset_.css" media="all">
+    <link rel="stylesheet" href="css/layout19.css" media="all">
+    <script>
+        //bx슬라이더는 외부로 잘 안먹으니 내부로 쳐라
+        //https://bxslider.com/options
+        $(document).ready(function(){
+        var slider = $('.bxslider').bxSlider({
+            auto:true,
+            mode:'horizontal',
+            pagerCustom:'#bx_pager',
+            speed:1000,
+            autoHover:true,
+            autoStart:true,
+        });
+        $(document).on('click','.bx-pager, #bx_pager, .bx-prev, .bx-next, .main_img',function(){
+            slider.startAuto();
+        });
+    });
+    </script>
+</head>
+<body>
+    <header id="top">
+        <div class="menu_wrap1">
+            <ul class="quick1">
+                <li><a href="#">join</a></li>
+                <li><a href="#">login</a></li>
+            </ul><!--quick1-->
+            <h1><a href="#"><img src="images/conceptzine_w.png" alt="#" width="130" height="19"></a></h1>
+            <ul class="quick1_t">
+                <li><a href="#"><img src="images/mo_cart.png" alt="장바구니" width="25" height="25"></a></li>
+                <li><a href="#"><img src="images/mo_my.png" alt="내정보" width="25" height="25"></a></li>
+            </ul><!--quick1_t-->
+            <div class="quick1_m">
+                <a href="#"><img src="images/menu_web2.png" alt="햄버거메뉴" width="23" height="17"></a>
+            </div><!--quick1_m-->
+        </div><!--menu_wrap1-->
+        <div class="menu_wrap2">
+            <h1><a href="#"><img src="images/conceptzine.png" alt="로고" width="185" height="27"></a></h1>
+            <nav class="nav_wrap">
+                <ul>
+                    <li><a href="#">concepetzine</a></li>
+                    <li><a href="#">contents</a></li>
+                    <li><a href="#">cs center</a></li>
+                </ul>
+            </nav><!--nav_wrap-->
+            <nav class="nav_wrap_t">
+                <ul>
+                    <li><a href="#">concepetzine</a></li>
+                    <li><a href="#">contents</a></li>
+                    <li><a href="#">cs center</a></li>
+                </ul>
+            </nav><!--nav_wrap_t-->
+            <ul class="quick2">
+                <li><a href="#">cart</a></li>
+                <li><a href="#">order</a></li>
+                <li><a href="#">mypage</a></li>
+            </ul><!--quick2-->
+        </div><!--menu_wrap2-->
+    </header><!--top-->
+
+    <div class="main_img">
+        <ul class="bxslider">
+            <li class="banner_01">
+                <ol>
+                    <li>이 달의 질문<span>당신의 삶엔 대화가 있나요?</span></li>
+                    <li>여러 대화를 같이 나눠요.</li>
+                </ol>
+            </li><!--banner_01-->
+            <li class="banner_02">
+                <ol>
+                    <li>한 달에 한 번 찾아오는<span>한 달에 한 번 찾아오는</span></li>
+                    <li>나를 위해 혹은 소중한 누군가를 위해</li>
+                </ol>
+            </li><!--banner_02-->
+            <li class="banner_03">
+                <ol>
+                    <li>소소한 우리의 일상에<span>활력을 넣는 건 당신의 이야기</span></li>
+                    <li>당신의 삶을 들려주세요.</li>
+                </ol>
+            </li><!--banner_03-->
+            <li class="banner_04">
+                <ol>
+                    <li>한 달에 한 번 찾아오는<span>한 달에 한 번 찾아오는</span></li>
+                    <li>나를 위해 혹은 소중한 누군가를 위해</li>
+                </ol>
+            </li><!--banner_04-->
+        </ul><!--bxslider-->
+        <p id="bx_pager">
+            <a data-slide-index="0" href="#">1</a>
+            <a data-slide-index="1" href="#">2</a>
+            <a data-slide-index="2" href="#">3</a>
+            <a data-slide-index="3" href="#">4</a>
+        </p><!--bx_pager-->
+    </div><!--main_img-->
+    <div>
+        내용<br>입니다.<br>
+    </div>
+</body>
+</html>

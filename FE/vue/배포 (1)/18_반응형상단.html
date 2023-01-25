@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형상단</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.touchSlider.js"></script>
+    <script src="js/main18.js"></script>
+    <link rel="stylesheet" href="css/reset_.css">
+    <link rel="stylesheet" href="css/main18.css">
+</head>
+<body>
+    <header id="top">
+        <div class="box">
+            <div class="top_wrap">
+                <ul class="sns">
+                    <li><a href="#"><img src="images/icSns1.gif" alt="#" width="29" height="30"></a></li>
+                    <li><a href="#"><img src="images/icSns2.gif" alt="#" width="29" height="30"></a></li>
+                    <li><a href="#"><img src="images/icSns3.gif" alt="#" width="29" height="30"></a></li>
+                    <li><a href="#"><img src="images/icSns4.gif" alt="#" width="29" height="30"></a></li>
+                </ul><!--.sns-->
+                <ul class="quick">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">주문배송</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">멤버십</a></li>
+                </ul><!--.quick-->
+                <div class="all_menu">
+                    <img src="images/all_menu.png" alt="햅버거메뉴" width="43" height="37">
+                </div><!--.all_menu-->
+                <div class="menu_wrap">
+                    <ul>
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">세일</a></li>
+                        <li><a href="#">매장안내</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                    <p class="close_btn">X</p>
+                </div><!--.menu_wrap-->
+                <h1><a href="#"><img src="images/logo.png" alt="메인로고" width="263" height="45"></a></h1>
+                <p class="search_wrap">
+                    <input type="text" id="u_search">
+                    <input type="image" src="images/sear_btn.png" alt="검색아이콘" width="32" height="29" id="btn_search">
+                </p><!--search_wrap-->
+            </div><!--.top_wrap-->
+        </div><!--.box-->
+    </header><!--#top-->
+    <div class="nav_wrap">
+        <div class="box">
+            <nav id="main_menu">
+                <ul>
+                   <li><a href="#">SKIN</a></li> 
+                   <li><a href="#">BODY</a></li> 
+                   <li><a href="#">HAIR</a></li> 
+                   <li><a href="#">MAKE-UP</a></li> 
+                   <li><a href="#">FRAGRANCE</a></li> 
+                   <li><a href="#">MAN</a></li> 
+                   <li><a href="#">TOOL&amp;ACC</a></li> 
+                   <li><a href="#">FOOD/LIVING</a></li> 
+                   <li><a href="#">BRANDS</a></li> 
+                   <li><a href="#">이벤트</a></li> 
+                   <li><a href="#">매장안내</a></li> 
+                </ul>
+            </nav><!--#main_menu-->
+            <nav id="m_main_menu">
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">세일</a></li>
+                    <li><a href="#">매장안내</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </nav><!--#m_main_menu-->
+        </div><!--.box-->
+    </div><!--.nav_wrap-->
+    <div id="touchSlider11">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ul>
+    </div><!--touchSlider11-->
+    <script>
+        $('#touchSlider11').touchSlider({
+            speed : 1000,
+            autoplay: {
+                enable: true,
+                pauseHover: true,
+                addHoverTarget: '', 
+                interval: 3500
+            }
+        });
+        </script>
+</body>
+</html>
