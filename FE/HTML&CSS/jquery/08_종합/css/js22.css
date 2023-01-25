@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+
+/* reset */
+div,p,img,ul,li{
+    margin:0;
+    padding:0;
+    font:normal 12px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+    color:#333;
+}
+ul,li{
+    list-style:none;
+}
+/* notice_wrap */
+#notice_wrap{
+    width:400px;
+    height:260px;
+    border:1px solid red;
+    margin: 20px;
+    position:relative;
+}
+/* 버튼 */
+.prev_btn, .next_btn{
+    position:absolute;
+    top:50%;
+    transform:translate(0,-50%);
+    cursor:pointer;
+    z-index:10;
+}
+.prev_btn{
+    left:0;
+} 
+.next_btn{
+    right:0;
+}
+#notice_w{
+    width:320px;
+    height:236px;
+    border:1px solid blue;
+    margin-left:40px;
+    overflow: hidden;
+}
+#notice{
+    width:320px;
+    height:236px;
+}
+#notice li{
+    width:320px;
+    height:236px;
+    float:left;
+}
+#photo_bg1{
+    width:250px;
+    height:50px;
+    position: absolute;
+    left:100px;
+    top:30px;
+    z-index:10;
+}
+.photo_bg1{
+    position:relative;
+    height:50px;
+}
+.photo_bg1 li{
+    position: absolute;
+    left:0;
+    top:0;
+    color:#fff;
+    font-size:30px;
+    background-color:rgba(0,0,0,0.8);
+}
+.photo_bg1 li.selected{
+    z-index:1;
+}
+
+.photo_bg2{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    text-align:center;
+}
+.photo_bg2 li.se21{
+    background-color:#3399ff;
+}
+.photo_bg2 li.se22{
+    background-color:#998686;
+}
+.photo_bg2 li.se23{
+    background-color:#e68626;
+}
+.photo_bg2 li.se24{
+    background-color:#2b6a1d;
+}
+.photo_bg2 li.se25{
+    background-color:#8a498a;
+}

@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+
+body{
+    font:normal 12px/1.5em "nanum",sans-serif;
+}
+
+@font-face{
+    font-family:nanum;
+    src:url("../font/NanumGothic.eot");
+    src:url("../font/NanumGothic.eot?#iefix") format("embedded-opentype"),
+            url("../font/NanumGothic.ttf") format("truetype"),
+            url("../font/NanumGothic.woff") format("woff");
+}
+
+/* top_wrap */
+#top_wrap{
+    width:100%;
+    height:60px;
+    min-width:1920px;
+    position: relative;
+}
+/* js로 추가한 클래스 */
+.n_bg{
+    position: absolute;
+    left:0;
+    top:60px;
+    width:100%;
+    height:50px;
+    background-color:#f4f4f4;
+    z-index:5;
+}
+#top{
+    width:1200px;
+    height:60px;
+    margin:0 auto;
+}
+/* 로고 */
+#top h1{
+    width:159px;
+    height:41px;
+    float:left;
+    margin-top:5px;
+}
+#top_navi{
+    width:940px;
+    height:33px;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+/* nav > ul */
+#menu{
+    width:940px;
+    height:33px;
+}
+#menu >  li{
+    float:left;
+    width:150px;
+    height:30px;
+    text-align:center;
+    font-weight:bold;
+    position:relative;
+}
+#menu >  li > a{
+    color:#666;
+    font-size:16px;
+}
+#menu >  li:hover > a{
+    color:#f47216;
+}
+/* #menu >  li > ul */
+#menu >  li > .submenu{
+    position:absolute;
+    left:0;
+    top:33px;
+    z-index:10;
+    height:55px;
+    line-height:60px;
+}
+#menu >  li > .submenu > li{
+    float:left;
+}
+#menu >  li > .submenu > li > a{
+    font-weight:normal;
+    color:#666;
+    font-size:13px;
+    margin:0 10px;
+}
+#menu >  li > .submenu > li > a:hover{
+    color:#f47216;
+    border-bottom:1px solid #f47216;
+}
+/* 회사소개 하위 ul */
+#menu >  li > .sub1{
+    width:500px;
+    left:-20px;
+}
+/* 지속가능경영 하위 ul */
+#menu >  li > .sub2{
+    width:500px;
+    left:-110px;
+}
+/* 제품소개 하위 ul */
+#menu >  li > .sub3{
+    width:400px;
+    left:-50px;
+}
+/* 인재채용 하위 ul */
+#menu >  li > .sub4{
+    width:500px;
+    left:-80px;
+}
+/* 홍보센터 하위 ul */
+#menu >  li > .sub5{
+    width:500px;
+    left:-70px;
+}
+/* 고객서비스 하위 ul */
+#menu >  li > .sub6{
+    width:100px;
+    left:25px;
+}
+#lang_wrap{
+    float:right;
+    width:70px;
+    position:relative;
+}
+#lang_i{
+    border:1px solid #ccc;
+    width:70px;
+    text-align:center;
+    border-radius:10px;
+    line-height:2em;
+    cursor:pointer;
+    position: absolute;
+    top:18px;
+    right:0;
+    background:#fff url(../images/lang_icon_d.png) no-repeat 55px 10px;
+    z-index:20;
+}
+#lang_i:hover{
+    background-image:url(../images/lang_icon_u.png);
+}
+/* kor */
+.ki{
+    background: url(../images/lang_icon1.png) no-repeat 8px center;
+}
+
+/* js로 추가 */
+.sel{
+    color:#ff6600;
+}
+
+.main_img{
+    clear:both;
+    width:100%;
+    height:743px;
+    min-width:1920px;
+}
+.main_img img{
+    width:100%;
+    height:auto;
+}

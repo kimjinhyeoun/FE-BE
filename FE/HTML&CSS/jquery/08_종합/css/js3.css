@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+
+/* reset */
+div,p,a,ul,li,img{
+    margin:0px;
+    padding:0;
+    font:normal 12px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+    color:#333
+}
+ul,li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+
+/* login 개인로그인 */
+#login{
+    border:3px solid #666;
+    width:300px;
+    height:180px;
+    padding-top:50px;
+    text-align:center;
+    background-color:#eaeaea;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    z-index:100;
+}
+#login p{
+    margin:10px 0;
+}
+
+/* 모달태그 */
+#layer{
+    width:100%;
+    height:100%;
+    background-color:black;
+    position:fixed;
+    left:0;
+    top:0;
+    opacity:0.80;
+    z-index:90;
+}
+
+/* wrap */
+#wrap{
+    width:1600px;
+    height:1400px;
+    position:relative;
+    margin:0 auto;
+}
+
+/* quick 빠른메뉴 개인로그인 기업로그인 */
+#quick {
+    position:absolute;
+    top:100px;
+    right:100px;
+    width:80px;
+    height:250px;
+}
+
+#quick li{
+    width:80px;
+    height:84px;
+    border:2px solid #1c4d9c;
+    box-sizing:border-box;
+    text-align:center;
+}
+#quick li:nth-child(2){
+    border-top:none;
+    border-bottom:none;
+}
+#quick li:nth-child(1) a{
+    background:#fff url(../images/quick1.png) no-repeat center 15px;
+}
+#quick li:nth-child(2) a{
+    background:#fff url(../images/quick2.png) no-repeat center 15px;
+}
+#quick li:nth-child(3) a{
+    background:#fff url(../images/quick3.png) no-repeat center 15px;
+}
+#quick li a{
+    width:100%;
+    height:100%;
+    display:block;
+    padding-top:50px;
+    box-sizing: border-box;
+    color:#1c4d9c;
+    font-weight:bold;
+}
+/* 마크업때 클래스 추가안함 js로 클래스 추가해서 사용할것 */
+#quick li a.sel{
+    color:#fff;
+    background-color:#1c4d9c;
+}
+
+/* 빠른메뉴 */
+#q1_menu{
+    position: absolute;
+    top:100px;
+    right:100px;
+    width:500px;
+    height:210px;
+    background-color: #fff;
+    border:1px solid #1c4d9c;
+    padding-top:30px;
+    padding-left:10px;
+}
+#q1_menu > ul{
+    float:left;
+    border-right:dotted 1px #666;
+    width:120px;
+}
+#q1_menu > ul:nth-of-type(4){
+    border-right:none;
+}
+#q1_menu > ul li{
+    line-height:3em;
+    text-indent:1em;
+}
+
+#q1_menu > ul li:first-child a{
+    color:#000;
+    font-weight:bold;
+}
+
+.close_btn a{
+    position: absolute;
+    top:20px;
+    right:20px;
+}

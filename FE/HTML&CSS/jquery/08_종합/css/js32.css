@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+
+body,div,ul,li,img,p,br,h3{
+    margin: 0;
+    padding:0;
+}
+ul,li{
+    list-style:none;
+}
+body{
+    font:normal 12px/1.5em "맑은 고딕",sans-serif;
+}
+
+.test{
+    height:1500px;
+}
+#number_bgimg{
+    width:1280px;
+    height:1324px;
+    margin:0 auto;
+    background:url(../images/circle_bg01.png) no-repeat;
+    position:relative;
+    overflow:hidden;
+}
+#number_wrap{
+    width:1280px;
+    height:1324px;
+}
+#number_wrap > li:nth-child(1){
+    position: absolute;
+    left:200px;
+    top:30px;
+}
+#number_wrap > li:nth-child(2){
+    position: absolute;
+    right:120px;
+    top:280px;
+}
+#number_wrap > li:nth-child(3){
+    position: absolute;
+    left:200px;
+    bottom:300px;
+}
+#number_wrap > li:nth-child(4){
+    position: absolute;
+    right:110px;
+    bottom:0;
+}
+
+.no01{
+    position: absolute;
+    left:230px;
+    top:150px;
+    margin-left:1000px;
+}
+.no02{
+    position: absolute;
+    left:-60px;
+    top:210px;
+    margin-left:-1000px;
+}
+.no03{
+    position: absolute;
+    left:230px;
+    bottom:170px;
+    margin-left:1000px;
+}
+.no04{
+    position: absolute;
+    left:-70px;
+    bottom:150px;
+    margin-left:-1000px;
+}
+
+#number_wrap > li > h3{
+    font-size:20px;
+    width:200px;
+}
+#number_wrap > li:nth-child(1) > h3{
+    position:absolute;
+    left:360px;
+    top:140px;
+    margin-left:1000px;
+}
+#number_wrap > li:nth-child(2) > h3{
+    position:absolute;
+    left:-260px;
+    top:200px;
+    margin-left:-1000px;
+}
+#number_wrap > li:nth-child(3) > h3{
+    position:absolute;
+    left:360px;
+    bottom:200px;
+    margin-left:1000px;
+}
+#number_wrap > li:nth-child(4) > h3{
+    position:absolute;
+    left:-230px;
+    bottom:190px;
+    margin-left:-1000px;
+}
+
+#number_wrap > li > p{
+    width:500px;
+    color:#808080;
+}
+#number_wrap > li:nth-child(1) > p{
+    position: absolute;
+    left:360px;
+    top:170px;
+    margin-left:1000px;
+}
+#number_wrap > li:nth-child(2) > p{
+    position:absolute;
+    left:-560px;
+    top:230px;
+    margin-left:-1000px;
+}
+#number_wrap > li:nth-child(3) > p{
+    position:absolute;
+    left:360px;
+    bottom:170px;
+    margin-left:1000px;
+}
+#number_wrap > li:nth-child(4) > p{
+    position:absolute;
+    left:-505px;
+    bottom:140px;
+    margin-left:-1000px;
+}

@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* 체크박스 */
+#chk1,#chk2,#chk3{ 
+    width:0;
+    height:0;
+    overflow:hidden;
+}
+label.type01{
+    background:url(../images/bg_checkbox2.png) no-repeat 0 0;
+    height:24px;
+    display:inline-block;
+    padding-left:30px;
+    color:#666;
+    -webkit-user-select:none; /*드래그 안되게 막아놓는 태그*/
+    -ms-user-select:none; /*드래그 안되게 막아놓는 태그*/
+    user-select:none; /*드래그 안되게 막아놓는 태그*/
+}
+/* 클래스를 추가하겠다 기능은 선택된 checkbox */
+label.checked{
+    background-position:0 -100px;
+}
+#wrap2 textarea{
+    resize:none;
+}
+

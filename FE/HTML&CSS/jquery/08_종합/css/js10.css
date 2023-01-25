@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+
+/* reset */
+body,input{
+    font:normal 12px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+    color:#333;
+}
+a{
+    color:#666;
+}
+input{
+    outline:none;
+}
+
+/* join_wrap */
+#join_wrap{
+    margin:20px;
+    width:600px;
+    border:1px solid #eaeaea;
+    overflow:hidden;
+}
+#join_wrap h3{
+    height:20px;
+    margin-bottom:30px;
+    text-align: center;
+}
+.join{
+    width:600px;
+    height:130px;
+    margin-left:18px;
+}
+.join li{
+    float:left;
+    width:120px;
+    height:130px;
+    margin:0 10px;
+    text-align: center;
+    position:relative;
+}
+.join li a{
+    width:120px;
+    height:130px;
+    display:block;
+    padding-top:80px;
+    box-sizing: border-box;
+    cursor:default;
+}
+.join li.join1 a{
+    background:url(../images/stepJoin_1.png) no-repeat center top;
+}
+.join li.join2 a{
+    background:url(../images/stepJoin_2.png) no-repeat center top;
+}
+.join li.join3 a{
+    background:url(../images/stepJoin_3.png) no-repeat center top;
+}
+.join li.join4 a{
+    background:url(../images/stepJoin_4.png) no-repeat center top;
+}
+.join li a.j_sel{
+    background-position:center -137px;
+    color:#f54a7e;
+    font-weight:bold
+} /*js*/
+span.j_txt1{
+    width:120px;
+    display:block;
+}
+span.j_txt2{ /*js로 추가된 태그*/
+    background:url(../images/step_off.png) no-repeat;
+    width:13px;
+    height:20px;
+    display:block;
+    position:absolute;
+    top:20px;
+    right:-20px;
+}
+span.j_txt2.j_txts{
+    background-image: url(../images/step_on.png); /*추가 span,,js가 들어갈거임*/
+}
+/* 내용 */
+#join_con{
+    clear:both;
+    width:2400px;
+    height:300px;
+    text-align: center;
+    line-height: 300px;
+    position: relative;
+    left:0;
+    top:0;
+}
+#join_con > div{
+    width:600px;
+    height:300px;
+    float:left;
+}
+#join_con > #join1{
+    background-color:#ebeb6d;
+}
+#join_con > #join2{
+    background-color:#76e1f4;
+}
+#join_con > #join3{
+    background-color:#3d69f9;
+}
+#join_con > #join4{
+    background-color:#73ee73;
+}
+
+/* 버튼 */
+.btn_wrap{
+    width:600px;
+    text-align: center;
+    margin:10px 0;
+}
+/* 이전 / 다음 */
+.btn_wrap input{
+    border:none;
+    background-color:#ff3366;
+    width:100px;
+    height:30px;
+    color:#fff;
+    font-weight:bold;
+    border-radius:20px;
+    cursor:pointer;
+}

@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/* reset */
+div,dl,dt,a,span,dd,br,p,img,input{
+    margin:0;
+    padding:0;
+    font:normal 12px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+}
+a{
+    text-decoration:none;
+}
+input{
+    outline:none;
+}
+
+/* wrap */
+#wrap{
+    height: 800px;
+}
+
+#faq{
+    width: 750px;
+}
+
+#faq dt{
+    border-bottom:1px solid #ccc;
+    background:url(../images/q.png) no-repeat left center;
+    width:700px;
+    height:50px;
+    padding-left:50px;
+    padding-top:15px;
+}
+#faq dt a{
+    color:#666;
+    width:680px;
+    display:block;
+    background:url(../images/arrow1_q.png) no-repeat right center;
+}
+#faq dt a.selected{ /* js로 클래스 만들어서 할거임*/
+    background-image:url(../images/arrow2_q.png);
+    color:#0571d1;
+}
+#faq dt a span{
+    display:block;
+    font-weight:bold;
+}
+
+#faq dd{
+    line-height:1.7em;
+    border-bottom:1px solid #eaeaea;
+    background-color:#f4f8fd;
+    color:#666;
+    padding:10px 0 10px 50px;
+}
+#faq dd div{
+    height:100px;
+}
+#faq dd div p{
+    margin:10px 0;
+}
+
+.star_wrap{
+    float:left;
+    width:200px;
+}
+.star_wrap img{
+    float:left;
+    margin:0 2px;
+    cursor:pointer;
+}
+
+.btn_wrap{
+    float:left;
+    width:460px;
+}
+.btn_wrap input{
+    float:left;
+
+}
+.btn_wrap input:nth-child(1){
+    border:1px solid #ccc;
+    width:400px;
+    height:40px;
+    text-indent:1em;
+    color:#ccc;
+}
+.btn_wrap input:nth-child(2){
+    width: 50px;
+    height: 42px;
+    border:none;
+    background-color:#0571d1;
+    color:#fff;
+    cursor:pointer;
+    font-weight:bold;
+}

@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+
+/* reset */
+footer,div,ul,li,a{
+    margin:0;
+    padding:0;
+    font:normal 14px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+    color:#333333;
+}
+footer{
+    display:block;
+}
+a{
+    text-decoration:none;
+}
+ul,li{
+    list-style:none;
+}
+
+/* bottom1 */
+#bottom1{
+    margin:50px;
+}
+
+/* bottom2 */
+#bottom2{
+    margin-bottom:150px;
+    height:200px;
+}
+/* 전체 */
+#family_site2{
+    width:180px;
+    height:30px;
+}
+/* FAMILY SITE */
+#family_site2 > button{
+    width:180px;
+    height:30px;
+    background-color:#999;
+    border:1px solid #666;
+    text-align:left;
+    color:#f1f1f1;
+    padding-left:10px;
+    cursor:pointer;
+    position:relative;
+}
+/* span */
+#family_site2 > button > .icon2{
+    border-left:1px solid #777;
+    width:30px;
+    height:29px;
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    text-align: center;
+    line-height:29px;
+}
+#family_site2 > ul{
+    background-color:#999;
+    width:178px;
+    height:140px;
+    padding-top: 10px;
+    border:1px solid #666;
+    position: relative;
+    top:-1px;
+}
+#family_site2 > ul > li{
+    padding-left:10px;
+}
+#family_site2 > ul > li > a{
+    font-size:13px;
+    color:#fff;
+}
+
+
+/* bottom3 */
+#bottom3{
+    margin-bottom:150px;
+    height:200px;
+}
+#family_site3{
+    width:180px;
+    height:170px;
+    position: relative;
+    left:0px;
+    top:-140px;
+    z-index:40;
+    overflow:hidden;
+}
+/* FAMILY SITE */
+#family_site3 > button{
+    width:180px;
+    height:30px;
+    background-color:#999;
+    border:1px solid #666;
+    text-align:left;
+    color:#f1f1f1;
+    padding-left:10px;
+    cursor:pointer;
+    z-index:52;
+    position: absolute;
+    left:0;
+    top:140px;
+}
+/* span */
+#family_site3 > button > .icon3{
+    border-left:1px solid #777;
+    width:30px;
+    height:29px;
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    text-align: center;
+    line-height:29px;
+}
+#family_site3 > ul{
+    background-color:#999;
+    width:178px;
+    height:150px;
+    border:1px solid #666;
+    padding-top: 10px;
+    position: absolute;
+    left:0;
+    top:1px;
+    z-index:51;
+}
+#family_site3 > ul > li{
+    padding-left:10px;
+    line-height:22px;
+}
+#family_site3 > ul > li > a{
+    font-size:13px;
+    color:#fff;
+}

@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+
+body{
+    font:normal 12px/1.5em "nanum",sans-serif;
+}
+    
+@font-face{
+    font-family:nanum;
+    src:url('../font/NanumGothic.eot');
+    src:url('../font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+            url('../font/NanumGothic.ttf') format('truetype'),
+            url('../font/NanumGothic.woff') format('woff');
+}
+
+/* wrap */
+#wrap{
+    width:100%;
+    border-top:20px solid #2b2b2b;
+    min-width:1920px;
+}
+
+#top{
+    width:1250px;
+    height:75px;
+    margin:10px auto 0 auto;
+}
+/* 로고 */
+#top h1{
+    width:104px;
+    height:38px;
+    float:left;
+    margin-top:10px;
+}
+
+#top_navi{
+    width:1050px;
+    height:45px;
+    float:left;
+    margin-top:30px;
+}
+/* nav > ul */
+#menu{
+    width:875px;
+    height:45px;
+    margin:0 auto;
+}
+/* w875 / 7 */
+#menu > li{
+    float:left;
+    width:125px;
+    height:45px;
+    text-indent:10px;
+    position:relative;
+}
+#menu > li:nth-child(5){
+    text-align:center;
+}
+#menu > li > a{
+    color:#666;
+    font-size:17px;
+    font-weight:bold;
+}
+#menu > li:hover > a{
+    color:#0e5ddc;
+}
+/* 하위 ul */
+#menu > li > .submenu{
+    position:absolute;
+    left:0;
+    top:45px;
+    z-index:10;
+    background-color:#fff;
+}
+/* pr센터 하위메뉴 */
+#menu > li:nth-child(5) > .submenu{
+    text-align:left;
+    left:20px;
+}
+/* pr센터 하위 ul > li */
+#menu > li:nth-child(5) > .submenu > li{
+    width:110px;
+}
+#menu > li > .submenu > li{
+    width:150px;
+    height:35px;
+    line-height:35px;
+}
+#menu > li > .submenu > li:hover{
+    background-color:#024b8f;
+}
+#menu > li > .submenu > li > a{
+    color:#666;
+    display:block;
+}
+#menu > li > .submenu > li > a:hover{
+    color:#fff;
+}
+/* 햄버거 */
+.menu_wrap{
+    width:59px;
+    height:58px;
+    float:right;
+    margin-top:10px;
+}
+.main_img{
+    clear:both;
+    width:1576px;
+    height:673px;
+    margin:0 auto;
+}

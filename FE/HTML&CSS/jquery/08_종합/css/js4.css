@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+
+/* RESET */
+div,ul,li,img,p,label,input,button,a{
+    margin:0;
+    padding:0;
+    font:normal 12px/1.5em "맑은 고딕","Malgun Gothic",sans-serif;
+}
+a{
+    text-decoration:none;
+}
+ul,li{
+    list-style:none;
+}
+
+/* top */
+#top{
+    width:1024px;
+    height:50px;
+    /* background-color:yellowgreen; */
+    margin:0 auto;
+    position:relative;
+}
+#top > ul{
+    width:240px;
+    height:50px;
+    /* background-color: blueviolet; */
+    float:right;
+}
+#top > ul > li{
+    float:left;
+    width:80px;
+    height:50px;
+    text-align:center; 
+    line-height:70px;
+    cursor:pointer;
+}
+#top > ul > li.search div{
+    position: absolute;
+    left:50%;
+    top:50px;
+    transform:translate(-50%,0);
+    width:900px;
+    height:50px;
+    background-color:rgba(0, 0, 0,0.8);
+}
+#top > ul > li.search div p{
+    width:700px;
+    height:50px;
+    /* border:1px solid red; */
+    margin:0 auto;
+}
+#search_t,#search,#search_b{
+    float:left;
+}
+/* 통합검색 */
+#search_t{
+    width:100px;
+    height:50px;
+    color:#fff;
+    line-height:50px;
+    display:block;
+}
+#search{
+    width:500px;
+    height:40px;
+    margin-top:2px;
+    text-align:left;
+    text-indent:20px;
+}
+/* 검색버튼 */
+#search_b{
+    width:90px;
+    height:45px;
+    margin-top:2px;
+    /* background-color:#99cc33; */
+    cursor:pointer;
+}
+
+#top > ul > li.language > ul{
+    position:absolute;
+    right:-10px;
+    top:43px;
+    background:url(../images/btn_language_bg.png) no-repeat 0 0;
+    width:100px;
+    height:60px;
+    padding-top:20px;
+    z-index:20;
+}
+#top > ul > li.language > ul > li{
+    width:400px;
+    height:50px;
+}
+#top > ul > li.language > ul > li a{
+    border:1px solid #858585;
+    width:400px;
+    height:50px;
+    background-color:#fff;
+    color:#333;
+    display:block;
+    box-sizing:border-box;
+    line-height:20px;
+    border-top:none;
+}
+#top > ul > li.language > ul > li a:hover{
+    color:#999;
+    background-color:#333;
+}
+
+
+
+
+
+/* top img */
+#top_img{
+    clear:both;
+    width:1024px;
+    height:400px;
+    margin:0 auto;
+}
+
+
+
+/* wwrap11 */
+#wrap11{
+    margin:20px;
+    height:100px;
+}
+#wrap11 span{
+    width:50px;
+    height:50px;
+    border:1px solid grey;
+    display: inline-block;
+    margin:5px;
+    cursor:pointer;
+}
