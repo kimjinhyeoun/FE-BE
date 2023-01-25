@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+
+/* reset */
+body,input{
+    font:normal 13px/1.5em nanum,sans-serif;
+    color:#333;
+}
+a{
+    color:#666;
+}
+input{
+    outline:none;
+}
+
+/* join_wrap */
+#join_wrap{
+    margin:10px;
+    width:600px;
+    border:1px solid #eaeaea;
+    overflow:hidden;
+    margin:30px auto;
+
+}
+#join_wrap h3{
+    height:20px;
+    margin-bottom:30px;
+    text-align: center;
+    font-size:20px;
+    border-top:none;
+    margin-top:40px;
+    margin-bottom:100px;
+}
+.join{
+    width:600px;
+    height:130px;
+    margin-left:18px;
+}
+.join li{
+    float:left;
+    width:120px;
+    height:130px;
+    margin:0 10px;
+    text-align: center;
+    position:relative;
+}
+.join li a{
+    width:120px;
+    height:130px;
+    display:block;
+    padding-top:80px;
+    box-sizing: border-box;
+    cursor:default;
+}
+.join li.join1 a{
+    background:url(../images/stepJoin_1.png) no-repeat center top;
+}
+.join li.join2 a{
+    background:url(../images/stepJoin_2.png) no-repeat center top;
+}
+.join li.join3 a{
+    background:url(../images/stepJoin_3.png) no-repeat center top;
+}
+.join li.join4 a{
+    background:url(../images/stepJoin_4.png) no-repeat center top;
+}
+.join li a.j_sel{
+    background-position:center -137px;
+    color:#000;
+    font-weight:bold;
+} /*js*/
+span.j_txt1{
+    width:120px;
+    display:block;
+}
+span.j_txt2{ /*js로 추가된 태그*/
+    background:url(../images/step_off.png) no-repeat;
+    width:13px;
+    height:20px;
+    display:block;
+    position:absolute;
+    top:20px;
+    right:-20px;
+}
+span.j_txt2.j_txts{
+    background-image: url(../images/step_on.png); /*추가 span,,js가 들어갈거임*/
+}
+/* 내용 */
+#join_con{
+    clear:both;
+    width:2400px;
+    height:300px;
+    text-align: center;
+    position: relative;
+    left:0;
+    top:0;
+    color:#000;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
+}
+#join_con > div{
+    width:600px;
+    height:300px;
+    float:left;
+}
+#join_con > #join1{
+    background-color:#eaeaea;
+}
+#join_con > #join2{
+    background-color:#fff;
+}
+#join_con > #join3{
+    background-color:#eaeaea;
+}
+#join_con > #join4{
+    background-color:#eaeaea;
+}
+/* 본인인증내용 */
+#join1{
+    position:relative;
+}
+#join1 > p{
+    clear:both;
+    width:600px;
+    height:30px;
+    position:absolute;
+}
+/* 본인인증 후 가입이 가능합니다.... */
+.help{
+    border:1px solid #eaeaea;
+    left:50%;
+    transform:translate(-50%, 0);
+    width:100px;
+    height:20px;
+    text-align: center;
+    font-size:12px;
+    line-height:30px;
+    background-color:#fff;
+}
+/* 휴대전화 인증 */
+.phone{
+    top:60px;
+    left:-125px;
+    font-size:18px;
+    font-weight: bold;
+}
+.phone_img{
+    top:100px;
+    left:-120px;
+}
+/* 아이핀 인증 */
+.i_pin{
+    top:60px;
+    right:-120px;
+    font-size:18px;
+    font-weight: bold;
+}
+.i_pin_img{
+    top:100px;
+    right:-120px;
+}
+/* 휴대전화 아이핀 글자색상 */
+.phone span, .i_pin span{
+    color:#303879;
+}
+/* 인증하기 버튼 */
+.phone_btn{
+    top:230px;
+    left:125px;
+}
+.i_pin_btn{
+    top:230px;
+    right:115px;
+}
+.phone_btn, .i_pin_btn{
+    background-color:#303879;
+    color:#fff;
+    outline:none;
+    border:none;
+    width:120px;
+    height:40px;
+    position:absolute;
+    cursor:pointer;
+    display:inline-block;
+}
+.phone_btn:hover, .i_pin_btn:hover{
+    opacity:0.8;
+}
+/* 약관동의내용 */
+.terms{
+    clear:both;
+    width:600px;
+    height:300px;
+    position:relative;
+    border:1px solid #eaeaea;
+}
+.terms_top{
+    clear:both;
+    position:absolute;
+    left:0px;
+    top:10px;
+    font-size:16px;
+    border-bottom:#999 1px solid;
+    width:600px;
+    text-align:left;
+    text-indent:60px;
+    padding-bottom:13px;
+}
+/* 체크박스 */
+.terms > .chk_all{
+    right:0;
+}
+#chk1,#chk2,#chk3{ 
+    width:0;
+    height:0;
+    overflow:hidden;
+    color:#333;
+}
+.check01{
+    position:absolute;
+}
+/* 전체선택 */
+.check02{
+    top:10px;
+    left:30px;
+    cursor:pointer;
+}
+/* 개인정보처리방침(선택) */
+.check03{
+    top:65px;
+    left:30px;
+    font-size:16px;
+    cursor:pointer;
+}
+.check03::after{
+    content: '>';
+    position:absolute;
+    right:-350px;
+    top:-4px;
+    font-size:20px;
+}
+.chk_h1{
+    width:600px;
+    position:absolute;
+    left:0;
+    top:95px;
+    font-size:10px;
+}
+/* 개인정보 제3자제공동의(선택) */
+.check04{
+    top:110px;
+    left:30px;
+    font-size:16px;
+    cursor:pointer;
+}
+.check04::after{
+    content: '>';
+    position:absolute;
+    right:-303px;
+    top:-4px;
+    font-size:20px;
+}
+label.check01{
+    background:url(../images/bg_checkbox2.png) no-repeat 0 0;
+    height:24px;
+    padding-left:30px;
+    color:#666;
+}
+.chk_h2{
+    width:600px;
+    position:absolute;
+    left:0;
+    top:140px;
+    font-size:10px;
+}
+/* checkbox 버튼 */
+label.checked{
+    background-position:0 -100px;
+}
+#join2 textarea{
+    resize:none;
+}
+/* 개인정보입력란 */
+#join3{
+    text-align: left;
+}
+.names{
+    margin-top:20px;
+    padding-left:20px;
+}
+.id_chk{
+    margin-left:20px;
+}
+.pwd1_con{
+    color:#ff0000; /* span  */
+}
+
+/* 가입완료 */
+#join4 h1{
+    height:120px;
+    font-size:22px;
+    margin-top:20px;
+    background: url(../images/chk_img.png) no-repeat center 55px;
+    background-size: 60px;
+}
+#join4 p:nth-child(2){
+    font-size:15px;
+    margin-top:30px;
+    color:#444;
+}
+#join4 p:nth-child(3) a{
+    display:inline-block;
+    width:155px;
+    height:40px;
+    margin-top:30px;
+    background-color:#2b72ba;
+    color:#fff;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    font-size:15px;
+    line-height:40px;
+}
+#join4 p:nth-child(3) a:hover{
+    opacity:0.8;
+}
+/* 하단 버튼 */
+.btn_wrap{
+    width:600px;
+    text-align: center;
+    margin:10px 0;
+
+}
+/* 이전 / 다음 */
+.btn_wrap input{
+    border:none;
+    background-color:#151515;
+    width:100px;
+    height:30px;
+    color:#fff;
+    font-weight:bold;
+    border-radius:20px;
+    cursor:pointer;
+}

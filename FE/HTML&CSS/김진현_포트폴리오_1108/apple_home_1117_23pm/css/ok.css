@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+
+.close_popup2{
+    width:30px;
+    height:30px;
+    position:absolute;
+    right:10px;
+    text-indent:-9999px;
+    border:1px solid #333;
+    background:#000000 url(../images/close.png) no-repeat center;
+    line-height:40px;
+    border-radius:50px;
+}
