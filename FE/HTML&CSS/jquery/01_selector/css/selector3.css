@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+
+/* reset */
+ol li{
+    list-style:none;
+}
+
+/* gallery */
+#gallery{
+    height: 500px;
+}
+#gallery ol li{
+    float: left;
+    width: 53px;
+    height: 80px;
+    margin: 15px;
+}
+#gallery ol li span{
+    display: block;
+    text-align: center;
+}

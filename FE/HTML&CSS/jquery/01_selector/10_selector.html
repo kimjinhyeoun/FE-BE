@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/selector10.js"></script>
+</head>
+<body>
+    <form action="#" method="post">
+        <p>수강과목선택(radio)<br> <!--한가지만 선택가능한 radio-->
+            <input type="radio" name="chk1" disabled>illustrator <!-- disabled 선택안됨-->
+            <input type="radio" name="chk1" checked>photoshop <!-- 브라우저 시작시 선택이 되어있음 -->
+            <input type="radio" name="chk1">flash   
+        </p>
+        <p>수강과목선택(checkbox)<br> <!--여러가지 중복 선택가능한 checkbox-->
+            <input type="checkbox" name="chk2" disabled>illustrator <!-- disabled 선택안됨-->
+            <input type="checkbox" name="chk2" >photoshop
+            <input type="checkbox" name="chk2" checked>flash <!--브라우저 시작시 선택이 되어있음-->
+        </p>
+        <p>
+            <select size="5" multiple> <!--사이즈 5개-->
+                <option value="illustrator">illustrator</option>
+                <option value="photoshop" selected>photoshop</option> <!--브라우저 시작시 선택이 되어있음-->
+                <option value="flash">flash</option>
+                <option value="dreamweaver" selected>dreamweaver</option> <!--브라우저 시작시 선택이 되어있음-->
+                <option value="web">web</option>
+            </select>
+        </p>
+        <p>웹표준<input type="text" value="웹표준"></p>
+        <p>웹접근성<input type="text" value="웹접근성" disabled></p> <!-- disabled 선택안됨-->
+    </form>
+</body>
+</html>

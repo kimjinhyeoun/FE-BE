@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* 결과 */
+#event{
+    border:1px solid #333;
+    width:100px;
+    height:100px;
+    margin-bottom:30px;
+    text-align:center;
+    line-height:100px;
+}
+.evt{
+    border:1px solid #000;
+    width:50px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    float:left;
+    margin:5px;
+    user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+}
+.evt3{
+    clear:both;
+}
+.evt10{
+    clear:both;
+    user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+}
+
+.menu{
+    padding-left:0;
+    height:30px;
+}
+.menu li{
+    list-style:none;
+    float:left;
+    margin-left:5px;
+    margin-right:5px;
+}
+.menu li a{
+    text-decoration:none;
+    color:#000;
+}
+.link_con{
+    clear: both;
+}
+.i_frm{
+    border:1px solid #999;
+}

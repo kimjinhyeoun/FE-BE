@@ -1,0 +1,19 @@
+Event Object
+event.currentTarget  이벤트 버블 링 단계 내의 현재 DOM 요소
+event.delegateTarget 현재 호출되는 jQuery 이벤트 핸들러가 연결된 요소를 반환
+event.data 현재 실행중인 처리기가 바인딩 될 때 이벤트 메서드에 전달되는 선택적 데이터가 포함
+event.isDefaultPrevented()  이벤트에 대해 preventDefault () 메서드가 호출 되었는지 여부를 확인
+event.isImmediatePropagationStopped()이벤트에 대해 event.stopImmediatePropagation () 이 호출 되었는지 여부를 확인, 호출되면 true를 반환하고 그렇지 않으면 false를 반환
+event.isPropagationStopped() 이벤트에 대해 event.stopPropagation () 이 호출 되었는지 여부를 확인,호출되면 true를 반환하고 그렇지 않으면 false를 반환
+event.namespace 이벤트가 트리거 될 때 사용자 지정 네임 스페이스를 반환
+event.pageX 문서의 왼쪽 가장자리를 기준으로 마우스 포인터의 위치를 ​​반환
+event.pageY 문서의 위쪽 가장자리를 기준으로 마우스 포인터의 위치를 ​​반환
+event.preventDefault() 요소의 기본 작업이 발생하는 것을 중지,제출 버튼이 양식을 제출하지 못하도록 방지, 링크가 URL을 따르지 못하도록 방지
+event.relatedTarget  마우스 이동시 입력 또는 종료되는 요소를 반환
+event.result 지정된 이벤트에 의해 트리거 된 이벤트 핸들러가 반환 한 마지막 / 이전 값이 포함
+event.stopImmediatePropagation() 나머지 이벤트 핸들러의 실행을 중지,이 메서드는 또한 이벤트가 DOM 트리를 버블 링하는 것을 중지
+event.stopPropagation() 부모 요소에 대한 이벤트 버블 링을 중지하여 부모 이벤트 처리기가 실행되지 않도록함
+event.target 이벤트를 트리거 한 DOM 요소를 반환
+event.timeStamp  이벤트가 트리거 된 1970 년 1 월 1 일 이후의 밀리 초 수를 반환
+event.type 트리거 된 이벤트 유형을 반환
+event.which 이벤트에 대해 누른 키보드 키 또는 마우스 버튼을 반환

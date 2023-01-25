@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* reset */
+ul,li{
+    list-style: none;
+    padding-left: 0;
+}
+/* ex3 */
+#ex3 li{
+    border:1px solid #000;
+    width:100px;
+    height:100px;
+    float:left;
+    margin:5px;
+}
+#ex4{
+    clear: both;
+}
+#ex4 li{
+    border:1px solid #000;
+    width:100px;
+    height:100px;
+    float:left;
+    margin:5px;
+}

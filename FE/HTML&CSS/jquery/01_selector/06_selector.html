@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute(속성)</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/selector6.js"></script>
+    <style>
+        a{
+            text-decoration:none;
+            color:#000;
+        }
+        #txt p{
+            float:left;
+            margin:20px;
+        }
+        #link1{
+            clear:both;
+        }
+        #link1 a{
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gallery">
+        <img src="images/img3.gif" alt="#" width="120" height="100">이미지1
+        <img src="images/img4.gif" alt="#" width="120" height="100">이미지2
+    </div> <!--gallery-->
+    <div id="txt">
+        <p id="html1-html51">js1</p>
+        <p class="html1-html51 css1">js2</p>
+        <p class="html1 css1">js3</p>
+        <p id="html1">js4</p>
+        <p class="css1">js5</p>
+        <p id="html51-html1">js6</p>
+    </div> <!--txt-->
+    <div id="link1">
+        <a href="http://" id="page1" title="이동1" target="_blank">확인1</a>
+        <a href="#page1" id="page2" title="이동2" target="_blank">확인2</a>
+        <a href="#page3" id="page3" title="이동3" target="_self">확인3</a>
+        <a href="http://" id="page4" title="이동4" target="_parent">확인4</a>
+        <a href="#" title="이동5" target="_self">확인5</a>
+    </div><!--link1-->
+</body>
+</html>

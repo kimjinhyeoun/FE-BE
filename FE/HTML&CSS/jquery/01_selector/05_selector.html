@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility Filters</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/selector5.js"></script>
+    <link rel="stylesheet" href="selector5.css">
+    <style>
+        #ex1{
+            height: 170px;
+        }
+        .none1{  /* 웹접근성1 */
+            width:0;
+            height: 0;
+            overflow: hidden;
+        }
+        .none2{ /* 웹접근성2 */
+            display: none;
+        }
+        .none3{ /* 웹접근성3 */
+            visibility: hidden;
+        }
+
+        #ex2{
+            height: 150px;
+        }
+        .none_img{ /* 두번째 이미지 클래스 */
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section id="ex1">
+        <h5>웹개발</h5>
+        <p>웹표준</p>
+        <p class="none1">웹접근성1</p>
+        <p class="none2">웹접근성2</p>
+        <p class="none3">웹접근성3</p>
+    </section> <!--ex1-->
+    <hr>
+    <section id="ex2">
+        <div id="photo">
+            <img src="images/img1.gif" alt="#" width="120" height="100">
+            <img src="images/img2.gif" alt="#" width="120" height="100" class="none_img">
+            <img src="images/img3.gif" alt="#" width="120" height="100">
+        </div> <!--photo-->
+    </section> <!--ex2-->
+</body>
+</html>

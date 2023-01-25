@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/* main1 */
+#main1{
+    background-color:#ffcccc;
+    width: 800px;
+    height: 150px;
+}
+#main1 div,#main1 p{
+    float:left;
+    background-color:#fff;
+    margin:10px;
+}
+#main1 div{
+    border:1px solid #ff0099;
+    width:100px;
+    height:100px;
+}
+#main1 p{
+    border:1px solid blueviolet;
+    width:50px;
+    height:50px;
+}
+
+
+/* slice1 */
+#slice1{
+    height:100px;
+}
+#slice1 p{
+    float:left;
+    border:1px solid blueviolet;
+    width:50px;
+    height:50px;
+    margin-right:5px;
+}
+
+/* main2 */
+#main2{
+    background-color:#ffcccc;
+    width: 800px;
+    height: 150px;
+}
+#main2 div,#main2 p{
+    float:left;
+    background-color:#fff;
+    margin:10px;
+}
+#main2 div{
+    border:1px solid #ff0099;
+    width:100px;
+    height:100px;
+}
+#main2 p{
+    border:1px solid blueviolet;
+    width:50px;
+    height:50px;
+}
+
+/* main3 */
+#main3{
+    background-color:#ffcccc;
+    width: 800px;
+    height: 150px;
+}
+#main3 div,#main3 p{
+    float:left;
+    background-color:#fff;
+    margin:10px;
+}
+#main3 div{
+    border:1px solid #ff0099;
+    width:100px;
+    height:100px;
+}
+#main3 p{
+    border:1px solid blueviolet;
+    width:50px;
+    height:50px;
+}
+
+
+/* main4 */
+#main4 *{
+    border:2px solid #cccccc;
+    color:#cccccc;
+    padding:5px;
+    display:block;
+    width:300px;
+}
+
+
+/* main5 */
+#main5 *{
+    border:2px solid #cccccc;
+    color:#cccccc;
+    padding:5px;
+    display:block;
+    margin:10px;
+}
+#main5 div{
+    width:500px;
+}
