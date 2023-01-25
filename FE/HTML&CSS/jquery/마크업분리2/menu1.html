@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>KBIZ</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/layout.css">
+<script src="js/jquery-3.6.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#box1").load("header.html");
+        $("#box2").load("bottom.html");
+    });
+</script>
+<style>
+    #menu1{
+        height:1500px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+
+<!-- 헤더부분 마크업연결 -->
+<div id="box1"></div>
+
+
+<div id="menu1">
+    메뉴1 파일입니다
+</div>
+
+
+<!-- 하단부분 마크업연결 -->
+<div id="box2"></div>
+
+
+</body>
+</html>

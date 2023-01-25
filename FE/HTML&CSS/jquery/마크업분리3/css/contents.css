@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/*main_img*/
+#main_img{clear:both; background:url(../images/main_img.jpg) no-repeat; width:1000px; height:226px; border:1px solid #cccccc; margin:30px auto 20px auto;}/*상단영역이미지*/
+#main_img p:nth-child(1){font-size:30px; line-height:1em; letter-spacing:-1px; margin-top:20px; margin-left:15px;}/*중소기업 최고...*/
+#main_img p:nth-child(1) span{display:block; color:#db3344;}/*제9기...*/
+#main_img p:nth-child(2){margin-top:25px; margin-left:15px;}/*교육기간 ...*/
+#main_img p:nth-child(2) strong{border-left:1px solid #cccccc; border-right:1px solid #cccccc; padding:0 10px; margin:0 5px;}/*교육기간,모집기간,지원방법*/
+#main_img p:nth-child(3) {margin-top:50px; margin-left:15px; background:url(../images/arrow.png) no-repeat; width:103px; height:25px;}/*자세히 보기*/
+#main_img p:nth-child(3) a{width:103px; height:25px; display:block; color:#ffffff; line-height:25px; text-indent:1em;}
+
+#contents{width:1000px; height:480px; border-bottom:1px solid #cccccc; margin:0 auto 20px auto;}/*주요사업,직접생산확인증명서,SINCE1965 전체*/
+
+.con1{float:left;width:200px; height:449px;}/*주요사업*/
+.con1 h2{width:200px;height:46px; background-color:#db3344; color:#ffffff; font-size:15px; text-align:center; line-height:46px; margin-bottom:3px;}
+.con1 ul{width:200px; height:405px;}
+.con1 ul li{width:100px; height:100px; float:left;border:1px solid #cccccc;box-sizing:border-box;}
+.con1 ul li.bi2{border-left:none;}/*인력지원*/
+.con1 ul li.bi3{border-top:none;}/*통계*/
+.con1 ul li.bi4{border-top:none;border-left:none;}/*협동조합*/
+.con1 ul li.bi5{border-top:none;}/*국제통상*/
+.con1 ul li.bi6{border-top:none;border-left:none;}/*교육*/
+.con1 ul li.bi7{border-top:none;}/*임대안내*/
+.con1 ul li.bi8{border-top:none;border-left:none;}/*공공구매*/
+.con1 ul li a{width:100px; height:100px; display:block; text-align:center; background-repeat:no-repeat; background-position:center 15px; line-height:150px;}
+.con1 ul li.bi1 a{background-image:url(../images/icon1.png);} /*공제사업*/
+.con1 ul li.bi2 a{background-image:url(../images/icon2.png);}/*인력지원*/
+.con1 ul li.bi3 a{background-image:url(../images/icon3.png);} /*통계*/
+.con1 ul li.bi4 a{background-image:url(../images/icon4.png);} /*협동조합*/
+.con1 ul li.bi5 a{background-image:url(../images/icon5.png);} /*국제통상*/
+.con1 ul li.bi6 a{background-image:url(../images/icon6.png);} /*교육*/
+.con1 ul li.bi7 a{background-image:url(../images/icon7.png);}/*임대안내*/
+.con1 ul li.bi8 a{background-image:url(../images/icon8.png);}/*공공구매*/
+.con1 ul li a:hover{text-decoration:underline;}
+
+.con2{float:left;width:488px; height:449px; margin-left:32px; border:1px solid #cccccc; box-sizing:border-box; background:url(../images/con1_img.png) no-repeat;}/*직접생산확인증명서*/
+.con2 p{font-size:15px; margin-top:50px; margin-left:10px;}
+.con2 p span{display:block; font-size:12px; margin-top:15px;}
+
+.con3{float:right;width:250px; height:449px; }/*SINCE1965 ,KBIZ 지역본부*/
+.con3 > div:first-child{background:url(../images/con3_img.jpg) no-repeat; width:250px; height:220px;border:1px solid #cccccc; box-sizing:border-box; margin-bottom:9px;}
+.con3 > div:first-child  h3{color:#df3a4a; margin-top:20px; margin-left:10px;}/*SINCE1965*/
+.con3 > div:first-child p:nth-of-type(1){margin-left:10px; color:#e39900;}/*300만..*/
+.con3 > div:first-child p:nth-of-type(2){margin-top:10px; margin-left:10px;}/*중소기업...*/
+.con3 > div:last-child{border:1px solid #cccccc;box-sizing:border-box; width:250px; height:220px;  background:url(../images/con2_img.jpg) no-repeat;}/*KBIZ 지역본부*/
+.con3 > div:last-child h3{margin-top:15px; margin-left:10px; font-weight:bold;}
+
+#news_wrap{clear:both; width:990px; height:250px; margin:0 auto 20px auto;}/*중앙회소식,중소기업소식.. 전체*/
+#news_wrap > div{border:1px solid #cccccc; width:230px; height:220px; float:left; box-sizing:border-box; position:relative;}
+#news_wrap > .news2, #news_wrap > .news3{margin-left:23px;}
+#news_wrap > .news4{float:right;}/*입찰공고*/
+#news_wrap > div > h4{font-size:15px;height:20px; font-weight:bold; margin-top:20px; margin-left:15px; margin-bottom:10px;}
+.news_img{height:113px; text-align:center; margin-bottom:10px;}
+
+.news_txt{width:195px; margin:0 auto; text-align:justify;}
+.news_list li{ background:url(../images/list.png) no-repeat left center; padding-left:10px; margin-left:20px; width:180px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+.news_more{position:absolute; top:20px; right:20px;}/*더보기*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
