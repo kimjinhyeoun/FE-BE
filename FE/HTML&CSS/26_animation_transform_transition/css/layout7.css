@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+
+/*reset*/
+div,p{
+  margin:0;
+  padding:0;
+}
+/*ex1*/
+#ex1{
+  border:1px solid #ccc;
+  height:300px;
+  width:620px;
+  overflow:hidden;
+}
+#ex1 > p{
+  background:url(../images/img9.jpg) no-repeat left center fixed;
+  height:917px;
+}
+/*ex2*/
+#ex2{
+  width:100%;
+  height:500px;
+  position:relative;
+  cursor:pointer;
+}
+#ex2 p:first-child{
+  width:100%;
+  height:500px;
+  background:url(../images/fixed1.jpg) no-repeat left center fixed;
+  background-size:cover;
+}
+#ex2 p:last-child{
+  position:absolute;
+  left:50%;
+  bottom:-100px;
+  transform:translate(-50%,0);
+}
+#ex2 p:last-child img{
+  transform:rotate(0deg);
+}
+#ex2:hover p:last-child img{
+  transform:rotate(5deg);
+  transform-origin:right bottom;
+}

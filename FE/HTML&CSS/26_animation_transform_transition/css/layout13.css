@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+/*reset*/
+div,p,ul,li{
+  padding:0;
+  margin:0;
+}
+ul,li{
+  list-style:none;
+}
+/*ex1 애니메이션*/
+@keyframes ex1_ani{
+  0%{
+    transform:rotateY(0deg);
+  }
+  100%{
+    transform:rotateY(180deg);
+    background-color:pink;
+  }
+}
+/*ex2 애니메이션*/
+@keyframes ex2_ani{
+  0%{
+    left:0;
+  }
+  50%{
+    left:500px;
+  }
+  100%{
+    left:0;
+  }
+}
+/*ex3,ex4,ex5 애니메이션*/
+@keyframes ex3_ani{
+  0%{
+    transform:rotateY(0deg);
+  }
+  100%{
+    transform:rotateY(180deg);
+    background-color:#000;
+  }
+}
+
+/*ex6 애니메이션*/
+@keyframes ex6_ani{
+  0%{
+    background-position:0 0;
+  }
+  5%{
+    background-position:0 -148px;
+  }
+  10%{
+    background-position:0 -296px;
+  }
+  15%{
+    background-position:0 -444px;
+  }
+  20%{
+    background-position:0 -592px;
+  }
+  25%{
+    background-position:0 -740px;
+  }
+  30%{
+    background-position:0 -888px;
+  }
+  35%{
+    background-position:0 -1036px;
+  }
+  40%{
+    background-position:0 -1184px;
+  }
+  45%{
+    background-position:0 -1332px;
+  }
+  50%{
+    background-position:0 -1480px;
+  }
+  55%{
+    background-position:0 -1628px;
+  }
+  60%{
+    background-position:0 -1776px;
+  }
+  65%{
+    background-position:0 -1924px;
+  }
+  70%{
+    background-position:0 -2072px;
+  }
+  75%{
+    background-position:0 -2220px;
+  }
+  80%{
+    background-position:0 -2368px;
+  }
+  85%{
+    background-position:0 -2516px;
+  }
+  90%{
+    background-position:0 -2664px;
+  }
+  95%{
+    background-position:0 -2812px;
+  }
+  100%{
+    background-position:0 -2960px;
+  }
+}
+
+
+
+
+/*wrap*/
+#wrap{
+  margin:20px;
+}
+
+/*ex1*/
+#ex1{
+  height:150px;
+  border-bottom:1px solid #ccc;
+}
+#ex1 p{
+  margin:30px;
+  width:100px;
+  height:100px;
+  background-color:orange;
+  border-radius:50%;
+  text-align:center;
+  line-height:100px;
+  animation:ex1_ani 2s step-start infinite;
+}
+/*ex2*/
+#ex2{
+  height:120px;
+  border-bottom:1px solid #ccc;
+}
+#ex2 p{
+  margin:30px;
+  width:100px;
+  height:100px;
+  background-color:orange;
+  text-align:center;
+  line-height:100px;
+  position:relative;
+  animation:ex2_ani 0.1s step-end infinite;
+}
+/*ex3*/
+#ex3{
+  height:120px;
+  border-bottom:1px solid #ccc;
+}
+#ex3 p{
+  margin:30px;
+  width:100px;
+  height:100px;
+  background-color:skyblue;
+  text-align:center;
+  line-height:100px;
+  border-radius:50%;
+  position:relative;
+  animation:ex3_ani 10s steps(5) infinite;
+}
+/*ex4*/
+#ex4{
+  height:120px;
+  border-bottom:1px solid #ccc;
+}
+#ex4 p{
+  margin:30px;
+  width:100px;
+  height:100px;
+  background-color:purple;
+  text-align:center;
+  line-height:100px;
+  border-radius:50%;
+  position:relative;
+  animation:ex3_ani 10s steps(5, end) infinite;
+}
+/*ex5*/
+#ex5{
+  height:120px;
+  border-bottom:1px solid #ccc;
+}
+#ex5 p{
+  margin:30px;
+  width:100px;
+  height:100px;
+  background-color:darkblue;
+  text-align:center;
+  line-height:100px;
+  border-radius:50%;
+  position:relative;
+  animation:ex3_ani 10s steps(5, start) infinite;
+}
+/*ex6*/
+#ex6{
+  height:200px;
+}
+#ex6 p{
+  background:url(../images/img1.png) no-repeat 0 0;
+  margin:30px;
+  width:130px;
+  height:148px;
+  animation:ex6_ani 1s steps(1) infinite both;
+}
+/*ex7*/
+#ex7{
+  height:100px;
+}
+#ex7 p{
+  margin:30px;
+}
+#ex7 p button{
+  width:128px;
+  height:40px;
+  font-weight:bold;
+  outline:none;
+  cursor:pointer;
+  color:#fff;
+  background-color:#000;
+  border:1px solid #fff;
+  transition:all 0.6s ease-in-out;
+}
+#ex7 p button:hover{
+  background-color:transparent;
+  color:#000;
+  border:none;
+}
+#ex7 p button{
+  position:relative;
+}
+#ex7 p button::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:0;
+  height:2px;
+  background-color:#000;
+  transition:all 0.8s ease-in-out;
+}
+#ex7 p button::after{
+  content:"";
+  position:absolute;
+  right:0;
+  bottom:0;
+  width:0;
+  height:2px;
+  background-color:#000;
+  transition:all 0.8s ease-in-out;
+}
+#ex7 p button:hover::before, #ex7 p button:hover::after{
+  width:100%;
+}
+/*ex8*/
+#ex8{
+  height:350px;
+}
+#ex8 > p{
+  margin:10px;
+}
+#ex8 > p > button{
+  border:2px solid #333;
+  color:#333;
+  background-color:none;
+  width:120px;
+  height:45px;
+  outline:none;
+  cursor:pointer;
+  transition:all 0.3s;
+}
+#ex8 > p > button:hover{
+  color:#fff;
+}
+#ex8 > p:nth-child(1) > button:hover{
+  box-shadow:inset 0 0 0 30px #333;
+}
+#ex8 > p:nth-child(2) > button:hover{
+  box-shadow:inset -60px 0 0 #333, inset 60px 0 0 #333;
+}
+#ex8 > p:nth-child(3) > button:hover{
+  box-shadow:0 5px 5px -4px #333;
+  color:#333;
+  transform:translateY(-5px);
+}
+#ex8 > p:nth-child(4) > button:hover{
+  box-shadow:inset 120px 0 0 0 #333;
+}
+#ex8 > p:nth-child(5) > button:hover{
+  box-shadow:inset 0 -45px 0 0 #333;
+}
+#ex8 > p:nth-child(6) > button:hover{
+  box-shadow:3px 3px 0 0 #333, inset 1px 1px 0 0 #333;
+  color:#333;
+}
+/*ex9*/
+#ex9{
+  height:100px;
+}
+#list1{
+  counter-reset:list1;
+}
+#list1 li::before{
+  counter-increment:list1;
+  content:"★"counter(list1)".";
+  color:red;
+  margin-right:10px;
+}
+/*ex10*/
+#ex10{
+  height:100px;
+}
+#list2{
+  counter-reset:list2;
+}
+#list2 li::before{
+  counter-increment:list2;
+  content:counter(list2, upper-roman)".";
+  color:blue;
+  margin-right:10px;
+  background-color:yellow;
+  width:20px;
+  display:inline-block;
+}

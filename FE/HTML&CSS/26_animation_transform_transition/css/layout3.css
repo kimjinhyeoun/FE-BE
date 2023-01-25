@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/*reset*/
+div,p,ul,li,a,img{
+  margin:0;
+  padding:0;
+}
+body{
+  font:normal 12px/1.5em Arial,sans-serif;
+  color:#333;
+}
+a{
+  text-decoration:none;
+  color:#333;
+}
+ul li{
+  list-style:none;
+}
+/*wrap*/
+#wrap{
+  margin:20px;
+  border:1px solid green;
+}
+/*ex1*/
+#ex1{
+  border:1px solid #ccc;
+  height:150px;
+}
+.ex1_1, .ex1_2{
+  background-color:orange;
+  width:50px;
+  height:50px;
+  margin:5px 0px;
+  cursor:pointer;
+}
+.ex1_1{ /*메뉴탭에 용이할듯*/
+  transition-property:width;
+  transition-duration:1s;
+}
+.ex1_2{
+  transition:width 4s;
+}
+.ex1_1:hover, .ex1_2:hover{
+  width:300px;
+}
+/*ex2*/
+#ex2{
+  border:1px solid pink;
+  height:400px;
+}
+#ex2 > p{
+  background-color:#951028;
+  width:50px;
+  height:50px;
+  margin:5px;
+  color:#fff;
+  cursor:pointer;
+  transition:width 2s;
+}
+#ex2 > .ex2_1{
+  transition-timing-function:ease;
+}
+#ex2 > .ex2_2{
+  transition-timing-function:linear;
+}
+#ex2 > .ex2_3{
+  transition-timing-function:ease-in;
+}
+#ex2 > .ex2_4{
+  transition-timing-function:ease-out;
+}
+#ex2 > .ex2_5{
+  transition-timing-function:ease-in-out;
+}
+#ex2 > .ex2_6{
+  transition-delay:1s;
+}
+#ex2 > p:hover{
+  width:300px;
+}
+/*ex3*/
+#ex3{
+  border:1px solid #ccc;
+  height:200px;
+}
+#ex3 > p{
+  margin-left:50px;
+  margin-top:50px;
+}
+#ex3 > p > img{
+  transform:rotate(0deg);
+  cursor:pointer;
+  transition:all 2s;
+  opacity:1;
+}
+#ex3 > p > img:hover{
+  transform:rotate(360deg);
+  opacity:0.3;
+}
+/*ex4*/
+#ex4{
+  border:1px solid #ccc;
+  height:300px;
+}
+#ex4 > ul{
+  width:400px;
+  height:200px;
+  border:1px solid #333;
+}
+#ex4 > ul > li{
+  float:left;
+  width:200px;
+  height:200px;
+}
+#ex4 > ul > li > a{
+  background:#ccc url(../images/arrow.gif) no-repeat left center;
+  width:200px;
+  height:200px;
+  display:block;
+  color:#fff;
+  font-weight:bold;
+  font-size:15px;
+  text-align:center;
+  line-height:200px;
+  transition:all 0.3s;
+}
+#ex4 > ul > li > a:hover{
+  background-color:#000;
+  background-position:right center;
+}
+/*ex5*/ /*이거다 이거 이걸로 공룡 뭐시기 할 수 있따*/
+#ex5{
+  height:500px;
+}
+#ex5 input[type="radio"]{
+  display:none;
+}
+#ex5 label{
+  border-bottom:1px solid #ccc;
+  cursor:pointer;
+  width:300px;
+  height:25px;
+  display:block;
+  line-height:25px;
+  margin-bottom:5px;
+}
+#ex5 input[type="radio"]+.container > p{
+  background-color:#eaeaea;
+  width:300px;
+  height:0;
+  overflow:hidden;
+  transition:height 1s;
+}
+#ex5 input[type="radio"]:checked +.container > p{
+  height:100px;
+}

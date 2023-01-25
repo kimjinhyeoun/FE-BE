@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>gradient</title>
+  <style>
+    /*reset*/
+    div,p{
+      margin:0;
+      padding:0;
+    }
+    #wrap > p{
+      border:1px solid #666;
+      width:150px;
+      height:150px;
+      float:left;
+      margin:10px;
+      text-align:center;
+    }
+    #wrap > p:nth-child(1){
+      background-color:#ff0088;
+      background:-webkit-gradient(linear, left top, left bottom, from(#ff0099),to(#0066ff));
+    }
+    #wrap > p:nth-child(2){
+      background: #f298dd;
+background: -webkit-linear-gradient(top left, #f298dd 0%, #a31079 33%, #ad1283 59%, #bf168f 59%, #ad1283 59%, #bf168f 70%, #bf168f 70%, #cb60b3 83%, #cb60b3 100%, #de47ac 100%, #de47ac 100%);
+background: -o-linear-gradient(top left, #f298dd 0%, #a31079 33%, #ad1283 59%, #bf168f 59%, #ad1283 59%, #bf168f 70%, #bf168f 70%, #cb60b3 83%, #cb60b3 100%, #de47ac 100%, #de47ac 100%);
+background: linear-gradient(to bottom right, #f298dd 0%, #a31079 33%, #ad1283 59%, #bf168f 59%, #ad1283 59%, #bf168f 70%, #bf168f 70%, #cb60b3 83%, #cb60b3 100%, #de47ac 100%, #de47ac 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f298dd', endColorstr='#de47ac',GradientType=1 );
+
+    }
+    #wrap > p:nth-child(3){
+      border-radius:50%;
+      background: #de47ac;
+background: -moz-radial-gradient(center, ellipse cover,  #de47ac 0%, #de47ac 0%, #070707 0%, #f77920 17%, #bf168f 30%, #f7f727 30%, #ad1283 41%, #bf168f 41%, #25f937 62%, #2ef2e1 71%, #f298dd 77%, #3d4af7 77%, #9222f9 82%, #d62fef 89%, #f91d96 93%, #000000 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  #de47ac 0%,#de47ac 0%,#070707 0%,#f77920 17%,#bf168f 30%,#f7f727 30%,#ad1283 41%,#bf168f 41%,#25f937 62%,#2ef2e1 71%,#f298dd 77%,#3d4af7 77%,#9222f9 82%,#d62fef 89%,#f91d96 93%,#000000 100%);
+background: radial-gradient(ellipse at center,  #de47ac 0%,#de47ac 0%,#070707 0%,#f77920 17%,#bf168f 30%,#f7f727 30%,#ad1283 41%,#bf168f 41%,#25f937 62%,#2ef2e1 71%,#f298dd 77%,#3d4af7 77%,#9222f9 82%,#d62fef 89%,#f91d96 93%,#000000 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de47ac', endColorstr='#000000',GradientType=1 );
+
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <p>확인1</p>
+    <p>확인2</p>
+    <p>확인3</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,697 @@
+@charset "utf-8";
+
+/*reset*/
+div,p,img,figure,figcaption,ul,li,span{
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration:none;
+}
+ul,li{
+  list-style:none;
+}
+/*wrap*/
+#wrap{
+  border:1px solid green;
+  margin:20px;
+}
+/*ex1*/
+#ex1{
+  height:150px;
+}
+#ex1 p{
+  margin:30px;
+}
+/*
+#ex1 p img{ 왼쪽위부터 커짐
+  width:100px;
+  height:100px;
+  cursor:pointer;
+  transition:all 0.2s;
+}
+#ex1 p img:hover{
+  width:120px;
+  height:120px;
+}*/
+#ex1 p img{ /*중간부터 커지는효과*/
+  transform:scale(1);
+  cursor:pointer;
+  transition:all 0.2s;
+}
+#ex1 p img:hover{ /*중간부터 커지는효과*/
+  transform:scale(1.2);
+}
+
+/*ex2*/
+#ex2{
+  height:250px;
+}
+.ex2{
+  width:320px;
+  height:240px;
+  position:relative;
+  cursor:pointer;
+}
+.ex2_t{
+  position:absolute;
+  left:0;
+  background-color:rgba(0,0,0,0.7);
+  bottom:0;
+  width:100%;
+  height:50px;
+  color:#f1f1f1;
+  font-size:20px;
+  text-align:center;
+  line-height:50px;
+  opacity:0;
+  transition:all 0.5s ease-in; /*ease-in 서서히 나타난다*/
+}
+.ex2:hover .ex2_t{
+  opacity:1;
+}
+/*ex3*/
+#ex3{
+  height:400px;
+}
+#ex3 figure{
+  float:left;
+  width:200px;
+  height:300px;
+  border:1px solid #666;
+  margin:10px;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+}
+#ex3 figure figcaption{
+  position:absolute;
+  left:0;
+  top:300px;
+  background-color:rgba(0,0,0,0.7);
+  width:200px;
+  height:300px;
+  text-align:center;
+  color:#fff;
+  padding-top:120px;
+  box-sizing:border-box; /*크기를 패딩만큼 줄이던가 아니면 박스사이징*/
+  transition:all 0.1s;
+}
+#ex3 figure figcaption a{
+  color:#fff;
+}
+#ex3 figure:hover figcaption{
+  top:0;
+}
+/*ex4*/
+#ex4{
+  height:400px;
+}
+#ex4 > p{
+  margin:20px;
+  width:200px;
+  height:300px;
+}
+#ex4 > p > img{
+  transform:rotateX(0deg);
+  transition:all 0.7s;
+}
+#ex4 > p:hover img{
+  transform:rotateX(180deg);
+}
+/*ex5*/
+#ex5{
+  height:400px;
+}
+#ex5 > p{
+  margin:20px;
+  width:200px;
+  height:300px;
+}
+#ex5 > p > img{
+  transform:rotateY(0deg);
+  transition:all 0.7s;
+}
+#ex5 > p:hover img{
+  transform:rotateY(180deg);
+}
+/*ex6*/
+#ex6{
+  height:400px;
+}
+#ex6 > p{
+  margin:20px;
+  width:200px;
+  height:300px;
+}
+#ex6 > p > img{
+  transform:rotateX(0deg) rotateY(0deg);;
+  
+  transition:all 0.7s;
+}
+#ex6 > p:hover img{
+  transform:rotateX(180deg) rotateY(180deg);;
+}
+/*ex7*/
+#ex7{
+  height:150px;
+}
+#ex7 ul{
+  height:120px;
+}
+#ex7 ul li{
+  float:left;
+  width:80px;
+  height:80px;
+  margin:20px;
+  background-color:#ccc;
+  position:relative;
+}
+#ex7 ul li a{
+  position:absolute;
+  left:0;
+  top:0;
+  transition:all 0.2s;
+}
+#ex7 ul li a:hover{
+  top:-10px;
+}
+/*ex8*/
+#ex8{
+  height:300px;
+}
+#ex8 p{
+  width:300px;
+  height:200px;
+  text-align:justify;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+}
+#ex8 p img{
+  position:absolute;
+  right:0;
+  top:110px;
+  z-index:2;
+  transition:all 0.4s;
+}
+#ex8 p:hover img{
+  right:-300px;
+}
+#ex8 p span{
+  display:block;
+  margin-top:75px;
+  transition:all 0.8s;
+}
+#ex8 p:hover span{
+  margin-top:0px;
+}
+/*ex9*/
+#ex9{
+  height:300px;
+}
+#ex9 p{
+  border:1px solid red;
+  width:199px;
+  height:226px;
+  cursor:pointer;
+  background:url(../images/banner_b.png) no-repeat 0 -210px;
+  transition:all 1s;
+  position:relative;
+}
+#ex9 p:hover{
+  background-position:0 0;
+}
+#ex9 p img{
+  position:absolute;
+  left:0;
+  top:0;
+  transition:all 1s;
+}
+#ex9 p:hover img{
+  top:50px;
+}
+/*ex10*/ /*버튼에 마우스 올리면 배경색 나옴*/
+#ex10{
+  height:80px;
+}
+#ex10 p{
+  margin:20px;
+}
+#ex10 p button{
+  border:2px solid #990099;
+  width:150px;
+  height:50px;
+  background-color:#fff;
+  cursor:pointer;
+  font-weight:bold;
+  outline:none;
+  transition:all 0.5s;
+}
+#ex10 p button:hover{
+  background-color:#990099;
+  color:#fff;
+}
+/*ex11*/ /*버튼에 마우스 올리면 그림자*/
+#ex11{
+  height:80px;
+}
+#ex11 p{
+  margin:20px;
+}
+#ex11 p button{
+border:none;
+  width:150px;
+  height:50px;
+  background-color:#990099;
+  color:#fff;
+  cursor:pointer;
+  font-weight:bold;
+  outline:none;
+  transition:all 0.3s
+}
+#ex11 p button:hover{
+  box-shadow:3px 4px 8px rgba(0,0,0,0.8);
+}
+/*ex12 버튼에 기호넣고 기호가 자연스럽게 생기는 설정*/
+#ex12{
+  height:100px;
+}
+#ex12 p{
+  margin:20px;
+}
+#ex12 p button{
+  border:none;
+  width:200px;
+  height:60px;
+  background-color:#990099;
+  cursor:pointer;
+  font-weight:bold;
+  outline:none;
+  color:#fff;
+}
+#ex12 p button span{
+  transition:all 0.3s;
+  position:relative;
+}
+#ex12 p button:hover span{
+  padding-right:25px;
+}
+#ex12 p button span::after{
+  content:"\00bb";
+  position:absolute;
+  right:-20px;
+  top:0;
+  transition:all 0.3s;
+  opacity:0;
+}
+#ex12 p button:hover span::after{
+  right:0;
+  opacity:1;
+}
+/*ex13*/ /*버튼 누르는 효과*/
+#ex13{
+  height:100px;
+}
+#ex13 p{
+  margin:20px;
+}
+#ex13 p button{
+  border:none;
+  width:200px;
+  height:60px;
+  background-color:#990099;
+  cursor:pointer;
+  font-weight:bold;
+  outline:none;
+  color:#fff;
+  border-radius:15px;
+  box-shadow:0 9px #666;
+  
+}
+#ex13 p button:hover{
+  background-color:#990000;
+}
+#ex13 p button:active{ /*active누르고있을때 눌러지는 느낌을 줄 수 있음*/
+  background-color:#990000;
+  box-shadow:0 6px #666;
+  transform:translateY(4px);
+}
+/*ex14*/ /*a태그 백그라운드가 티비꺼지는것처럼 보여짐*/
+#ex14{
+  height:120px;
+}
+#ex14 p{
+  margin:20px;
+}
+#ex14 p a{
+  font-size:20px;
+  font-weight:bold;
+  width:200px;
+  height:60px;
+  box-shadow:inset 0 0 0 2px rgba(30,22,54,0.6);
+  display:block;
+  text-align:center;
+  line-height:60px;
+  color:rgba(20,22,54,0.6);
+  border-radius:4px;
+  transition:all 0.2s;
+}
+#ex14 p a:hover{
+  box-shadow:inset 0 0 0 40px rgba(30,22,54,0.6);
+  color:rgba(255,255,255,0.8);
+}
+/*ex15*/ /*그림안에서 티비 켜지는것처럼 글자 나옴*/
+#ex15{
+  height:300px;
+}
+.ex15{
+  width:320px;
+  height:240px;
+  cursor:pointer;
+  position:relative;
+}
+.over15{
+  position:absolute;
+  left:0;
+  bottom:0;
+  background-color:#000;
+  width:100%;
+  height:100%;
+  transform:scale(0); /*스케일0으로하면 안나옴*/
+  transition:all 0.3s ease-in;
+}
+.ex15:hover .over15{
+  transform:scale(1);
+}
+.ex15_t{ /*앱솔루트로 가운데 정렬하는방법*/
+  color:white;
+  font-size:20px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+/*ex16*/ /*이미지에 마우스 올려놓으면 다른 이미지가 나옴*/
+#ex16{
+  height:300px;
+}
+.ex16{
+  width:320px;
+  height:240px;
+  cursor:pointer;
+  position:relative;
+}
+.ex16_i{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.over16{
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:2;
+  opacity:0;
+  transition:all 0.3s ease-in;
+}
+.ex16:hover .over16{
+  opacity:1;
+}
+/*ex17*/ /*메뉴탭에서 X로 표시*/
+#ex17{
+  height:100px;
+}
+.ex17{
+  width:25px;
+  height:25px;
+  margin:20px;
+  cursor:pointer;
+}
+.ex17 span{
+  width:25px;
+  height:4px;
+  background-color:#333;
+  display:block;
+  margin-bottom:4px;
+  transition:all 0.4s;
+}
+.ex17 span:nth-child(3){
+  margin-bottom:0;
+}
+.ex17 span i{
+  display:none;
+}
+.ex17:hover span:nth-child(1){
+  transform:rotate(-45deg) translate(-6px,5px);
+}
+.ex17:hover span:nth-child(2){
+  opacity:0;
+}
+.ex17:hover span:nth-child(3){
+  transform:rotate(45deg) translate(-6px,-5px);
+}
+/*ex18*/
+#ex18{
+  height:350px;
+}
+.ex18{ /*이미지 마우스 대기전엔 크다가 대면 축소됨과 동시에 검은화면에 글자나옴 */
+  border:1px solid #333;
+  width:300px;
+  height:300px;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+}
+.ex18 .over18{
+  position:absolute;
+  left:0;
+  top:0;
+  background-color:rgba(0,0,0,0.6);
+  width:300px;
+  height:300px;
+  opacity:0;
+  transition:all 0.3s;
+}
+.ex18:hover .over18{
+  opacity:1;
+}
+.ex18 .over18 p{
+  color:#fff;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  font-size:20px;
+}
+.ex18 img{
+  transform:scale(1.1);
+  transition:all 0.3s;
+}
+.ex18:hover img{
+  transform:scale(1);
+}
+/*ex19*/
+#ex19{
+  height:350px;
+}
+.ex19{ /*이미지 마우스 대기전엔 크다가 대면 축소됨과 동시에 검은화면이 위에서 밑으로 나옴*/
+  border:1px solid #333;
+  width:300px;
+  height:300px;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+}
+.ex19 .over19{
+  position:absolute;
+  left:0;
+  top:-300px;
+  background-color:rgba(0,0,0,0.6);
+  width:300px;
+  height:300px;
+  transition:all 0.5s;
+}
+.ex19:hover .over19{
+  top:0;
+}
+.ex19 .over19 p{
+  color:#fff;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  font-size:20px;
+}
+.ex19 img{
+  transform:scale(1.1);
+  transition:all 0.3s;
+}
+.ex19:hover img{
+  transform:scale(1);
+}
+/*ex20*/
+#ex20{
+  height:350px;
+}
+.ex20{ /*이미지 마우스 대기전엔 크다가 대면 축소됨과 동시에 검은화면이 밑에서 위로 나옴*/
+  border:1px solid #333;
+  width:300px;
+  height:300px;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+}
+.ex20 .over20{
+  position:absolute;
+  left:0;
+  bottom:-300px;
+  background-color:rgba(0,0,0,0.6);
+  width:300px;
+  height:300px;
+  transition:all 0.5s;
+}
+.ex20:hover .over20{
+  bottom:0;
+}
+.ex20 .over20 p{
+  color:#fff;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  font-size:20px;
+}
+.ex20 img{
+  transform:scale(1.1);
+  transition:all 0.3s;
+}
+.ex20:hover img{
+  transform:scale(1);
+}
+/*ex21*/
+#ex21{
+  height:350px;
+}
+.ex21{ /*이미지 마우스 대기전엔 크다가 대면 축소됨과 동시에 검은화면이 밑에서 위로 나옴*/
+  border:1px solid #333;
+  width:300px;
+  height:300px;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+}
+.ex21 .over21{
+  position:absolute;
+  left:-300px;
+  top:0;
+  background-color:rgba(0,0,0,0.6);
+  width:300px;
+  height:300px;
+  transition:all 0.5s;
+}
+.ex21:hover .over21{
+  left:0;
+}
+.ex21 .over21 p{
+  color:#fff;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  font-size:20px;
+}
+.ex21 img{
+  transform:scale(1.1);
+  transition:all 0.3s;
+}
+.ex21:hover img{
+  transform:scale(1);
+}
+/*ex22*/
+#ex22{
+  height:350px;
+}
+.ex22{ /*이미지 마우스 대기전엔 크다가 대면 축소됨과 동시에 검은화면이 밑에서 위로 나옴*/
+  border:1px solid #333;
+  width:300px;
+  height:300px;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+}
+.ex22 .over22{
+  position:absolute;
+  right:-300px;
+  top:0;
+  background-color:rgba(0,0,0,0.6);
+  width:300px;
+  height:300px;
+  transition:all 0.5s;
+}
+.ex22:hover .over22{
+  right:0;
+}
+.ex22 .over22 p{
+  color:#fff;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  font-size:20px;
+}
+.ex22 img{
+  transform:scale(1.1);
+  transition:all 0.3s;
+}
+.ex22:hover img{
+  transform:scale(1);
+}
+/*ex23*/
+#ex23{
+  height:350px;
+}
+.ex23{ /*이미지 마우스 대기전엔 크다가 대면 축소됨과 동시에 검은화면이 밑에서 위로 나옴*/
+  border:1px solid #333;
+  width:300px;
+  height:300px;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+}
+.ex23 .over23{
+  position:absolute;
+  left:0;
+  top:0;
+  width:300px;
+  height:300px;
+  opacity:0;
+  transition:all 0.5s;
+}
+.ex23:hover .over23{
+  opacity:1;
+}
+.ex23 .over23 p{
+  color:#fff;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  font-size:20px;
+  width:100px;
+  height:30px;
+  background-color:#333;
+  text-align:center;
+}
+.ex23 .over23:hover p{
+  color:red;
+}
+.ex23 img{
+  transform:scale(1.1);
+  transition:all 0.3s;
+  opacity:1;
+}
+.ex23:hover img{
+  transform:scale(1);
+  opacity:0.3;
+}
