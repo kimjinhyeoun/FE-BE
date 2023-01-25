@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*top_wrap*/
+#top_wrap{width:100%; height:112px; border-bottom:2px solid #ff6633; min-width:1024px;}
+#top{width:1024px; height:112px; margin:20px auto 0 auto;}
+
+#top h1{width:223px; height:25px; float:left; margin-bottom:50px;}/*로고*/
+
+.quick{float:right;  height:20px;}/*홈,로그인....*/
+.quick li{display:inline; background:url(../images/bar1.jpg) no-repeat left center; padding-left:5px;}
+.quick li:first-child{background:none; padding-left:0;}/*홈*/
+.quick li a:hover{text-decoration:underline;}
+
+#main_navi{clear:both; width:1024px; height:35px; }/*정보마당.....*/
+#main_navi ul{width:1024px; height:35px;  text-align:center; line-height:35px;}
+#main_navi ul li{display:inline; margin:0 10px; background:url(../images/bar1.jpg) no-repeat right center; padding-right:20px;}
+#main_navi ul li:last-child{padding-right:0; background:none;}/*협동조합*/
+#main_navi ul li a{font-size:16px;}
+#main_navi ul li a:hover{color:#e0233b;}
+
+
+
+
+
+
+
+
+
+
+
