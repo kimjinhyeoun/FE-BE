@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vue</title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<!-- 
+    * 공식사이트 : www.vuejs.org
+    https://v2.vuejs.org/v2/guide
+
+    new Vue({
+        el:  //Vue 객체가 관리할 요소 설정(id,class등..) 한마디로 어디다가 적용할것인지
+        data : {              
+        },
+        methods : {  
+        }
+    });
+-->
+</head>
+<body>
+<h3>* 예제1 *</h3>
+<div id="ex1">
+    {{ t_message }}
+</div><!--ex1-->
+<hr>
+
+<h3>* 예제2 *</h3>
+<div class="ex2">
+    {{ t_message }}
+</div><!--.ex2-->
+<hr>
+
+<h3>* 예제3 *</h3>
+<div id="ex3">
+    {{ message }} {{ name }} {{ age }}
+</div><!--ex3-->
+<hr>
+
+<h3>* 예제4 *</h3>
+<div id="ex4">
+    {{ message }} {{ person.name }} {{ person.age }}
+</div><!--ex4-->
+<hr>
+
+
+<h3>* 예제5 *</h3>
+<div id="ex5">
+    <p>{{ message }}</p> <!--텍스트로 표시-->
+    <p v-text="message"></p> <!--텍스트로 표시-->
+    <p v-html="message"></p><!--태그로 표시-->
+</div><!--ex5-->
+<hr>
+
+<h3>* 예제6 *</h3>
+<div id="ex6">
+    <p>{{ price *100 }}</p>
+    <p>안녕하세요 {{ name }} 님 반가워요.</p>
+</div><!--ex6-->
+<hr>
+
+<h3>* 예제7 *</h3>
+<div id="ex7">
+    <p>{{ web }}</p>
+    <p>{{ web[1] }}</p>
+    <p>{{ object.name }}</p>
+    <p>{{ object.price1 }}</p>
+    <p>{{ object.price2 }}</p>
+</div><!--ex7-->
+<hr>
+
+<h3>* 예제8 *</h3>
+<div id="ex8">
+    <p v-bind:title="txt">안녕</p><!--요소 속성을 바인딩 / v-bind-->
+</div><!--ex8-->
+<hr>
+<script src="js/index.js"></script>
+
+<h3>* 예제9 *</h3>
+<div id="ex9">
+    <a v-bind:href="link" v-bind:target="target" v-bind:title="title">네이버로 연결</a>
+</div><!--ex9-->
+<hr>
+
+<h3>* 예제10 *</h3>
+<div id="ex10">
+    <input type="text" v-bind:value="v_data">
+</div><!--ex10-->
+<hr>
+
+<h3>* 예제11 *</h3>
+<div id="ex11">
+    <input v-bind:type="type1" v-bind:value="data">
+    <input v-bind:type="type2" v-bind:value="data">
+</div><!--ex11-->
+<hr>
+
+
+<h3>* 예제12 *</h3>
+<div id="ex12">
+    <p> {{ msg }} </p>
+    <input v-model="msg"> <!--v-model 양방향 바인딩-->
+</div><!--ex12-->
+<hr>
+
+<h3>* 예제13 *</h3>
+<div id="ex13">
+    {{ year }}<br><br>
+    <button v-on:click="plus">더하기</button> <!--v-on:이벤트-->
+    <button v-on:click="minus">빼기</button>
+</div><!--ex13-->
+<hr>
+
+<h3>* 예제14 *</h3>
+<div id="ex14">
+    {{ text }}<br><br>
+    <button v-on:click="oneclick">클릭</button>
+</div><!--ex14-->
+<hr>
+
+<h3>* 예제15 *</h3>
+<div id="ex15">
+    {{ count }}<br><br>
+    <button v-on:click="plus(1)">1씩 증가</button>
+</div><!--ex15-->
+<hr>
+
+<h3>* 예제16 *</h3>
+<div id="ex16">
+    <button v-on:click="alert">클릭</button>
+    <button v-on:mouseover="alert">마우스 오버</button>
+    <button v-on:dblclick="alert">더블클릭</button>
+</div><!--ex16-->
+<hr>
+
+<h3>* 예제17 *</h3>
+<div id="ex17"> <!--조건문 v-if ~ v-else-->
+    <div v-if="txt">Hellow</div>    <!--true-->
+    <div v-else>Bye!</div>          <!--false-->
+    <button v-on:click="toggle">Click!</button>
+</div><!--ex17-->
+<hr>
+
+<h3>* 예제18 *</h3>
+<div id="ex18"> <!--반복문 v-for=value in 변수명-->
+    <ol>
+        <li v-for="code in code1">{{ code.txt }}</li>
+    </ol>
+</div><!--ex18-->
+<hr>
+
+<h3>* 예제19 *</h3>
+<div id="ex19"> 
+    {{ msg }}<br>
+    {{ r_msg }}<br>
+</div><!--ex19-->
+<hr>
+
+
+<h3>* 예제20 *</h3>
+<div id="ex20"> 
+    {{ msg }}<br>
+    {{ r_msg }}<br>
+</div><!--ex20-->
+<hr>
+
+
+<h3>* 예제21 *</h3>
+<div id="ex21"> 
+    {{ msg }}<br>
+    {{ r_msg }}<br>
+</div><!--ex21-->
+<hr>
+
+
+<h3>* 예제22 *</h3>
+<div id="ex22"> 
+    {{ msg }}<br>
+    {{ r_msg }}<br>
+</div><!--ex22-->
+<hr>
+
+
+<h3>* 예제23 *</h3>
+<div id="ex23"> 
+    {{ msg }}<br>
+    {{ r_msg }}<br>
+</div><!--ex23-->
+<hr>
+
+
+<h3>* 예제24 *</h3>
+<div id="ex24"> 
+    {{ msg }}<br>
+    {{ r_msg }}<br>
+</div><!--ex24-->
+<hr>
+
+
+<h3>* 예제25 *</h3>
+<div id="ex25"> 
+    {{ msg }}<br>
+    {{ r_msg }}<br>
+</div><!--ex25-->
+<hr>
+
+
+
+
+<script src="js/index.js"></script>
+</body>
+</html>

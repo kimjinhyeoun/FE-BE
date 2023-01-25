@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김진현</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <script src="js/vue.js"></script>
+    <div class="num1">
+        {{ count }}<br>
+        <button v-on:click="plus">add</button>
+        <button v-on:click="minus">del</button>
+    </div><!--num1-->
+    <hr>
+    <div id="num2">
+        {{ text }}<br>
+        <button v-on:mousedown="mousedown" v-on:mouseup="mouseup">내용추가</button>
+    </div><!--num2-->
+    <hr>
+    <div id="num3">
+        <p v-bind:title="txt">겨울이에요</p>
+    </div><!--num3-->
+    <hr>
+    <div class="num4">
+        <a v-bind:href="link" v-bind:target="target" v-bind:title="title">네이트 연결</a>
+    </div><!--num4-->
+    <hr>
+    <div id="num5">
+        {{ msg }}<br>
+        {{ r_msg }}
+    </div><!--num5-->
+    <hr>
+    <div class="num6">
+        {{ msg }}<br>
+        {{ r_msg }}
+    </div><!--num6-->
+    <hr>
+    <div class="num7">
+        {{ msg }}<br>
+        {{ r_msg }}
+    </div><!--num7-->
+    <script src="js/vue.js"></script>
+</body>
+</html>
