@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+
+/* reset */
+div,figure,figcaption,a,img{
+    margin:0;
+    padding:0;
+}
+figure, figcaption{
+    display:block;
+}
+
+/* ex1 */
+#ex1{
+    height:300px;
+}
+#ex1 figure{
+    width:226px;
+    height:265px;
+    border:1px solid #ccc;
+    float:left;
+    margin:5px;
+}
+.ex1_i{ /* a */
+    width:226px;
+    height:236px;
+    display:block;
+    position:relative;
+} 
+.img1{
+    position:absolute;
+    left:0;
+    top:0;
+}
+#ex1 figcaption{
+    text-align:center;
+}
+
+/* ex2 */
+#ex2{
+    height:100px;
+}
+.ex2_i{
+    width:31px;
+    height:40px;
+    margin:30px;
+}
+.ex2_i img{
+    position:relative;
+    left:0;
+    top:0;
+}
+
+/* ex3 */
+#ex3{
+    height:300px;
+}
+.ex3_i{
+    width:150px;
+    height:200px;
+    margin:30px;
+    position:relative;
+}
+.ex3_i img{
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+/* ex4 */
+#ex4{
+    width:500px;
+    height:280px;
+    position:relative;
+    overflow: hidden; /* 마지막에 오버플로우 히든 줌*/
+}
+#ba0,#ba1,#ba2{
+    position:absolute;
+}
+#ba1,#ba2{
+    display:none;
+}

@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* ex3 reset */
+div,h3,ul,li,a,span{
+    margin:0;
+    padding:0;
+}
+ul,li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#333;
+}
+
+
+
+#ex1{
+    height:350px;
+}
+.box1{
+    background:url(../images/img10_l.jpg) no-repeat;
+    width:500px;
+    height:280px;
+    display:none;
+}
+
+#ex2{
+    height:200px;
+}
+
+
+/* ex3 */
+#ex3{
+    width:150px;
+    height:300px;
+    border:1px solid red;   
+}
+#ex3 h3{
+    font-size:17px;
+    border-bottom:1px solid #ccc;
+    height:30px;
+    margin-bottom:10px;
+}
+#list_li2a.sel{  /* js로 추가할거임(#list_li2a 이거는 상품신청 a태그임 뒤에 .sel은 js로) */
+    color:#ff0033;
+}
+.list_li2 span{
+    float:right;
+    font-size:20px;
+}
+.list_li2 div{
+    margin-left:10px;
+    font-size:15px;
+}
